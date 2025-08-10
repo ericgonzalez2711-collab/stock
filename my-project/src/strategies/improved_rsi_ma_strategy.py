@@ -186,11 +186,30 @@ class ImprovedRSIMACrossoverStrategy(RSIMACrossoverStrategy):
             logger.warning(f"No data provided for signal generation for {symbol}")
             return data
         
-        # Ensure we have all required indicators
-        required_indicators = ['rsi', 'sma_20', 'sma_50', 'macd', 'macd_signal', 'bb_upper', 'bb_lower', 'atr']
-        if not all(col in data.columns for col in required_indicators):
-            logger.error(f"Missing required indicators for {symbol}")
+        # Ensure we have basic required indicators, calculate missing ones
+        basic_required = ['rsi', 'sma_20', 'sma_50']
+        if not all(col in data.columns for col in basic_required):
+            logger.warning(f"Missing basic indicators for {symbol}, calculating all indicators...")
+            data = TechnicalIndicators.calculate_all_indicators(data)
+        
+        # Check if we still have the basic indicators after calculation
+        if not all(col in data.columns for col in basic_required):
+            logger.error(f"Failed to calculate basic indicators for {symbol}")
             return data
+        
+        # Calculate additional indicators if missing
+        if 'macd' not in data.columns or 'macd_signal' not in data.columns:
+            macd_data = TechnicalIndicators.calculate_macd(data['close'])
+            for key, series in macd_data.items():
+                data[key] = series
+        
+        if 'bb_upper' not in data.columns or 'bb_lower' not in data.columns:
+            bb_data = TechnicalIndicators.calculate_bollinger_bands(data['close'])
+            for key, series in bb_data.items():
+                data[f'bb_{key}'] = series
+        
+        if 'atr' not in data.columns:
+            data['atr'] = TechnicalIndicators.calculate_atr(data['high'], data['low'], data['close'])
         
         signals_df = data.copy()
         signals_df['signal'] = 0
@@ -218,17 +237,23 @@ class ImprovedRSIMACrossoverStrategy(RSIMACrossoverStrategy):
             ma_bullish = row['sma_20'] > row['sma_50']
             ma_crossover = (row['sma_20'] > row['sma_50']) and (prev_row['sma_20'] <= prev_row['sma_50'])
             
-            # Enhanced filters
-            volume_confirmation = row['volume_ratio'] >= self.volume_threshold if 'volume' in signals_df.columns else True
-            macd_bullish = row['macd'] > row['macd_signal']
-            price_above_bb_middle = row['close'] > (row['bb_upper'] + row['bb_lower']) / 2
-            not_in_strong_downtrend = row['price_change_20d'] > -0.15  # Not in severe downtrend
+                         # Enhanced filters with fallbacks for missing indicators
+             volume_confirmation = row.get('volume_ratio', 1) >= self.volume_threshold if 'volume_ratio' in signals_df.columns else True
+             macd_bullish = row.get('macd', 0) > row.get('macd_signal', 0) if 'macd' in signals_df.columns and 'macd_signal' in signals_df.columns else True
+             
+             # Bollinger Bands filter (fallback to price vs SMA if BB not available)
+             if 'bb_upper' in signals_df.columns and 'bb_lower' in signals_df.columns:
+                 price_above_bb_middle = row['close'] > (row['bb_upper'] + row['bb_lower']) / 2
+             else:
+                 price_above_bb_middle = row['close'] > row['sma_20']  # Fallback to SMA
+             
+             not_in_strong_downtrend = row.get('price_change_20d', 0) > -0.15  # Not in severe downtrend
             
-            # Market regime filter - only trade in favorable conditions
-            favorable_regime = row['market_regime'] in ['BULLISH', 'SIDEWAYS']
+                         # Market regime filter - only trade in favorable conditions
+             favorable_regime = row.get('market_regime', 'SIDEWAYS') in ['BULLISH', 'SIDEWAYS']
             
-            # Momentum confirmation
-            recent_momentum_positive = row['price_change_5d'] > -0.05  # Not falling too fast
+                         # Momentum confirmation
+             recent_momentum_positive = row.get('price_change_5d', 0) > -0.05  # Not falling too fast
             
             # Combined buy condition (much more restrictive)
             buy_condition = (
@@ -241,25 +266,25 @@ class ImprovedRSIMACrossoverStrategy(RSIMACrossoverStrategy):
                 recent_momentum_positive
             )
             
-            # MA crossover buy (alternative entry)
-            crossover_buy = (
-                ma_crossover and 
-                row['rsi'] < 40 and  # More restrictive RSI for crossover
-                volume_confirmation and
-                favorable_regime and
-                row['price_change_5d'] > 0  # Recent momentum
-            )
+                         # MA crossover buy (alternative entry)
+             crossover_buy = (
+                 ma_crossover and 
+                 row['rsi'] < 40 and  # More restrictive RSI for crossover
+                 volume_confirmation and
+                 favorable_regime and
+                 row.get('price_change_5d', 0) > 0  # Recent momentum
+             )
             
             if buy_condition or crossover_buy:
                 signals_df.iloc[idx, signals_df.columns.get_loc('signal')] = 1
                 
-                # Calculate signal strength
-                strength_score = 0
-                strength_score += 1 if rsi_oversold else 0
-                strength_score += 1 if ma_crossover else 0
-                strength_score += 1 if volume_confirmation else 0
-                strength_score += 1 if macd_bullish else 0
-                strength_score += 1 if row['market_regime'] == 'BULLISH' else 0
+                                 # Calculate signal strength with fallbacks
+                 strength_score = 0
+                 strength_score += 1 if rsi_oversold else 0
+                 strength_score += 1 if ma_crossover else 0
+                 strength_score += 1 if volume_confirmation else 0
+                 strength_score += 1 if macd_bullish else 0
+                 strength_score += 1 if row.get('market_regime', 'SIDEWAYS') == 'BULLISH' else 0
                 
                 if strength_score >= 4:
                     signals_df.iloc[idx, signals_df.columns.get_loc('signal_strength')] = 'STRONG'
@@ -268,12 +293,12 @@ class ImprovedRSIMACrossoverStrategy(RSIMACrossoverStrategy):
                 else:
                     signals_df.iloc[idx, signals_df.columns.get_loc('signal_strength')] = 'WEAK'
             
-            # Enhanced sell conditions
-            rsi_overbought = row['rsi'] > self.rsi_overbought
-            ma_bearish = row['sma_20'] < row['sma_50']
-            ma_crossover_down = (row['sma_20'] < row['sma_50']) and (prev_row['sma_20'] >= prev_row['sma_50'])
-            macd_bearish = row['macd'] < row['macd_signal']
-            strong_downtrend = row['price_change_5d'] < -0.05
+                         # Enhanced sell conditions with fallbacks
+             rsi_overbought = row['rsi'] > self.rsi_overbought
+             ma_bearish = row['sma_20'] < row['sma_50']
+             ma_crossover_down = (row['sma_20'] < row['sma_50']) and (prev_row['sma_20'] >= prev_row['sma_50'])
+             macd_bearish = row.get('macd', 0) < row.get('macd_signal', 0) if 'macd' in signals_df.columns and 'macd_signal' in signals_df.columns else False
+             strong_downtrend = row.get('price_change_5d', 0) < -0.05
             
             sell_condition = (
                 rsi_overbought or 

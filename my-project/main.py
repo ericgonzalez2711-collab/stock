@@ -75,13 +75,13 @@ def run_backtest():
     # Initialize components
     try:
         data_fetcher = DataFetcher()
-        # Use improved strategy for better performance
-        from src.strategies.improved_rsi_ma_strategy import ImprovedRSIMACrossoverStrategy
-        strategy = ImprovedRSIMACrossoverStrategy(
+        # Use simple improved strategy for better performance (works with existing indicators)
+        from src.strategies.simple_improved_strategy import SimpleImprovedStrategy
+        strategy = SimpleImprovedStrategy(
             initial_capital=Config.INITIAL_CAPITAL,
-            risk_per_trade=Config.RISK_PER_TRADE * 0.75  # Reduced risk
+            risk_per_trade=Config.RISK_PER_TRADE * 0.75  # Reduced risk (1.5% instead of 2%)
         )
-        logger.info("Using IMPROVED RSI+MA strategy for backtesting")
+        logger.info("Using SIMPLE IMPROVED RSI+MA strategy for backtesting")
     except Exception as e:
         print(f"❌ Failed to initialize components: {e}")
         print("Please check your configuration and dependencies.")
