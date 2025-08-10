@@ -17,6 +17,7 @@ import psutil
 from ..data.data_fetcher import DataFetcher
 from ..data.technical_indicators import TechnicalIndicators
 from ..strategies.rsi_ma_strategy import RSIMACrossoverStrategy, Trade
+from ..strategies.improved_rsi_ma_strategy import ImprovedRSIMACrossoverStrategy
 from ..ml.predictive_model import StockPredictiveModel
 from ..utils.sheets_logger import GoogleSheetsLogger
 from ..utils.telegram_alerts import TelegramAlertsBot
@@ -26,9 +27,10 @@ from ..config import Config
 class TradingEngine:
     """Main trading automation engine."""
     
-    def __init__(self):
+    def __init__(self, use_improved_strategy: bool = True):
         """Initialize the trading engine with all components."""
         self.config = Config()
+        self.use_improved_strategy = use_improved_strategy
         
         # Initialize components
         self.data_fetcher = None
@@ -86,11 +88,18 @@ class TradingEngine:
             self.data_fetcher = DataFetcher()
             
             # Trading strategy
-            logger.info("Initializing trading strategy...")
-            self.strategy = RSIMACrossoverStrategy(
-                initial_capital=Config.INITIAL_CAPITAL,
-                risk_per_trade=Config.RISK_PER_TRADE
-            )
+            if self.use_improved_strategy:
+                logger.info("Initializing improved trading strategy...")
+                self.strategy = ImprovedRSIMACrossoverStrategy(
+                    initial_capital=Config.INITIAL_CAPITAL,
+                    risk_per_trade=Config.RISK_PER_TRADE * 0.75  # Reduced risk for improved strategy
+                )
+            else:
+                logger.info("Initializing original trading strategy...")
+                self.strategy = RSIMACrossoverStrategy(
+                    initial_capital=Config.INITIAL_CAPITAL,
+                    risk_per_trade=Config.RISK_PER_TRADE
+                )
             
             # ML model
             logger.info("Initializing ML model...")
