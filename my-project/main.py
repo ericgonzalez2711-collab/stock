@@ -424,6 +424,31 @@ def compare_strategies():
         logger.error(f"Strategy comparison error: {e}")
 
 
+def cleanup_repository():
+    """Clean up unnecessary files from the repository."""
+    try:
+        from cleanup_system import RepositoryCleanup
+        
+        print("🧹 Starting repository cleanup...")
+        print("This will remove cache files, logs, and temporary files.")
+        
+        # Ask for confirmation
+        response = input("\nProceed with cleanup? (y/N): ").strip().lower()
+        
+        if response in ['y', 'yes']:
+            cleanup = RepositoryCleanup(dry_run=False)
+            cleanup.run_full_cleanup(include_cache=True, include_logs=True)
+        else:
+            print("Cleanup cancelled.")
+            
+    except ImportError as e:
+        print(f"❌ Could not import cleanup system: {e}")
+    except Exception as e:
+        print(f"❌ Cleanup failed: {e}")
+        if CORE_AVAILABLE:
+            logger.error(f"Cleanup error: {e}")
+
+
 def main():
     """Main function with command-line interface."""
     setup_logging()
@@ -440,12 +465,13 @@ Examples:
   python main.py test               # Test integrations
   python main.py config             # Show configuration
   python main.py compare-strategies  # Compare original vs improved strategy
+  python main.py cleanup            # Clean up unnecessary files
         """
     )
     
     parser.add_argument(
         'command',
-        choices=['run', 'backtest', 'train-ml', 'scan', 'test', 'config', 'compare-strategies'],
+        choices=['run', 'backtest', 'train-ml', 'scan', 'test', 'config', 'compare-strategies', 'cleanup'],
         help='Command to execute'
     )
     
@@ -475,6 +501,8 @@ Examples:
             show_config()
         elif args.command == 'compare-strategies':
             compare_strategies()
+        elif args.command == 'cleanup':
+            cleanup_repository()
     
     except KeyboardInterrupt:
         logger.info("Operation interrupted by user")
