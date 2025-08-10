@@ -75,7 +75,13 @@ def run_backtest():
     # Initialize components
     try:
         data_fetcher = DataFetcher()
-        strategy = RSIMACrossoverStrategy()
+        # Use improved strategy for better performance
+        from src.strategies.improved_rsi_ma_strategy import ImprovedRSIMACrossoverStrategy
+        strategy = ImprovedRSIMACrossoverStrategy(
+            initial_capital=Config.INITIAL_CAPITAL,
+            risk_per_trade=Config.RISK_PER_TRADE * 0.75  # Reduced risk
+        )
+        logger.info("Using IMPROVED RSI+MA strategy for backtesting")
     except Exception as e:
         print(f"❌ Failed to initialize components: {e}")
         print("Please check your configuration and dependencies.")
@@ -397,6 +403,63 @@ def show_config():
     print("="*50)
 
 
+def run_original_backtest():
+    """Run backtest with the original strategy for comparison."""
+    if not CORE_AVAILABLE:
+        print("❌ Core modules not available. Please install dependencies:")
+        print("pip install pandas numpy alpha-vantage scikit-learn matplotlib loguru")
+        return
+    
+    logger.info("Running 6-month backtest with ORIGINAL strategy...")
+    
+    # Initialize components with original strategy
+    try:
+        data_fetcher = DataFetcher()
+        strategy = RSIMACrossoverStrategy()  # Original strategy
+        logger.info("Using ORIGINAL RSI+MA strategy for backtesting")
+    except Exception as e:
+        print(f"❌ Failed to initialize components: {e}")
+        return
+    
+    # Fetch and run backtest (same logic as improved backtest)
+    try:
+        data = data_fetcher.get_nifty50_data()
+        if not data:
+            logger.error("No data available for backtesting")
+            return
+        
+        # Filter to 6 months
+        from datetime import datetime, timedelta
+        latest_date = max(stock_data.index.max() for stock_data in data.values() if not stock_data.empty)
+        start_date = latest_date - timedelta(days=180)
+        
+        six_month_data = {}
+        for symbol, stock_data in data.items():
+            if not stock_data.empty:
+                mask = (stock_data.index >= start_date) & (stock_data.index <= latest_date)
+                filtered_data = stock_data[mask]
+                if len(filtered_data) > 0:
+                    six_month_data[symbol] = filtered_data
+        
+        # Run backtest
+        results = strategy.backtest(six_month_data, start_date=start_date.strftime('%Y-%m-%d'))
+        
+        # Display results
+        print("\n" + "="*60)
+        print("ORIGINAL STRATEGY - 6-MONTH BACKTEST RESULTS")
+        print("="*60)
+        print(f"Period: {start_date.date()} to {latest_date.date()}")
+        print(f"Total Return: {results.get('total_return', 0):.2%}")
+        print(f"Win Rate: {results.get('win_rate', 0):.2%}")
+        print(f"Max Drawdown: {results.get('max_drawdown', 0):.2%}")
+        print(f"Total Trades: {results.get('total_trades', 0)}")
+        print("="*60)
+        print("💡 Compare with: python main.py backtest (improved strategy)")
+        
+    except Exception as e:
+        print(f"❌ Original backtest failed: {e}")
+
+
 def compare_strategies():
     """Compare original and improved trading strategies."""
     if not CORE_AVAILABLE:
@@ -424,6 +487,31 @@ def compare_strategies():
         logger.error(f"Strategy comparison error: {e}")
 
 
+def cleanup_repository():
+    """Clean up unnecessary files from the repository."""
+    try:
+        from cleanup_system import RepositoryCleanup
+        
+        print("🧹 Starting repository cleanup...")
+        print("This will remove cache files, logs, and temporary files.")
+        
+        # Ask for confirmation
+        response = input("\nProceed with cleanup? (y/N): ").strip().lower()
+        
+        if response in ['y', 'yes']:
+            cleanup = RepositoryCleanup(dry_run=False)
+            cleanup.run_full_cleanup(include_cache=True, include_logs=True)
+        else:
+            print("Cleanup cancelled.")
+            
+    except ImportError as e:
+        print(f"❌ Could not import cleanup system: {e}")
+    except Exception as e:
+        print(f"❌ Cleanup failed: {e}")
+        if CORE_AVAILABLE:
+            logger.error(f"Cleanup error: {e}")
+
+
 def main():
     """Main function with command-line interface."""
     setup_logging()
@@ -440,12 +528,14 @@ Examples:
   python main.py test               # Test integrations
   python main.py config             # Show configuration
   python main.py compare-strategies  # Compare original vs improved strategy
+  python main.py cleanup            # Clean up unnecessary files
+  python main.py backtest-original  # Run backtest with original strategy
         """
     )
     
     parser.add_argument(
         'command',
-        choices=['run', 'backtest', 'train-ml', 'scan', 'test', 'config', 'compare-strategies'],
+        choices=['run', 'backtest', 'train-ml', 'scan', 'test', 'config', 'compare-strategies', 'cleanup', 'backtest-original'],
         help='Command to execute'
     )
     
@@ -475,6 +565,10 @@ Examples:
             show_config()
         elif args.command == 'compare-strategies':
             compare_strategies()
+        elif args.command == 'cleanup':
+            cleanup_repository()
+        elif args.command == 'backtest-original':
+            run_original_backtest()
     
     except KeyboardInterrupt:
         logger.info("Operation interrupted by user")
