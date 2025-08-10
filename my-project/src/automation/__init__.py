@@ -1,0 +1,1 @@
+# Automation package for the trading engine

@@ -1,0 +1,1989 @@
+2025-08-09 11:17:41 | INFO | Testing integrations...
+2025-08-09 11:17:41 | INFO | DataFetcher initialized successfully
+2025-08-09 11:17:41 | INFO | Fetching daily data for RELIANCE.BSE
+2025-08-09 11:17:43 | SUCCESS | Successfully fetched 100 days of data for RELIANCE.BSE
+2025-08-09 11:17:43 | ERROR | Failed to connect to Google Sheets: [Errno 2] No such file or directory: 'path/to/your/credentials.json'
+2025-08-09 11:17:43 | INFO | Google Sheets logger initialized successfully
+2025-08-09 11:17:43 | SUCCESS | Telegram bot initialized successfully
+2025-08-09 11:17:43 | ERROR | Failed to send Telegram message: Not Found
+2025-08-09 11:17:43 | ERROR | Telegram connection test failed
+2025-08-09 11:18:40 | INFO | Training ML model...
+2025-08-09 11:18:40 | INFO | DataFetcher initialized successfully
+2025-08-09 11:18:40 | INFO | Initialized random_forest model
+2025-08-09 11:18:40 | INFO | Fetching training data...
+2025-08-09 11:18:40 | INFO | Processing RELIANCE.BSE...
+2025-08-09 11:18:40 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-09 11:18:40 | SUCCESS | Successfully processed RELIANCE.BSE
+2025-08-09 11:18:40 | INFO | Processing TCS.BSE...
+2025-08-09 11:18:40 | INFO | Fetching daily data for TCS.BSE
+2025-08-09 11:18:42 | SUCCESS | Successfully fetched 5093 days of data for TCS.BSE
+2025-08-09 11:18:42 | SUCCESS | Successfully processed TCS.BSE
+2025-08-09 11:18:42 | INFO | Processing INFY.BSE...
+2025-08-09 11:18:42 | INFO | Rate limiting: sleeping for 10.03 seconds
+2025-08-09 11:18:52 | INFO | Fetching daily data for INFY.BSE
+2025-08-09 11:18:55 | SUCCESS | Successfully fetched 5095 days of data for INFY.BSE
+2025-08-09 11:18:55 | SUCCESS | Successfully processed INFY.BSE
+2025-08-09 11:18:55 | INFO | Successfully fetched data for 3 out of 3 stocks
+2025-08-09 11:18:55 | INFO | Starting model training...
+2025-08-09 11:18:55 | INFO | Preparing data for RELIANCE.BSE...
+2025-08-09 11:18:55 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 11:18:55 | INFO | Selected 28 features for ML model
+2025-08-09 11:18:55 | WARNING | Insufficient valid data for RELIANCE.BSE: 51 samples
+2025-08-09 11:18:55 | INFO | Preparing data for TCS.BSE...
+2025-08-09 11:18:55 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 11:18:55 | INFO | Selected 28 features for ML model
+2025-08-09 11:18:55 | SUCCESS | Added 5037 valid samples from TCS.BSE
+2025-08-09 11:18:55 | INFO | Preparing data for INFY.BSE...
+2025-08-09 11:18:56 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 11:18:56 | INFO | Selected 28 features for ML model
+2025-08-09 11:18:56 | SUCCESS | Added 5039 valid samples from INFY.BSE
+2025-08-09 11:18:56 | INFO | Data cleaning completed. Removed 0 problematic rows
+2025-08-09 11:18:56 | SUCCESS | Prepared dataset with 10076 samples and 28 features
+2025-08-09 11:18:56 | INFO | Training random_forest on 8060 samples...
+2025-08-09 11:19:41 | SUCCESS | Model training completed. Test accuracy: 0.5670
+2025-08-09 11:19:41 | INFO | Model saved to models/trading_model.pkl
+2025-08-09 11:19:45 | INFO | Model analysis plot saved to ml_model_analysis.png
+2025-08-09 11:23:07 | INFO | Starting Algo-Trading Engine...
+2025-08-09 11:23:07 | SUCCESS | Logging system configured
+2025-08-09 11:23:07 | INFO | Initializing data fetcher...
+2025-08-09 11:23:07 | INFO | DataFetcher initialized successfully
+2025-08-09 11:23:07 | INFO | Initializing trading strategy...
+2025-08-09 11:23:07 | INFO | RSI MA Crossover Strategy initialized with $100,000.00 capital
+2025-08-09 11:23:07 | INFO | Initializing ML model...
+2025-08-09 11:23:07 | INFO | Initialized random_forest model
+2025-08-09 11:23:07 | INFO | Initializing Google Sheets logger...
+2025-08-09 11:23:07 | ERROR | Failed to connect to Google Sheets: [Errno 2] No such file or directory: 'path/to/your/credentials.json'
+2025-08-09 11:23:07 | INFO | Google Sheets logger initialized successfully
+2025-08-09 11:23:07 | INFO | Initializing Telegram bot...
+2025-08-09 11:23:07 | SUCCESS | Telegram bot initialized successfully
+2025-08-09 11:23:07 | SUCCESS | All components initialized successfully
+2025-08-09 11:23:07 | INFO | Trading Engine initialized successfully
+2025-08-09 11:23:07 | INFO | Starting automated trading engine...
+2025-08-09 11:23:07 | INFO | Validating system configuration...
+2025-08-09 11:23:07 | INFO | Configuration validation completed: OK
+2025-08-09 11:23:07 | INFO | Training ML model...
+2025-08-09 11:23:07 | INFO | Model loaded from models/trading_model.pkl
+2025-08-09 11:23:07 | SUCCESS | ML model loaded from disk
+2025-08-09 11:23:07 | INFO | Automated tasks scheduled successfully
+2025-08-09 11:23:08 | ERROR | Failed to send Telegram message: Not Found
+2025-08-09 11:23:08 | SUCCESS | Automated trading engine started successfully
+2025-08-09 11:35:54 | INFO | Received shutdown signal
+2025-08-09 11:35:54 | INFO | Stopping automated trading engine...
+2025-08-09 11:35:54 | ERROR | Failed to send Telegram message: Not Found
+2025-08-09 11:35:54 | SUCCESS | Automated trading engine stopped successfully
+2025-08-09 11:37:38 | INFO | Testing integrations...
+2025-08-09 11:37:38 | INFO | DataFetcher initialized successfully
+2025-08-09 11:37:38 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-09 11:37:38 | ERROR | Failed to connect to Google Sheets: [Errno 2] No such file or directory: 'path/to/your/credentials.json'
+2025-08-09 11:37:38 | INFO | Google Sheets logger initialized successfully
+2025-08-09 11:37:38 | SUCCESS | Telegram bot initialized successfully
+2025-08-09 11:37:39 | SUCCESS | Telegram connection test passed
+2025-08-09 11:38:15 | INFO | Running backtest...
+2025-08-09 11:38:15 | INFO | DataFetcher initialized successfully
+2025-08-09 11:38:15 | INFO | RSI MA Crossover Strategy initialized with $100,000.00 capital
+2025-08-09 11:38:15 | INFO | Fetching historical data...
+2025-08-09 11:38:15 | INFO | Processing RELIANCE.BSE...
+2025-08-09 11:38:15 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-09 11:38:15 | SUCCESS | Successfully processed RELIANCE.BSE
+2025-08-09 11:38:15 | INFO | Processing TCS.BSE...
+2025-08-09 11:38:15 | INFO | Loading TCS.BSE daily data from cache
+2025-08-09 11:38:15 | SUCCESS | Successfully processed TCS.BSE
+2025-08-09 11:38:15 | INFO | Processing INFY.BSE...
+2025-08-09 11:38:15 | INFO | Loading INFY.BSE daily data from cache
+2025-08-09 11:38:15 | SUCCESS | Successfully processed INFY.BSE
+2025-08-09 11:38:15 | INFO | Successfully fetched data for 3 out of 3 stocks
+2025-08-09 11:38:15 | INFO | Starting backtesting...
+2025-08-09 11:38:15 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 11:38:15 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 11:38:16 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 11:38:17 | SUCCESS | Backtesting completed. Total return: 0.00%
+2025-08-09 11:38:21 | INFO | Backtest plot saved to backtest_results.png
+2025-08-09 11:48:42 | INFO | Running backtest...
+2025-08-09 11:48:42 | INFO | DataFetcher initialized successfully
+2025-08-09 11:48:42 | INFO | RSI MA Crossover Strategy initialized with $100,000.00 capital
+2025-08-09 11:48:42 | INFO | Fetching historical data...
+2025-08-09 11:48:42 | INFO | Processing RELIANCE.BSE...
+2025-08-09 11:48:42 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-09 11:48:42 | SUCCESS | Successfully processed RELIANCE.BSE
+2025-08-09 11:48:42 | INFO | Processing TCS.BSE...
+2025-08-09 11:48:42 | INFO | Loading TCS.BSE daily data from cache
+2025-08-09 11:48:42 | SUCCESS | Successfully processed TCS.BSE
+2025-08-09 11:48:42 | INFO | Processing INFY.BSE...
+2025-08-09 11:48:42 | INFO | Loading INFY.BSE daily data from cache
+2025-08-09 11:48:42 | SUCCESS | Successfully processed INFY.BSE
+2025-08-09 11:48:42 | INFO | Successfully fetched data for 3 out of 3 stocks
+2025-08-09 11:48:42 | INFO | Starting backtesting...
+2025-08-09 11:48:42 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 11:48:42 | INFO | RELIANCE.BSE: Generated 10 buy signals and 19 sell signals out of 100 periods
+2025-08-09 11:48:43 | INFO | RELIANCE.BSE signal distribution: {0: 71, -1: 19, 1: 10}
+2025-08-09 11:48:43 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 11:48:43 | INFO | TCS.BSE: Generated 215 buy signals and 1043 sell signals out of 5093 periods
+2025-08-09 11:48:43 | INFO | TCS.BSE signal distribution: {0: 3835, -1: 1043, 1: 215}
+2025-08-09 11:48:43 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 11:48:43 | INFO | INFY.BSE: Generated 166 buy signals and 1005 sell signals out of 5095 periods
+2025-08-09 11:48:43 | INFO | INFY.BSE signal distribution: {0: 3924, -1: 1005, 1: 166}
+2025-08-09 11:48:43 | INFO | BUY: 130 shares of TCS.BSE at $153.07
+2025-08-09 11:48:43 | INFO | SELL: 130 shares of TCS.BSE at $156.57 (SELL_SIGNAL)
+2025-08-09 11:48:43 | INFO | BUY: 465 shares of INFY.BSE at $43.16
+2025-08-09 11:48:43 | INFO | SELL: 465 shares of INFY.BSE at $44.31 (SELL_SIGNAL)
+2025-08-09 11:48:43 | INFO | BUY: 90 shares of TCS.BSE at $223.07
+2025-08-09 11:48:43 | INFO | BUY: 366 shares of INFY.BSE at $44.16
+2025-08-09 11:48:44 | INFO | SELL: 366 shares of INFY.BSE at $47.31 (SELL_SIGNAL)
+2025-08-09 11:48:44 | INFO | SELL: 90 shares of TCS.BSE at $222.82 (SELL_SIGNAL)
+2025-08-09 11:48:44 | INFO | BUY: 38 shares of TCS.BSE at $530.95
+2025-08-09 11:48:44 | INFO | SELL: 38 shares of TCS.BSE at $573.85 (SELL_SIGNAL)
+2025-08-09 11:48:44 | INFO | BUY: 34 shares of TCS.BSE at $594.23
+2025-08-09 11:48:44 | INFO | BUY: 64 shares of INFY.BSE at $259.79
+2025-08-09 11:48:44 | INFO | SELL: 34 shares of TCS.BSE at $596.50 (SELL_SIGNAL)
+2025-08-09 11:48:44 | INFO | SELL: 64 shares of INFY.BSE at $267.79 (SELL_SIGNAL)
+2025-08-09 11:48:44 | INFO | BUY: 89 shares of INFY.BSE at $232.57
+2025-08-09 11:48:44 | INFO | BUY: 33 shares of TCS.BSE at $502.27
+2025-08-09 11:48:44 | INFO | SELL: 89 shares of INFY.BSE at $217.98 (SELL_SIGNAL)
+2025-08-09 11:48:44 | INFO | SELL: 33 shares of TCS.BSE at $481.85 (SELL_SIGNAL)
+2025-08-09 11:48:44 | INFO | BUY: 42 shares of TCS.BSE at $480.40
+2025-08-09 11:48:44 | INFO | BUY: 85 shares of INFY.BSE at $191.28
+2025-08-09 11:48:44 | INFO | SELL: 42 shares of TCS.BSE at $417.95 (SELL_SIGNAL)
+2025-08-09 11:48:44 | INFO | SELL: 85 shares of INFY.BSE at $173.78 (STOP_LOSS)
+2025-08-09 11:48:44 | INFO | BUY: 44 shares of TCS.BSE at $442.98
+2025-08-09 11:48:44 | INFO | SELL: 44 shares of TCS.BSE at $428.90 (SELL_SIGNAL)
+2025-08-09 11:48:44 | INFO | BUY: 89 shares of INFY.BSE at $218.57
+2025-08-09 11:48:44 | INFO | SELL: 89 shares of INFY.BSE at $219.43 (SELL_SIGNAL)
+2025-08-09 11:48:44 | INFO | BUY: 94 shares of INFY.BSE at $190.46
+2025-08-09 11:48:44 | INFO | SELL: 94 shares of INFY.BSE at $173.99 (SELL_SIGNAL)
+2025-08-09 11:48:44 | INFO | BUY: 1 shares of INFY.BSE at $153.69
+2025-08-09 11:48:44 | INFO | BUY: 77 shares of TCS.BSE at $245.97
+2025-08-09 11:48:44 | INFO | SELL: 1 shares of INFY.BSE at $159.85 (SELL_SIGNAL)
+2025-08-09 11:48:44 | INFO | SELL: 77 shares of TCS.BSE at $249.53 (SELL_SIGNAL)
+2025-08-09 11:48:44 | INFO | BUY: 62 shares of INFY.BSE at $308.77
+2025-08-09 11:48:44 | INFO | BUY: 21 shares of TCS.BSE at $726.05
+2025-08-09 11:48:44 | INFO | SELL: 62 shares of INFY.BSE at $312.21 (SELL_SIGNAL)
+2025-08-09 11:48:44 | INFO | SELL: 21 shares of TCS.BSE at $766.75 (SELL_SIGNAL)
+2025-08-09 11:48:44 | INFO | BUY: 58 shares of INFY.BSE at $333.37
+2025-08-09 11:48:44 | INFO | SELL: 58 shares of INFY.BSE at $332.11 (SELL_SIGNAL)
+2025-08-09 11:48:44 | INFO | BUY: 57 shares of INFY.BSE at $338.61
+2025-08-09 11:48:44 | INFO | SELL: 57 shares of INFY.BSE at $338.39 (SELL_SIGNAL)
+2025-08-09 11:48:44 | INFO | BUY: 50 shares of INFY.BSE at $385.71
+2025-08-09 11:48:44 | INFO | SELL: 50 shares of INFY.BSE at $380.79 (SELL_SIGNAL)
+2025-08-09 11:48:45 | INFO | BUY: 17 shares of TCS.BSE at $1098.00
+2025-08-09 11:48:45 | INFO | SELL: 17 shares of TCS.BSE at $1136.65 (SELL_SIGNAL)
+2025-08-09 11:48:45 | INFO | BUY: 53 shares of INFY.BSE at $367.77
+2025-08-09 11:48:45 | INFO | SELL: 53 shares of INFY.BSE at $363.84 (SELL_SIGNAL)
+2025-08-09 11:48:45 | INFO | BUY: 17 shares of TCS.BSE at $1138.40
+2025-08-09 11:48:45 | INFO | SELL: 17 shares of TCS.BSE at $1151.60 (SELL_SIGNAL)
+2025-08-09 11:48:45 | INFO | BUY: 17 shares of TCS.BSE at $1139.35
+2025-08-09 11:48:45 | INFO | BUY: 45 shares of INFY.BSE at $345.91
+2025-08-09 11:48:45 | INFO | SELL: 17 shares of TCS.BSE at $1134.45 (SELL_SIGNAL)
+2025-08-09 11:48:45 | INFO | SELL: 45 shares of INFY.BSE at $345.85 (SELL_SIGNAL)
+2025-08-09 11:48:45 | INFO | BUY: 18 shares of TCS.BSE at $1064.95
+2025-08-09 11:48:45 | INFO | BUY: 47 shares of INFY.BSE at $332.65
+2025-08-09 11:48:45 | INFO | SELL: 18 shares of TCS.BSE at $1175.50 (TAKE_PROFIT)
+2025-08-09 11:48:45 | INFO | SELL: 47 shares of INFY.BSE at $342.61 (SELL_SIGNAL)
+2025-08-09 11:48:45 | INFO | BUY: 18 shares of TCS.BSE at $1092.90
+2025-08-09 11:48:45 | INFO | BUY: 49 shares of INFY.BSE at $322.94
+2025-08-09 11:48:45 | INFO | SELL: 18 shares of TCS.BSE at $1087.65 (SELL_SIGNAL)
+2025-08-09 11:48:45 | INFO | SELL: 49 shares of INFY.BSE at $342.92 (SELL_SIGNAL)
+2025-08-09 11:48:45 | INFO | BUY: 16 shares of TCS.BSE at $1197.55
+2025-08-09 11:48:45 | INFO | SELL: 16 shares of TCS.BSE at $1122.40 (STOP_LOSS)
+2025-08-09 11:48:45 | INFO | BUY: 17 shares of TCS.BSE at $1135.00
+2025-08-09 11:48:45 | INFO | SELL: 17 shares of TCS.BSE at $1143.25 (SELL_SIGNAL)
+2025-08-09 11:48:45 | INFO | BUY: 70 shares of INFY.BSE at $283.16
+2025-08-09 11:48:45 | INFO | SELL: 70 shares of INFY.BSE at $271.98 (SELL_SIGNAL)
+2025-08-09 11:48:45 | INFO | BUY: 16 shares of TCS.BSE at $1200.75
+2025-08-09 11:48:45 | INFO | SELL: 16 shares of TCS.BSE at $1212.70 (SELL_SIGNAL)
+2025-08-09 11:48:45 | INFO | BUY: 15 shares of TCS.BSE at $1269.30
+2025-08-09 11:48:46 | INFO | SELL: 15 shares of TCS.BSE at $1298.15 (SELL_SIGNAL)
+2025-08-09 11:48:46 | INFO | BUY: 67 shares of INFY.BSE at $295.71
+2025-08-09 11:48:46 | INFO | SELL: 67 shares of INFY.BSE at $18630.80 (SELL_SIGNAL)
+2025-08-09 11:48:46 | INFO | BUY: 10 shares of INFY.BSE at $292.73
+2025-08-09 11:48:46 | INFO | SELL: 10 shares of INFY.BSE at $302.07 (SELL_SIGNAL)
+2025-08-09 11:48:46 | INFO | BUY: 202 shares of TCS.BSE at $1314.85
+2025-08-09 11:48:46 | INFO | SELL: 202 shares of TCS.BSE at $1297.15 (SELL_SIGNAL)
+2025-08-09 11:48:46 | INFO | BUY: 742 shares of INFY.BSE at $356.79
+2025-08-09 11:48:46 | INFO | BUY: 143 shares of TCS.BSE at $1481.00
+2025-08-09 11:48:46 | INFO | SELL: 742 shares of INFY.BSE at $286.93 (SELL_SIGNAL)
+2025-08-09 11:48:46 | INFO | SELL: 143 shares of TCS.BSE at $1402.10 (SELL_SIGNAL)
+2025-08-09 11:48:46 | INFO | BUY: 179 shares of TCS.BSE at $1404.15
+2025-08-09 11:48:46 | INFO | SELL: 179 shares of TCS.BSE at $1488.80 (SELL_SIGNAL)
+2025-08-09 11:48:46 | INFO | BUY: 168 shares of TCS.BSE at $1518.40
+2025-08-09 11:48:46 | INFO | SELL: 168 shares of TCS.BSE at $1527.35 (SELL_SIGNAL)
+2025-08-09 11:48:46 | INFO | BUY: 678 shares of INFY.BSE at $376.93
+2025-08-09 11:48:46 | INFO | SELL: 678 shares of INFY.BSE at $388.44 (SELL_SIGNAL)
+2025-08-09 11:48:46 | INFO | BUY: 129 shares of TCS.BSE at $1984.90
+2025-08-09 11:48:46 | INFO | SELL: 129 shares of TCS.BSE at $2014.20 (SELL_SIGNAL)
+2025-08-09 11:48:46 | INFO | BUY: 119 shares of TCS.BSE at $2155.20
+2025-08-09 11:48:46 | INFO | BUY: 464 shares of INFY.BSE at $445.43
+2025-08-09 11:48:46 | INFO | SELL: 119 shares of TCS.BSE at $2198.45 (SELL_SIGNAL)
+2025-08-09 11:48:46 | INFO | SELL: 464 shares of INFY.BSE at $469.24 (TAKE_PROFIT)
+2025-08-09 11:48:46 | INFO | BUY: 622 shares of INFY.BSE at $419.69
+2025-08-09 11:48:46 | INFO | SELL: 622 shares of INFY.BSE at $413.16 (SELL_SIGNAL)
+2025-08-09 11:48:46 | INFO | BUY: 120 shares of TCS.BSE at $2166.35
+2025-08-09 11:48:46 | INFO | SELL: 120 shares of TCS.BSE at $2034.70 (STOP_LOSS)
+2025-08-09 11:48:46 | INFO | BUY: 103 shares of TCS.BSE at $2494.90
+2025-08-09 11:48:46 | INFO | SELL: 103 shares of TCS.BSE at $2601.30 (SELL_SIGNAL)
+2025-08-09 11:48:46 | INFO | BUY: 107 shares of TCS.BSE at $2423.35
+2025-08-09 11:48:46 | INFO | SELL: 107 shares of TCS.BSE at $2573.50 (SELL_SIGNAL)
+2025-08-09 11:48:47 | INFO | BUY: 263 shares of INFY.BSE at $998.50
+2025-08-09 11:48:47 | INFO | SELL: 263 shares of INFY.BSE at $1064.40 (SELL_SIGNAL)
+2025-08-09 11:48:47 | INFO | BUY: 108 shares of TCS.BSE at $2442.95
+2025-08-09 11:48:47 | INFO | SELL: 108 shares of TCS.BSE at $2633.90 (TAKE_PROFIT)
+2025-08-09 11:48:47 | INFO | BUY: 247 shares of INFY.BSE at $1091.80
+2025-08-09 11:48:47 | INFO | BUY: 83 shares of TCS.BSE at $2593.55
+2025-08-09 11:48:47 | INFO | SELL: 247 shares of INFY.BSE at $1086.12 (SELL_SIGNAL)
+2025-08-09 11:48:47 | INFO | SELL: 83 shares of TCS.BSE at $2586.10 (SELL_SIGNAL)
+2025-08-09 11:48:47 | INFO | BUY: 107 shares of TCS.BSE at $2511.05
+2025-08-09 11:48:47 | INFO | BUY: 216 shares of INFY.BSE at $997.70
+2025-08-09 11:48:47 | INFO | SELL: 216 shares of INFY.BSE at $957.20 (SELL_SIGNAL)
+2025-08-09 11:48:47 | INFO | SELL: 107 shares of TCS.BSE at $2562.85 (SELL_SIGNAL)
+2025-08-09 11:48:47 | INFO | BUY: 106 shares of TCS.BSE at $2539.50
+2025-08-09 11:48:47 | INFO | BUY: 203 shares of INFY.BSE at $1059.30
+2025-08-09 11:48:47 | INFO | SELL: 106 shares of TCS.BSE at $2554.15 (SELL_SIGNAL)
+2025-08-09 11:48:47 | INFO | SELL: 203 shares of INFY.BSE at $1108.20 (SELL_SIGNAL)
+2025-08-09 11:48:47 | INFO | BUY: 251 shares of INFY.BSE at $1080.20
+2025-08-09 11:48:47 | INFO | SELL: 251 shares of INFY.BSE at $1019.85 (STOP_LOSS)
+2025-08-09 11:48:47 | INFO | BUY: 256 shares of INFY.BSE at $1047.30
+2025-08-09 11:48:47 | INFO | SELL: 256 shares of INFY.BSE at $1053.50 (SELL_SIGNAL)
+2025-08-09 11:48:47 | INFO | BUY: 254 shares of INFY.BSE at $1057.10
+2025-08-09 11:48:47 | INFO | SELL: 254 shares of INFY.BSE at $1128.70 (TAKE_PROFIT)
+2025-08-09 11:48:47 | INFO | BUY: 231 shares of INFY.BSE at $1178.30
+2025-08-09 11:48:47 | INFO | SELL: 231 shares of INFY.BSE at $1161.05 (SELL_SIGNAL)
+2025-08-09 11:48:48 | INFO | BUY: 106 shares of TCS.BSE at $2551.45
+2025-08-09 11:48:48 | INFO | SELL: 106 shares of TCS.BSE at $2447.00 (STOP_LOSS)
+2025-08-09 11:48:48 | INFO | BUY: 116 shares of TCS.BSE at $2321.15
+2025-08-09 11:48:48 | INFO | SELL: 116 shares of TCS.BSE at $2359.10 (SELL_SIGNAL)
+2025-08-09 11:48:48 | INFO | BUY: 288 shares of INFY.BSE at $936.65
+2025-08-09 11:48:48 | INFO | SELL: 288 shares of INFY.BSE at $942.15 (SELL_SIGNAL)
+2025-08-09 11:48:48 | INFO | BUY: 112 shares of TCS.BSE at $2413.30
+2025-08-09 11:48:48 | INFO | BUY: 220 shares of INFY.BSE at $981.25
+2025-08-09 11:48:48 | INFO | SELL: 112 shares of TCS.BSE at $2327.85 (STOP_LOSS)
+2025-08-09 11:48:48 | INFO | SELL: 220 shares of INFY.BSE at $931.40 (STOP_LOSS)
+2025-08-09 11:48:48 | INFO | BUY: 114 shares of TCS.BSE at $2320.85
+2025-08-09 11:48:48 | INFO | BUY: 230 shares of INFY.BSE at $924.80
+2025-08-09 11:48:48 | INFO | SELL: 114 shares of TCS.BSE at $2308.65 (SELL_SIGNAL)
+2025-08-09 11:48:48 | INFO | SELL: 230 shares of INFY.BSE at $918.80 (SELL_SIGNAL)
+2025-08-09 11:48:48 | INFO | BUY: 286 shares of INFY.BSE at $929.45
+2025-08-09 11:48:48 | INFO | BUY: 90 shares of TCS.BSE at $2360.65
+2025-08-09 11:48:48 | INFO | SELL: 286 shares of INFY.BSE at $935.65 (SELL_SIGNAL)
+2025-08-09 11:48:48 | INFO | SELL: 90 shares of TCS.BSE at $2357.75 (SELL_SIGNAL)
+2025-08-09 11:48:48 | INFO | BUY: 304 shares of INFY.BSE at $873.50
+2025-08-09 11:48:48 | INFO | SELL: 304 shares of INFY.BSE at $927.55 (SELL_SIGNAL)
+2025-08-09 11:48:48 | INFO | BUY: 102 shares of TCS.BSE at $2630.55
+2025-08-09 11:48:48 | INFO | SELL: 102 shares of TCS.BSE at $2547.85 (STOP_LOSS)
+2025-08-09 11:48:48 | INFO | BUY: 243 shares of INFY.BSE at $1098.05
+2025-08-09 11:48:48 | INFO | BUY: 73 shares of TCS.BSE at $2925.75
+2025-08-09 11:48:48 | INFO | SELL: 73 shares of TCS.BSE at $2829.95 (SELL_SIGNAL)
+2025-08-09 11:48:48 | INFO | SELL: 243 shares of INFY.BSE at $1125.00 (SELL_SIGNAL)
+2025-08-09 11:48:48 | INFO | BUY: 68 shares of TCS.BSE at $1744.80
+2025-08-09 11:48:48 | INFO | SELL: 68 shares of TCS.BSE at $1721.20 (SELL_SIGNAL)
+2025-08-09 11:48:49 | INFO | BUY: 135 shares of TCS.BSE at $1976.35
+2025-08-09 11:48:49 | INFO | SELL: 135 shares of TCS.BSE at $2011.85 (SELL_SIGNAL)
+2025-08-09 11:48:49 | INFO | BUY: 171 shares of INFY.BSE at $735.65
+2025-08-09 11:48:49 | INFO | SELL: 171 shares of INFY.BSE at $727.95 (SELL_SIGNAL)
+2025-08-09 11:48:49 | INFO | BUY: 139 shares of TCS.BSE at $1917.05
+2025-08-09 11:48:49 | INFO | SELL: 139 shares of TCS.BSE at $1851.50 (SELL_SIGNAL)
+2025-08-09 11:48:49 | INFO | BUY: 140 shares of TCS.BSE at $1889.50
+2025-08-09 11:48:49 | INFO | BUY: 322 shares of INFY.BSE at $660.75
+2025-08-09 11:48:49 | INFO | SELL: 140 shares of TCS.BSE at $1888.15 (SELL_SIGNAL)
+2025-08-09 11:48:49 | INFO | SELL: 322 shares of INFY.BSE at $683.70 (SELL_SIGNAL)
+2025-08-09 11:48:49 | INFO | BUY: 139 shares of TCS.BSE at $1925.90
+2025-08-09 11:48:49 | INFO | SELL: 139 shares of TCS.BSE at $2079.50 (TAKE_PROFIT)
+2025-08-09 11:48:49 | INFO | BUY: 128 shares of TCS.BSE at $2109.20
+2025-08-09 11:48:49 | INFO | SELL: 128 shares of TCS.BSE at $2240.35 (SELL_SIGNAL)
+2025-08-09 11:48:49 | INFO | BUY: 376 shares of INFY.BSE at $731.15
+2025-08-09 11:48:49 | INFO | BUY: 103 shares of TCS.BSE at $2131.45
+2025-08-09 11:48:49 | INFO | SELL: 376 shares of INFY.BSE at $779.45 (TAKE_PROFIT)
+2025-08-09 11:48:49 | INFO | SELL: 103 shares of TCS.BSE at $2109.70 (SELL_SIGNAL)
+2025-08-09 11:48:49 | INFO | BUY: 129 shares of TCS.BSE at $2149.15
+2025-08-09 11:48:49 | INFO | SELL: 129 shares of TCS.BSE at $2014.75 (STOP_LOSS)
+2025-08-09 11:48:49 | INFO | BUY: 134 shares of TCS.BSE at $2044.30
+2025-08-09 11:48:49 | INFO | SELL: 134 shares of TCS.BSE at $2087.80 (SELL_SIGNAL)
+2025-08-09 11:48:49 | INFO | BUY: 130 shares of TCS.BSE at $2117.05
+2025-08-09 11:48:49 | INFO | SELL: 130 shares of TCS.BSE at $2020.95 (STOP_LOSS)
+2025-08-09 11:48:49 | INFO | BUY: 133 shares of TCS.BSE at $2050.40
+2025-08-09 11:48:49 | INFO | SELL: 133 shares of TCS.BSE at $2060.70 (SELL_SIGNAL)
+2025-08-09 11:48:49 | INFO | BUY: 389 shares of INFY.BSE at $703.90
+2025-08-09 11:48:50 | INFO | SELL: 389 shares of INFY.BSE at $631.55 (SELL_SIGNAL)
+2025-08-09 11:48:50 | INFO | BUY: 119 shares of TCS.BSE at $2254.65
+2025-08-09 11:48:50 | INFO | BUY: 234 shares of INFY.BSE at $914.30
+2025-08-09 11:48:50 | INFO | SELL: 119 shares of TCS.BSE at $2348.95 (SELL_SIGNAL)
+2025-08-09 11:48:50 | INFO | SELL: 234 shares of INFY.BSE at $977.95 (TAKE_PROFIT)
+2025-08-09 11:48:50 | INFO | BUY: 104 shares of TCS.BSE at $2621.75
+2025-08-09 11:48:50 | INFO | BUY: 204 shares of INFY.BSE at $1072.00
+2025-08-09 11:48:50 | INFO | SELL: 104 shares of TCS.BSE at $2796.40 (TAKE_PROFIT)
+2025-08-09 11:48:50 | INFO | SELL: 204 shares of INFY.BSE at $1175.15 (TAKE_PROFIT)
+2025-08-09 11:48:50 | INFO | BUY: 223 shares of INFY.BSE at $1261.45
+2025-08-09 11:48:50 | INFO | BUY: 76 shares of TCS.BSE at $2958.75
+2025-08-09 11:48:50 | INFO | SELL: 223 shares of INFY.BSE at $1252.35 (SELL_SIGNAL)
+2025-08-09 11:48:50 | INFO | SELL: 76 shares of TCS.BSE at $3010.55 (SELL_SIGNAL)
+2025-08-09 11:48:50 | INFO | BUY: 207 shares of INFY.BSE at $1355.55
+2025-08-09 11:48:50 | INFO | BUY: 74 shares of TCS.BSE at $3038.40
+2025-08-09 11:48:50 | INFO | SELL: 207 shares of INFY.BSE at $1330.70 (SELL_SIGNAL)
+2025-08-09 11:48:50 | INFO | SELL: 74 shares of TCS.BSE at $3069.80 (SELL_SIGNAL)
+2025-08-09 11:48:50 | INFO | BUY: 87 shares of TCS.BSE at $3213.85
+2025-08-09 11:48:50 | INFO | SELL: 87 shares of TCS.BSE at $3167.50 (SELL_SIGNAL)
+2025-08-09 11:48:50 | INFO | BUY: 161 shares of INFY.BSE at $1740.95
+2025-08-09 11:48:50 | INFO | SELL: 161 shares of INFY.BSE at $1716.55 (SELL_SIGNAL)
+2025-08-09 11:48:50 | INFO | BUY: 158 shares of INFY.BSE at $1766.65
+2025-08-09 11:48:50 | INFO | BUY: 63 shares of TCS.BSE at $3528.45
+2025-08-09 11:48:50 | INFO | SELL: 158 shares of INFY.BSE at $1621.45 (STOP_LOSS)
+2025-08-09 11:48:50 | INFO | BUY: 147 shares of INFY.BSE at $1563.95
+2025-08-09 11:48:50 | INFO | SELL: 147 shares of INFY.BSE at $1561.45 (SELL_SIGNAL)
+2025-08-09 11:48:50 | INFO | SELL: 63 shares of TCS.BSE at $3550.10 (SELL_SIGNAL)
+2025-08-09 11:48:50 | INFO | BUY: 87 shares of TCS.BSE at $3133.70
+2025-08-09 11:48:50 | INFO | BUY: 151 shares of INFY.BSE at $1462.00
+2025-08-09 11:48:50 | INFO | SELL: 87 shares of TCS.BSE at $3120.85 (SELL_SIGNAL)
+2025-08-09 11:48:50 | INFO | SELL: 151 shares of INFY.BSE at $1475.00 (SELL_SIGNAL)
+2025-08-09 11:48:51 | INFO | BUY: 182 shares of INFY.BSE at $1507.60
+2025-08-09 11:48:51 | INFO | BUY: 67 shares of TCS.BSE at $3267.15
+2025-08-09 11:48:51 | INFO | SELL: 182 shares of INFY.BSE at $1517.50 (SELL_SIGNAL)
+2025-08-09 11:48:51 | INFO | SELL: 67 shares of TCS.BSE at $3260.65 (SELL_SIGNAL)
+2025-08-09 11:48:51 | INFO | BUY: 83 shares of TCS.BSE at $3314.15
+2025-08-09 11:48:51 | INFO | BUY: 148 shares of INFY.BSE at $1487.30
+2025-08-09 11:48:51 | INFO | SELL: 148 shares of INFY.BSE at $1434.80 (SELL_SIGNAL)
+2025-08-09 11:48:51 | INFO | SELL: 83 shares of TCS.BSE at $3198.75 (SELL_SIGNAL)
+2025-08-09 11:48:51 | INFO | BUY: 209 shares of INFY.BSE at $1301.45
+2025-08-09 11:48:51 | INFO | SELL: 209 shares of INFY.BSE at $1265.65 (STOP_LOSS)
+2025-08-09 11:48:51 | INFO | BUY: 79 shares of TCS.BSE at $3399.70
+2025-08-09 11:48:51 | INFO | SELL: 79 shares of TCS.BSE at $3479.35 (SELL_SIGNAL)
+2025-08-09 11:48:51 | INFO | BUY: 81 shares of TCS.BSE at $3337.75
+2025-08-09 11:48:51 | INFO | SELL: 81 shares of TCS.BSE at $3359.95 (SELL_SIGNAL)
+2025-08-09 11:48:51 | INFO | BUY: 168 shares of INFY.BSE at $1616.95
+2025-08-09 11:48:51 | INFO | SELL: 168 shares of INFY.BSE at $1561.95 (SELL_SIGNAL)
+2025-08-09 11:48:51 | INFO | BUY: 62 shares of TCS.BSE at $4296.85
+2025-08-09 11:48:51 | INFO | SELL: 62 shares of TCS.BSE at $4232.40 (SELL_SIGNAL)
+2025-08-09 11:48:51 | INFO | BUY: 64 shares of TCS.BSE at $4168.60
+2025-08-09 11:48:51 | INFO | BUY: 114 shares of INFY.BSE at $1882.65
+2025-08-09 11:48:51 | INFO | SELL: 64 shares of TCS.BSE at $4036.65 (SELL_SIGNAL)
+2025-08-09 11:48:51 | INFO | SELL: 114 shares of INFY.BSE at $1799.80 (STOP_LOSS)
+2025-08-09 11:48:52 | INFO | BUY: 78 shares of TCS.BSE at $3380.55
+2025-08-09 11:48:52 | INFO | SELL: 78 shares of TCS.BSE at $3390.20 (SELL_SIGNAL)
+2025-08-09 11:48:52 | INFO | BUY: 186 shares of RELIANCE.BSE at $1428.20
+2025-08-09 11:48:52 | INFO | BUY: 137 shares of INFY.BSE at $1553.55
+2025-08-09 11:48:52 | INFO | SELL: 137 shares of INFY.BSE at $1513.85 (SELL_SIGNAL)
+2025-08-09 11:48:52 | INFO | SELL: 186 shares of RELIANCE.BSE at $1411.30 (SELL_SIGNAL)
+2025-08-09 11:48:52 | SUCCESS | Backtesting completed. Total return: 1223.12%
+2025-08-09 11:48:59 | INFO | Backtest plot saved to backtest_results.png
+2025-08-09 11:50:34 | INFO | Testing integrations...
+2025-08-09 11:50:34 | INFO | DataFetcher initialized successfully
+2025-08-09 11:50:34 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-09 11:50:34 | ERROR | Failed to connect to Google Sheets: [Errno 2] No such file or directory: 'path/to/your/credentials.json'
+2025-08-09 11:50:34 | INFO | Google Sheets logger initialized successfully
+2025-08-09 11:50:34 | SUCCESS | Telegram bot initialized successfully
+2025-08-09 11:50:34 | SUCCESS | Telegram connection test passed
+2025-08-09 11:50:52 | INFO | Training ML model...
+2025-08-09 11:50:52 | INFO | DataFetcher initialized successfully
+2025-08-09 11:50:52 | INFO | Initialized random_forest model
+2025-08-09 11:50:52 | INFO | Fetching training data...
+2025-08-09 11:50:52 | INFO | Processing RELIANCE.BSE...
+2025-08-09 11:50:52 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-09 11:50:52 | SUCCESS | Successfully processed RELIANCE.BSE
+2025-08-09 11:50:52 | INFO | Processing TCS.BSE...
+2025-08-09 11:50:52 | INFO | Loading TCS.BSE daily data from cache
+2025-08-09 11:50:53 | SUCCESS | Successfully processed TCS.BSE
+2025-08-09 11:50:53 | INFO | Processing INFY.BSE...
+2025-08-09 11:50:53 | INFO | Loading INFY.BSE daily data from cache
+2025-08-09 11:50:53 | SUCCESS | Successfully processed INFY.BSE
+2025-08-09 11:50:53 | INFO | Successfully fetched data for 3 out of 3 stocks
+2025-08-09 11:50:53 | INFO | Starting model training...
+2025-08-09 11:50:53 | INFO | Preparing data for RELIANCE.BSE...
+2025-08-09 11:50:53 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 11:50:53 | INFO | Selected 28 features for ML model
+2025-08-09 11:50:53 | WARNING | Insufficient valid data for RELIANCE.BSE: 51 samples
+2025-08-09 11:50:53 | INFO | Preparing data for TCS.BSE...
+2025-08-09 11:50:53 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 11:50:53 | INFO | Selected 28 features for ML model
+2025-08-09 11:50:53 | SUCCESS | Added 5037 valid samples from TCS.BSE
+2025-08-09 11:50:53 | INFO | Preparing data for INFY.BSE...
+2025-08-09 11:50:53 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 11:50:53 | INFO | Selected 28 features for ML model
+2025-08-09 11:50:53 | SUCCESS | Added 5039 valid samples from INFY.BSE
+2025-08-09 11:50:53 | INFO | Data cleaning completed. Removed 0 problematic rows
+2025-08-09 11:50:53 | SUCCESS | Prepared dataset with 10076 samples and 28 features
+2025-08-09 11:50:53 | INFO | Training random_forest on 8060 samples...
+2025-08-09 11:51:39 | SUCCESS | Model training completed. Test accuracy: 0.5670
+2025-08-09 11:51:39 | INFO | Model saved to models/trading_model.pkl
+2025-08-09 11:51:42 | INFO | Model analysis plot saved to ml_model_analysis.png
+2025-08-09 12:33:49 | INFO | Running market scan...
+2025-08-09 12:33:49 | SUCCESS | Logging system configured
+2025-08-09 12:33:49 | INFO | Initializing data fetcher...
+2025-08-09 12:33:49 | INFO | DataFetcher initialized successfully
+2025-08-09 12:33:49 | INFO | Initializing trading strategy...
+2025-08-09 12:33:49 | INFO | RSI MA Crossover Strategy initialized with $100,000.00 capital
+2025-08-09 12:33:49 | INFO | Initializing ML model...
+2025-08-09 12:33:49 | INFO | Initialized random_forest model
+2025-08-09 12:33:49 | INFO | Initializing Google Sheets logger...
+2025-08-09 12:33:49 | ERROR | Failed to connect to Google Sheets: [Errno 2] No such file or directory: 'path/to/your/credentials.json'
+2025-08-09 12:33:49 | INFO | Google Sheets logger initialized successfully
+2025-08-09 12:33:49 | INFO | Initializing Telegram bot...
+2025-08-09 12:33:49 | SUCCESS | Telegram bot initialized successfully
+2025-08-09 12:33:49 | SUCCESS | All components initialized successfully
+2025-08-09 12:33:49 | INFO | Trading Engine initialized successfully
+2025-08-09 12:33:49 | INFO | Running single market scan...
+2025-08-09 12:33:49 | INFO | Starting market scan and analysis...
+2025-08-09 12:33:49 | INFO | Fetching market data...
+2025-08-09 12:33:49 | INFO | Processing RELIANCE.BSE...
+2025-08-09 12:33:49 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-09 12:33:49 | SUCCESS | Successfully processed RELIANCE.BSE
+2025-08-09 12:33:49 | INFO | Processing TCS.BSE...
+2025-08-09 12:33:49 | INFO | Loading TCS.BSE daily data from cache
+2025-08-09 12:33:49 | SUCCESS | Successfully processed TCS.BSE
+2025-08-09 12:33:49 | INFO | Processing INFY.BSE...
+2025-08-09 12:33:49 | INFO | Loading INFY.BSE daily data from cache
+2025-08-09 12:33:49 | SUCCESS | Successfully processed INFY.BSE
+2025-08-09 12:33:49 | INFO | Successfully fetched data for 3 out of 3 stocks
+2025-08-09 12:33:49 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 12:33:49 | WARNING | Cannot log signal - Google Sheets not configured
+2025-08-09 12:33:50 | INFO | Generated SELL signal for RELIANCE.BSE (Strength: STRONG)
+2025-08-09 12:33:50 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 12:33:50 | WARNING | Cannot log signal - Google Sheets not configured
+2025-08-09 12:33:51 | INFO | Generated SELL signal for TCS.BSE (Strength: MODERATE)
+2025-08-09 12:33:51 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 12:33:51 | WARNING | Cannot log signal - Google Sheets not configured
+2025-08-09 12:33:51 | INFO | Generated SELL signal for INFY.BSE (Strength: STRONG)
+2025-08-09 12:33:51 | SUCCESS | Market scan completed. Scanned 3 symbols, generated 3 signals
+2025-08-09 12:34:49 | INFO | Starting Algo-Trading Engine...
+2025-08-09 12:34:49 | SUCCESS | Logging system configured
+2025-08-09 12:34:49 | INFO | Initializing data fetcher...
+2025-08-09 12:34:49 | INFO | DataFetcher initialized successfully
+2025-08-09 12:34:49 | INFO | Initializing trading strategy...
+2025-08-09 12:34:49 | INFO | RSI MA Crossover Strategy initialized with $100,000.00 capital
+2025-08-09 12:34:49 | INFO | Initializing ML model...
+2025-08-09 12:34:49 | INFO | Initialized random_forest model
+2025-08-09 12:34:49 | INFO | Initializing Google Sheets logger...
+2025-08-09 12:34:49 | ERROR | Failed to connect to Google Sheets: [Errno 2] No such file or directory: 'path/to/your/credentials.json'
+2025-08-09 12:34:49 | INFO | Google Sheets logger initialized successfully
+2025-08-09 12:34:49 | INFO | Initializing Telegram bot...
+2025-08-09 12:34:49 | SUCCESS | Telegram bot initialized successfully
+2025-08-09 12:34:50 | SUCCESS | All components initialized successfully
+2025-08-09 12:34:50 | INFO | Trading Engine initialized successfully
+2025-08-09 12:34:50 | INFO | Starting automated trading engine...
+2025-08-09 12:34:50 | INFO | Validating system configuration...
+2025-08-09 12:34:50 | INFO | Configuration validation completed: OK
+2025-08-09 12:34:50 | INFO | Training ML model...
+2025-08-09 12:34:50 | INFO | Model loaded from models/trading_model.pkl
+2025-08-09 12:34:50 | SUCCESS | ML model loaded from disk
+2025-08-09 12:34:50 | INFO | Automated tasks scheduled successfully
+2025-08-09 12:34:50 | SUCCESS | Automated trading engine started successfully
+2025-08-09 12:35:18 | INFO | Received shutdown signal
+2025-08-09 12:35:18 | INFO | Stopping automated trading engine...
+2025-08-09 12:35:19 | SUCCESS | Automated trading engine stopped successfully
+2025-08-09 12:47:17 | INFO | Running backtest...
+2025-08-09 12:47:17 | INFO | DataFetcher initialized successfully
+2025-08-09 12:47:17 | INFO | RSI MA Crossover Strategy initialized with $100,000.00 capital
+2025-08-09 12:47:17 | INFO | Fetching historical data...
+2025-08-09 12:47:17 | INFO | Processing RELIANCE.BSE...
+2025-08-09 12:47:17 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-09 12:47:17 | SUCCESS | Successfully processed RELIANCE.BSE
+2025-08-09 12:47:17 | INFO | Processing TCS.BSE...
+2025-08-09 12:47:17 | INFO | Loading TCS.BSE daily data from cache
+2025-08-09 12:47:17 | SUCCESS | Successfully processed TCS.BSE
+2025-08-09 12:47:17 | INFO | Processing INFY.BSE...
+2025-08-09 12:47:17 | INFO | Loading INFY.BSE daily data from cache
+2025-08-09 12:47:17 | SUCCESS | Successfully processed INFY.BSE
+2025-08-09 12:47:17 | INFO | Successfully fetched data for 3 out of 3 stocks
+2025-08-09 12:47:17 | INFO | Starting backtesting...
+2025-08-09 12:47:17 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 12:47:17 | INFO | RELIANCE.BSE: Generated 10 buy signals and 19 sell signals out of 100 periods
+2025-08-09 12:47:17 | INFO | RELIANCE.BSE signal distribution: {0: 71, -1: 19, 1: 10}
+2025-08-09 12:47:17 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 12:47:17 | INFO | TCS.BSE: Generated 215 buy signals and 1043 sell signals out of 5093 periods
+2025-08-09 12:47:18 | INFO | TCS.BSE signal distribution: {0: 3835, -1: 1043, 1: 215}
+2025-08-09 12:47:18 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 12:47:18 | INFO | INFY.BSE: Generated 166 buy signals and 1005 sell signals out of 5095 periods
+2025-08-09 12:47:18 | INFO | INFY.BSE signal distribution: {0: 3924, -1: 1005, 1: 166}
+2025-08-09 12:47:18 | INFO | BUY: 130 shares of TCS.BSE at $153.07
+2025-08-09 12:47:18 | INFO | SELL: 130 shares of TCS.BSE at $156.57 (SELL_SIGNAL)
+2025-08-09 12:47:18 | INFO | BUY: 465 shares of INFY.BSE at $43.16
+2025-08-09 12:47:18 | INFO | SELL: 465 shares of INFY.BSE at $44.31 (SELL_SIGNAL)
+2025-08-09 12:47:18 | INFO | BUY: 90 shares of TCS.BSE at $223.07
+2025-08-09 12:47:18 | INFO | BUY: 366 shares of INFY.BSE at $44.16
+2025-08-09 12:47:18 | INFO | SELL: 366 shares of INFY.BSE at $47.31 (SELL_SIGNAL)
+2025-08-09 12:47:18 | INFO | SELL: 90 shares of TCS.BSE at $222.82 (SELL_SIGNAL)
+2025-08-09 12:47:18 | INFO | BUY: 38 shares of TCS.BSE at $530.95
+2025-08-09 12:47:18 | INFO | SELL: 38 shares of TCS.BSE at $573.85 (SELL_SIGNAL)
+2025-08-09 12:47:18 | INFO | BUY: 34 shares of TCS.BSE at $594.23
+2025-08-09 12:47:18 | INFO | BUY: 64 shares of INFY.BSE at $259.79
+2025-08-09 12:47:18 | INFO | SELL: 34 shares of TCS.BSE at $596.50 (SELL_SIGNAL)
+2025-08-09 12:47:18 | INFO | SELL: 64 shares of INFY.BSE at $267.79 (SELL_SIGNAL)
+2025-08-09 12:47:19 | INFO | BUY: 89 shares of INFY.BSE at $232.57
+2025-08-09 12:47:19 | INFO | BUY: 33 shares of TCS.BSE at $502.27
+2025-08-09 12:47:19 | INFO | SELL: 89 shares of INFY.BSE at $217.98 (SELL_SIGNAL)
+2025-08-09 12:47:19 | INFO | SELL: 33 shares of TCS.BSE at $481.85 (SELL_SIGNAL)
+2025-08-09 12:47:19 | INFO | BUY: 42 shares of TCS.BSE at $480.40
+2025-08-09 12:47:19 | INFO | BUY: 85 shares of INFY.BSE at $191.28
+2025-08-09 12:47:19 | INFO | SELL: 42 shares of TCS.BSE at $417.95 (SELL_SIGNAL)
+2025-08-09 12:47:19 | INFO | SELL: 85 shares of INFY.BSE at $173.78 (STOP_LOSS)
+2025-08-09 12:47:19 | INFO | BUY: 44 shares of TCS.BSE at $442.98
+2025-08-09 12:47:19 | INFO | SELL: 44 shares of TCS.BSE at $428.90 (SELL_SIGNAL)
+2025-08-09 12:47:19 | INFO | BUY: 89 shares of INFY.BSE at $218.57
+2025-08-09 12:47:19 | INFO | SELL: 89 shares of INFY.BSE at $219.43 (SELL_SIGNAL)
+2025-08-09 12:47:19 | INFO | BUY: 94 shares of INFY.BSE at $190.46
+2025-08-09 12:47:19 | INFO | SELL: 94 shares of INFY.BSE at $173.99 (SELL_SIGNAL)
+2025-08-09 12:47:19 | INFO | BUY: 1 shares of INFY.BSE at $153.69
+2025-08-09 12:47:19 | INFO | BUY: 77 shares of TCS.BSE at $245.97
+2025-08-09 12:47:19 | INFO | SELL: 1 shares of INFY.BSE at $159.85 (SELL_SIGNAL)
+2025-08-09 12:47:19 | INFO | SELL: 77 shares of TCS.BSE at $249.53 (SELL_SIGNAL)
+2025-08-09 12:47:19 | INFO | BUY: 62 shares of INFY.BSE at $308.77
+2025-08-09 12:47:19 | INFO | BUY: 21 shares of TCS.BSE at $726.05
+2025-08-09 12:47:19 | INFO | SELL: 62 shares of INFY.BSE at $312.21 (SELL_SIGNAL)
+2025-08-09 12:47:19 | INFO | SELL: 21 shares of TCS.BSE at $766.75 (SELL_SIGNAL)
+2025-08-09 12:47:19 | INFO | BUY: 58 shares of INFY.BSE at $333.37
+2025-08-09 12:47:19 | INFO | SELL: 58 shares of INFY.BSE at $332.11 (SELL_SIGNAL)
+2025-08-09 12:47:19 | INFO | BUY: 57 shares of INFY.BSE at $338.61
+2025-08-09 12:47:19 | INFO | SELL: 57 shares of INFY.BSE at $338.39 (SELL_SIGNAL)
+2025-08-09 12:47:19 | INFO | BUY: 50 shares of INFY.BSE at $385.71
+2025-08-09 12:47:19 | INFO | SELL: 50 shares of INFY.BSE at $380.79 (SELL_SIGNAL)
+2025-08-09 12:47:19 | INFO | BUY: 17 shares of TCS.BSE at $1098.00
+2025-08-09 12:47:19 | INFO | SELL: 17 shares of TCS.BSE at $1136.65 (SELL_SIGNAL)
+2025-08-09 12:47:20 | INFO | BUY: 53 shares of INFY.BSE at $367.77
+2025-08-09 12:47:20 | INFO | SELL: 53 shares of INFY.BSE at $363.84 (SELL_SIGNAL)
+2025-08-09 12:47:20 | INFO | BUY: 17 shares of TCS.BSE at $1138.40
+2025-08-09 12:47:20 | INFO | SELL: 17 shares of TCS.BSE at $1151.60 (SELL_SIGNAL)
+2025-08-09 12:47:20 | INFO | BUY: 17 shares of TCS.BSE at $1139.35
+2025-08-09 12:47:20 | INFO | BUY: 45 shares of INFY.BSE at $345.91
+2025-08-09 12:47:20 | INFO | SELL: 17 shares of TCS.BSE at $1134.45 (SELL_SIGNAL)
+2025-08-09 12:47:20 | INFO | SELL: 45 shares of INFY.BSE at $345.85 (SELL_SIGNAL)
+2025-08-09 12:47:20 | INFO | BUY: 18 shares of TCS.BSE at $1064.95
+2025-08-09 12:47:20 | INFO | BUY: 47 shares of INFY.BSE at $332.65
+2025-08-09 12:47:20 | INFO | SELL: 18 shares of TCS.BSE at $1175.50 (TAKE_PROFIT)
+2025-08-09 12:47:20 | INFO | SELL: 47 shares of INFY.BSE at $342.61 (SELL_SIGNAL)
+2025-08-09 12:47:20 | INFO | BUY: 18 shares of TCS.BSE at $1092.90
+2025-08-09 12:47:20 | INFO | BUY: 49 shares of INFY.BSE at $322.94
+2025-08-09 12:47:20 | INFO | SELL: 18 shares of TCS.BSE at $1087.65 (SELL_SIGNAL)
+2025-08-09 12:47:20 | INFO | SELL: 49 shares of INFY.BSE at $342.92 (SELL_SIGNAL)
+2025-08-09 12:47:20 | INFO | BUY: 16 shares of TCS.BSE at $1197.55
+2025-08-09 12:47:20 | INFO | SELL: 16 shares of TCS.BSE at $1122.40 (STOP_LOSS)
+2025-08-09 12:47:20 | INFO | BUY: 17 shares of TCS.BSE at $1135.00
+2025-08-09 12:47:20 | INFO | SELL: 17 shares of TCS.BSE at $1143.25 (SELL_SIGNAL)
+2025-08-09 12:47:20 | INFO | BUY: 70 shares of INFY.BSE at $283.16
+2025-08-09 12:47:20 | INFO | SELL: 70 shares of INFY.BSE at $271.98 (SELL_SIGNAL)
+2025-08-09 12:47:20 | INFO | BUY: 16 shares of TCS.BSE at $1200.75
+2025-08-09 12:47:20 | INFO | SELL: 16 shares of TCS.BSE at $1212.70 (SELL_SIGNAL)
+2025-08-09 12:47:20 | INFO | BUY: 15 shares of TCS.BSE at $1269.30
+2025-08-09 12:47:20 | INFO | SELL: 15 shares of TCS.BSE at $1298.15 (SELL_SIGNAL)
+2025-08-09 12:47:20 | INFO | BUY: 67 shares of INFY.BSE at $295.71
+2025-08-09 12:47:20 | INFO | SELL: 67 shares of INFY.BSE at $18630.80 (SELL_SIGNAL)
+2025-08-09 12:47:20 | INFO | BUY: 10 shares of INFY.BSE at $292.73
+2025-08-09 12:47:20 | INFO | SELL: 10 shares of INFY.BSE at $302.07 (SELL_SIGNAL)
+2025-08-09 12:47:21 | INFO | BUY: 202 shares of TCS.BSE at $1314.85
+2025-08-09 12:47:21 | INFO | SELL: 202 shares of TCS.BSE at $1297.15 (SELL_SIGNAL)
+2025-08-09 12:47:21 | INFO | BUY: 742 shares of INFY.BSE at $356.79
+2025-08-09 12:47:21 | INFO | BUY: 143 shares of TCS.BSE at $1481.00
+2025-08-09 12:47:21 | INFO | SELL: 742 shares of INFY.BSE at $286.93 (SELL_SIGNAL)
+2025-08-09 12:47:21 | INFO | SELL: 143 shares of TCS.BSE at $1402.10 (SELL_SIGNAL)
+2025-08-09 12:47:21 | INFO | BUY: 179 shares of TCS.BSE at $1404.15
+2025-08-09 12:47:21 | INFO | SELL: 179 shares of TCS.BSE at $1488.80 (SELL_SIGNAL)
+2025-08-09 12:47:21 | INFO | BUY: 168 shares of TCS.BSE at $1518.40
+2025-08-09 12:47:21 | INFO | SELL: 168 shares of TCS.BSE at $1527.35 (SELL_SIGNAL)
+2025-08-09 12:47:21 | INFO | BUY: 678 shares of INFY.BSE at $376.93
+2025-08-09 12:47:21 | INFO | SELL: 678 shares of INFY.BSE at $388.44 (SELL_SIGNAL)
+2025-08-09 12:47:21 | INFO | BUY: 129 shares of TCS.BSE at $1984.90
+2025-08-09 12:47:21 | INFO | SELL: 129 shares of TCS.BSE at $2014.20 (SELL_SIGNAL)
+2025-08-09 12:47:21 | INFO | BUY: 119 shares of TCS.BSE at $2155.20
+2025-08-09 12:47:21 | INFO | BUY: 464 shares of INFY.BSE at $445.43
+2025-08-09 12:47:21 | INFO | SELL: 119 shares of TCS.BSE at $2198.45 (SELL_SIGNAL)
+2025-08-09 12:47:21 | INFO | SELL: 464 shares of INFY.BSE at $469.24 (TAKE_PROFIT)
+2025-08-09 12:47:21 | INFO | BUY: 622 shares of INFY.BSE at $419.69
+2025-08-09 12:47:21 | INFO | SELL: 622 shares of INFY.BSE at $413.16 (SELL_SIGNAL)
+2025-08-09 12:47:21 | INFO | BUY: 120 shares of TCS.BSE at $2166.35
+2025-08-09 12:47:21 | INFO | SELL: 120 shares of TCS.BSE at $2034.70 (STOP_LOSS)
+2025-08-09 12:47:21 | INFO | BUY: 103 shares of TCS.BSE at $2494.90
+2025-08-09 12:47:21 | INFO | SELL: 103 shares of TCS.BSE at $2601.30 (SELL_SIGNAL)
+2025-08-09 12:47:21 | INFO | BUY: 107 shares of TCS.BSE at $2423.35
+2025-08-09 12:47:21 | INFO | SELL: 107 shares of TCS.BSE at $2573.50 (SELL_SIGNAL)
+2025-08-09 12:47:21 | INFO | BUY: 263 shares of INFY.BSE at $998.50
+2025-08-09 12:47:21 | INFO | SELL: 263 shares of INFY.BSE at $1064.40 (SELL_SIGNAL)
+2025-08-09 12:47:21 | INFO | BUY: 108 shares of TCS.BSE at $2442.95
+2025-08-09 12:47:21 | INFO | SELL: 108 shares of TCS.BSE at $2633.90 (TAKE_PROFIT)
+2025-08-09 12:47:22 | INFO | BUY: 247 shares of INFY.BSE at $1091.80
+2025-08-09 12:47:22 | INFO | BUY: 83 shares of TCS.BSE at $2593.55
+2025-08-09 12:47:22 | INFO | SELL: 247 shares of INFY.BSE at $1086.12 (SELL_SIGNAL)
+2025-08-09 12:47:22 | INFO | SELL: 83 shares of TCS.BSE at $2586.10 (SELL_SIGNAL)
+2025-08-09 12:47:22 | INFO | BUY: 107 shares of TCS.BSE at $2511.05
+2025-08-09 12:47:22 | INFO | BUY: 216 shares of INFY.BSE at $997.70
+2025-08-09 12:47:22 | INFO | SELL: 216 shares of INFY.BSE at $957.20 (SELL_SIGNAL)
+2025-08-09 12:47:22 | INFO | SELL: 107 shares of TCS.BSE at $2562.85 (SELL_SIGNAL)
+2025-08-09 12:47:22 | INFO | BUY: 106 shares of TCS.BSE at $2539.50
+2025-08-09 12:47:22 | INFO | BUY: 203 shares of INFY.BSE at $1059.30
+2025-08-09 12:47:22 | INFO | SELL: 106 shares of TCS.BSE at $2554.15 (SELL_SIGNAL)
+2025-08-09 12:47:22 | INFO | SELL: 203 shares of INFY.BSE at $1108.20 (SELL_SIGNAL)
+2025-08-09 12:47:22 | INFO | BUY: 251 shares of INFY.BSE at $1080.20
+2025-08-09 12:47:22 | INFO | SELL: 251 shares of INFY.BSE at $1019.85 (STOP_LOSS)
+2025-08-09 12:47:22 | INFO | BUY: 256 shares of INFY.BSE at $1047.30
+2025-08-09 12:47:22 | INFO | SELL: 256 shares of INFY.BSE at $1053.50 (SELL_SIGNAL)
+2025-08-09 12:47:22 | INFO | BUY: 254 shares of INFY.BSE at $1057.10
+2025-08-09 12:47:22 | INFO | SELL: 254 shares of INFY.BSE at $1128.70 (TAKE_PROFIT)
+2025-08-09 12:47:22 | INFO | BUY: 231 shares of INFY.BSE at $1178.30
+2025-08-09 12:47:22 | INFO | SELL: 231 shares of INFY.BSE at $1161.05 (SELL_SIGNAL)
+2025-08-09 12:47:22 | INFO | BUY: 106 shares of TCS.BSE at $2551.45
+2025-08-09 12:47:22 | INFO | SELL: 106 shares of TCS.BSE at $2447.00 (STOP_LOSS)
+2025-08-09 12:47:22 | INFO | BUY: 116 shares of TCS.BSE at $2321.15
+2025-08-09 12:47:22 | INFO | SELL: 116 shares of TCS.BSE at $2359.10 (SELL_SIGNAL)
+2025-08-09 12:47:23 | INFO | BUY: 288 shares of INFY.BSE at $936.65
+2025-08-09 12:47:23 | INFO | SELL: 288 shares of INFY.BSE at $942.15 (SELL_SIGNAL)
+2025-08-09 12:47:23 | INFO | BUY: 112 shares of TCS.BSE at $2413.30
+2025-08-09 12:47:23 | INFO | BUY: 220 shares of INFY.BSE at $981.25
+2025-08-09 12:47:23 | INFO | SELL: 112 shares of TCS.BSE at $2327.85 (STOP_LOSS)
+2025-08-09 12:47:23 | INFO | SELL: 220 shares of INFY.BSE at $931.40 (STOP_LOSS)
+2025-08-09 12:47:23 | INFO | BUY: 114 shares of TCS.BSE at $2320.85
+2025-08-09 12:47:23 | INFO | BUY: 230 shares of INFY.BSE at $924.80
+2025-08-09 12:47:23 | INFO | SELL: 114 shares of TCS.BSE at $2308.65 (SELL_SIGNAL)
+2025-08-09 12:47:23 | INFO | SELL: 230 shares of INFY.BSE at $918.80 (SELL_SIGNAL)
+2025-08-09 12:47:23 | INFO | BUY: 286 shares of INFY.BSE at $929.45
+2025-08-09 12:47:23 | INFO | BUY: 90 shares of TCS.BSE at $2360.65
+2025-08-09 12:47:23 | INFO | SELL: 286 shares of INFY.BSE at $935.65 (SELL_SIGNAL)
+2025-08-09 12:47:23 | INFO | SELL: 90 shares of TCS.BSE at $2357.75 (SELL_SIGNAL)
+2025-08-09 12:47:23 | INFO | BUY: 304 shares of INFY.BSE at $873.50
+2025-08-09 12:47:23 | INFO | SELL: 304 shares of INFY.BSE at $927.55 (SELL_SIGNAL)
+2025-08-09 12:47:23 | INFO | BUY: 102 shares of TCS.BSE at $2630.55
+2025-08-09 12:47:23 | INFO | SELL: 102 shares of TCS.BSE at $2547.85 (STOP_LOSS)
+2025-08-09 12:47:23 | INFO | BUY: 243 shares of INFY.BSE at $1098.05
+2025-08-09 12:47:23 | INFO | BUY: 73 shares of TCS.BSE at $2925.75
+2025-08-09 12:47:23 | INFO | SELL: 73 shares of TCS.BSE at $2829.95 (SELL_SIGNAL)
+2025-08-09 12:47:23 | INFO | SELL: 243 shares of INFY.BSE at $1125.00 (SELL_SIGNAL)
+2025-08-09 12:47:23 | INFO | BUY: 68 shares of TCS.BSE at $1744.80
+2025-08-09 12:47:23 | INFO | SELL: 68 shares of TCS.BSE at $1721.20 (SELL_SIGNAL)
+2025-08-09 12:47:23 | INFO | BUY: 135 shares of TCS.BSE at $1976.35
+2025-08-09 12:47:23 | INFO | SELL: 135 shares of TCS.BSE at $2011.85 (SELL_SIGNAL)
+2025-08-09 12:47:23 | INFO | BUY: 171 shares of INFY.BSE at $735.65
+2025-08-09 12:47:23 | INFO | SELL: 171 shares of INFY.BSE at $727.95 (SELL_SIGNAL)
+2025-08-09 12:47:23 | INFO | BUY: 139 shares of TCS.BSE at $1917.05
+2025-08-09 12:47:23 | INFO | SELL: 139 shares of TCS.BSE at $1851.50 (SELL_SIGNAL)
+2025-08-09 12:47:23 | INFO | BUY: 140 shares of TCS.BSE at $1889.50
+2025-08-09 12:47:23 | INFO | BUY: 322 shares of INFY.BSE at $660.75
+2025-08-09 12:47:23 | INFO | SELL: 140 shares of TCS.BSE at $1888.15 (SELL_SIGNAL)
+2025-08-09 12:47:23 | INFO | SELL: 322 shares of INFY.BSE at $683.70 (SELL_SIGNAL)
+2025-08-09 12:47:24 | INFO | BUY: 139 shares of TCS.BSE at $1925.90
+2025-08-09 12:47:24 | INFO | SELL: 139 shares of TCS.BSE at $2079.50 (TAKE_PROFIT)
+2025-08-09 12:47:24 | INFO | BUY: 128 shares of TCS.BSE at $2109.20
+2025-08-09 12:47:24 | INFO | SELL: 128 shares of TCS.BSE at $2240.35 (SELL_SIGNAL)
+2025-08-09 12:47:24 | INFO | BUY: 376 shares of INFY.BSE at $731.15
+2025-08-09 12:47:24 | INFO | BUY: 103 shares of TCS.BSE at $2131.45
+2025-08-09 12:47:24 | INFO | SELL: 376 shares of INFY.BSE at $779.45 (TAKE_PROFIT)
+2025-08-09 12:47:24 | INFO | SELL: 103 shares of TCS.BSE at $2109.70 (SELL_SIGNAL)
+2025-08-09 12:47:24 | INFO | BUY: 129 shares of TCS.BSE at $2149.15
+2025-08-09 12:47:24 | INFO | SELL: 129 shares of TCS.BSE at $2014.75 (STOP_LOSS)
+2025-08-09 12:47:24 | INFO | BUY: 134 shares of TCS.BSE at $2044.30
+2025-08-09 12:47:24 | INFO | SELL: 134 shares of TCS.BSE at $2087.80 (SELL_SIGNAL)
+2025-08-09 12:47:24 | INFO | BUY: 130 shares of TCS.BSE at $2117.05
+2025-08-09 12:47:24 | INFO | SELL: 130 shares of TCS.BSE at $2020.95 (STOP_LOSS)
+2025-08-09 12:47:24 | INFO | BUY: 133 shares of TCS.BSE at $2050.40
+2025-08-09 12:47:24 | INFO | SELL: 133 shares of TCS.BSE at $2060.70 (SELL_SIGNAL)
+2025-08-09 12:47:24 | INFO | BUY: 389 shares of INFY.BSE at $703.90
+2025-08-09 12:47:24 | INFO | SELL: 389 shares of INFY.BSE at $631.55 (SELL_SIGNAL)
+2025-08-09 12:47:24 | INFO | BUY: 119 shares of TCS.BSE at $2254.65
+2025-08-09 12:47:24 | INFO | BUY: 234 shares of INFY.BSE at $914.30
+2025-08-09 12:47:24 | INFO | SELL: 119 shares of TCS.BSE at $2348.95 (SELL_SIGNAL)
+2025-08-09 12:47:24 | INFO | SELL: 234 shares of INFY.BSE at $977.95 (TAKE_PROFIT)
+2025-08-09 12:47:24 | INFO | BUY: 104 shares of TCS.BSE at $2621.75
+2025-08-09 12:47:24 | INFO | BUY: 204 shares of INFY.BSE at $1072.00
+2025-08-09 12:47:24 | INFO | SELL: 104 shares of TCS.BSE at $2796.40 (TAKE_PROFIT)
+2025-08-09 12:47:24 | INFO | SELL: 204 shares of INFY.BSE at $1175.15 (TAKE_PROFIT)
+2025-08-09 12:47:24 | INFO | BUY: 223 shares of INFY.BSE at $1261.45
+2025-08-09 12:47:24 | INFO | BUY: 76 shares of TCS.BSE at $2958.75
+2025-08-09 12:47:24 | INFO | SELL: 223 shares of INFY.BSE at $1252.35 (SELL_SIGNAL)
+2025-08-09 12:47:24 | INFO | SELL: 76 shares of TCS.BSE at $3010.55 (SELL_SIGNAL)
+2025-08-09 12:47:24 | INFO | BUY: 207 shares of INFY.BSE at $1355.55
+2025-08-09 12:47:24 | INFO | BUY: 74 shares of TCS.BSE at $3038.40
+2025-08-09 12:47:24 | INFO | SELL: 207 shares of INFY.BSE at $1330.70 (SELL_SIGNAL)
+2025-08-09 12:47:24 | INFO | SELL: 74 shares of TCS.BSE at $3069.80 (SELL_SIGNAL)
+2025-08-09 12:47:24 | INFO | BUY: 87 shares of TCS.BSE at $3213.85
+2025-08-09 12:47:24 | INFO | SELL: 87 shares of TCS.BSE at $3167.50 (SELL_SIGNAL)
+2025-08-09 12:47:24 | INFO | BUY: 161 shares of INFY.BSE at $1740.95
+2025-08-09 12:47:24 | INFO | SELL: 161 shares of INFY.BSE at $1716.55 (SELL_SIGNAL)
+2025-08-09 12:47:24 | INFO | BUY: 158 shares of INFY.BSE at $1766.65
+2025-08-09 12:47:24 | INFO | BUY: 63 shares of TCS.BSE at $3528.45
+2025-08-09 12:47:24 | INFO | SELL: 158 shares of INFY.BSE at $1621.45 (STOP_LOSS)
+2025-08-09 12:47:24 | INFO | BUY: 147 shares of INFY.BSE at $1563.95
+2025-08-09 12:47:24 | INFO | SELL: 147 shares of INFY.BSE at $1561.45 (SELL_SIGNAL)
+2025-08-09 12:47:24 | INFO | SELL: 63 shares of TCS.BSE at $3550.10 (SELL_SIGNAL)
+2025-08-09 12:47:25 | INFO | BUY: 87 shares of TCS.BSE at $3133.70
+2025-08-09 12:47:25 | INFO | BUY: 151 shares of INFY.BSE at $1462.00
+2025-08-09 12:47:25 | INFO | SELL: 87 shares of TCS.BSE at $3120.85 (SELL_SIGNAL)
+2025-08-09 12:47:25 | INFO | SELL: 151 shares of INFY.BSE at $1475.00 (SELL_SIGNAL)
+2025-08-09 12:47:25 | INFO | BUY: 182 shares of INFY.BSE at $1507.60
+2025-08-09 12:47:25 | INFO | BUY: 67 shares of TCS.BSE at $3267.15
+2025-08-09 12:47:25 | INFO | SELL: 182 shares of INFY.BSE at $1517.50 (SELL_SIGNAL)
+2025-08-09 12:47:25 | INFO | SELL: 67 shares of TCS.BSE at $3260.65 (SELL_SIGNAL)
+2025-08-09 12:47:25 | INFO | BUY: 83 shares of TCS.BSE at $3314.15
+2025-08-09 12:47:25 | INFO | BUY: 148 shares of INFY.BSE at $1487.30
+2025-08-09 12:47:25 | INFO | SELL: 148 shares of INFY.BSE at $1434.80 (SELL_SIGNAL)
+2025-08-09 12:47:25 | INFO | SELL: 83 shares of TCS.BSE at $3198.75 (SELL_SIGNAL)
+2025-08-09 12:47:25 | INFO | BUY: 209 shares of INFY.BSE at $1301.45
+2025-08-09 12:47:25 | INFO | SELL: 209 shares of INFY.BSE at $1265.65 (STOP_LOSS)
+2025-08-09 12:47:25 | INFO | BUY: 79 shares of TCS.BSE at $3399.70
+2025-08-09 12:47:25 | INFO | SELL: 79 shares of TCS.BSE at $3479.35 (SELL_SIGNAL)
+2025-08-09 12:47:25 | INFO | BUY: 81 shares of TCS.BSE at $3337.75
+2025-08-09 12:47:25 | INFO | SELL: 81 shares of TCS.BSE at $3359.95 (SELL_SIGNAL)
+2025-08-09 12:47:25 | INFO | BUY: 168 shares of INFY.BSE at $1616.95
+2025-08-09 12:47:25 | INFO | SELL: 168 shares of INFY.BSE at $1561.95 (SELL_SIGNAL)
+2025-08-09 12:47:26 | INFO | BUY: 62 shares of TCS.BSE at $4296.85
+2025-08-09 12:47:26 | INFO | SELL: 62 shares of TCS.BSE at $4232.40 (SELL_SIGNAL)
+2025-08-09 12:47:26 | INFO | BUY: 64 shares of TCS.BSE at $4168.60
+2025-08-09 12:47:26 | INFO | BUY: 114 shares of INFY.BSE at $1882.65
+2025-08-09 12:47:26 | INFO | SELL: 64 shares of TCS.BSE at $4036.65 (SELL_SIGNAL)
+2025-08-09 12:47:26 | INFO | SELL: 114 shares of INFY.BSE at $1799.80 (STOP_LOSS)
+2025-08-09 12:47:26 | INFO | BUY: 78 shares of TCS.BSE at $3380.55
+2025-08-09 12:47:26 | INFO | SELL: 78 shares of TCS.BSE at $3390.20 (SELL_SIGNAL)
+2025-08-09 12:47:26 | INFO | BUY: 186 shares of RELIANCE.BSE at $1428.20
+2025-08-09 12:47:26 | INFO | BUY: 137 shares of INFY.BSE at $1553.55
+2025-08-09 12:47:26 | INFO | SELL: 137 shares of INFY.BSE at $1513.85 (SELL_SIGNAL)
+2025-08-09 12:47:26 | INFO | SELL: 186 shares of RELIANCE.BSE at $1411.30 (SELL_SIGNAL)
+2025-08-09 12:47:26 | SUCCESS | Backtesting completed. Total return: 1223.12%
+2025-08-09 12:47:35 | INFO | Backtest plot saved to backtest_results.png
+2025-08-09 12:47:56 | INFO | Testing integrations...
+2025-08-09 12:47:56 | INFO | DataFetcher initialized successfully
+2025-08-09 12:47:56 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-09 12:47:57 | SUCCESS | Connected to Google Sheets successfully
+2025-08-09 12:47:58 | ERROR | Error setting up worksheets: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+2025-08-09 12:47:58 | INFO | Google Sheets logger initialized successfully
+2025-08-09 12:47:58 | SUCCESS | Telegram bot initialized successfully
+2025-08-09 12:47:59 | SUCCESS | Telegram connection test passed
+2025-08-09 12:51:29 | INFO | Starting Algo-Trading Engine...
+2025-08-09 12:51:29 | SUCCESS | Logging system configured
+2025-08-09 12:51:29 | INFO | Initializing data fetcher...
+2025-08-09 12:51:29 | INFO | DataFetcher initialized successfully
+2025-08-09 12:51:29 | INFO | Initializing trading strategy...
+2025-08-09 12:51:29 | INFO | RSI MA Crossover Strategy initialized with $100,000.00 capital
+2025-08-09 12:51:29 | INFO | Initializing ML model...
+2025-08-09 12:51:29 | INFO | Initialized random_forest model
+2025-08-09 12:51:29 | INFO | Initializing Google Sheets logger...
+2025-08-09 12:51:31 | SUCCESS | Connected to Google Sheets successfully
+2025-08-09 12:51:32 | SUCCESS | Created new worksheet: Trade_Log
+2025-08-09 12:51:36 | SUCCESS | Created new worksheet: Portfolio_Summary
+2025-08-09 12:51:39 | SUCCESS | Created new worksheet: Signal_Log
+2025-08-09 12:51:42 | SUCCESS | Created new worksheet: Performance_Metrics
+2025-08-09 12:51:44 | INFO | Google Sheets logger initialized successfully
+2025-08-09 12:51:44 | INFO | Initializing Telegram bot...
+2025-08-09 12:51:44 | SUCCESS | Telegram bot initialized successfully
+2025-08-09 12:51:44 | SUCCESS | All components initialized successfully
+2025-08-09 12:51:44 | INFO | Trading Engine initialized successfully
+2025-08-09 12:51:44 | INFO | Starting automated trading engine...
+2025-08-09 12:51:44 | INFO | Validating system configuration...
+2025-08-09 12:51:44 | INFO | Configuration validation completed: OK
+2025-08-09 12:51:44 | INFO | Training ML model...
+2025-08-09 12:51:44 | INFO | Model loaded from models/trading_model.pkl
+2025-08-09 12:51:44 | SUCCESS | ML model loaded from disk
+2025-08-09 12:51:44 | INFO | Automated tasks scheduled successfully
+2025-08-09 12:51:45 | SUCCESS | Automated trading engine started successfully
+2025-08-09 12:54:07 | INFO | Received shutdown signal
+2025-08-09 12:54:07 | INFO | Stopping automated trading engine...
+2025-08-09 12:54:08 | SUCCESS | Automated trading engine stopped successfully
+2025-08-09 12:54:24 | INFO | Running backtest...
+2025-08-09 12:54:24 | INFO | DataFetcher initialized successfully
+2025-08-09 12:54:24 | INFO | RSI MA Crossover Strategy initialized with $100,000.00 capital
+2025-08-09 12:54:24 | INFO | Fetching historical data...
+2025-08-09 12:54:24 | INFO | Processing RELIANCE.BSE...
+2025-08-09 12:54:24 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-09 12:54:25 | SUCCESS | Successfully processed RELIANCE.BSE
+2025-08-09 12:54:25 | INFO | Processing TCS.BSE...
+2025-08-09 12:54:25 | INFO | Loading TCS.BSE daily data from cache
+2025-08-09 12:54:25 | SUCCESS | Successfully processed TCS.BSE
+2025-08-09 12:54:25 | INFO | Processing INFY.BSE...
+2025-08-09 12:54:25 | INFO | Loading INFY.BSE daily data from cache
+2025-08-09 12:54:25 | SUCCESS | Successfully processed INFY.BSE
+2025-08-09 12:54:25 | INFO | Successfully fetched data for 3 out of 3 stocks
+2025-08-09 12:54:25 | INFO | Starting backtesting...
+2025-08-09 12:54:25 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 12:54:25 | INFO | RELIANCE.BSE: Generated 10 buy signals and 19 sell signals out of 100 periods
+2025-08-09 12:54:25 | INFO | RELIANCE.BSE signal distribution: {0: 71, -1: 19, 1: 10}
+2025-08-09 12:54:25 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 12:54:25 | INFO | TCS.BSE: Generated 215 buy signals and 1043 sell signals out of 5093 periods
+2025-08-09 12:54:25 | INFO | TCS.BSE signal distribution: {0: 3835, -1: 1043, 1: 215}
+2025-08-09 12:54:25 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 12:54:25 | INFO | INFY.BSE: Generated 166 buy signals and 1005 sell signals out of 5095 periods
+2025-08-09 12:54:26 | INFO | INFY.BSE signal distribution: {0: 3924, -1: 1005, 1: 166}
+2025-08-09 12:54:26 | INFO | BUY: 130 shares of TCS.BSE at $153.07
+2025-08-09 12:54:26 | INFO | SELL: 130 shares of TCS.BSE at $156.57 (SELL_SIGNAL)
+2025-08-09 12:54:26 | INFO | BUY: 465 shares of INFY.BSE at $43.16
+2025-08-09 12:54:26 | INFO | SELL: 465 shares of INFY.BSE at $44.31 (SELL_SIGNAL)
+2025-08-09 12:54:26 | INFO | BUY: 90 shares of TCS.BSE at $223.07
+2025-08-09 12:54:26 | INFO | BUY: 366 shares of INFY.BSE at $44.16
+2025-08-09 12:54:26 | INFO | SELL: 366 shares of INFY.BSE at $47.31 (SELL_SIGNAL)
+2025-08-09 12:54:26 | INFO | SELL: 90 shares of TCS.BSE at $222.82 (SELL_SIGNAL)
+2025-08-09 12:54:26 | INFO | BUY: 38 shares of TCS.BSE at $530.95
+2025-08-09 12:54:26 | INFO | SELL: 38 shares of TCS.BSE at $573.85 (SELL_SIGNAL)
+2025-08-09 12:54:26 | INFO | BUY: 34 shares of TCS.BSE at $594.23
+2025-08-09 12:54:26 | INFO | BUY: 64 shares of INFY.BSE at $259.79
+2025-08-09 12:54:26 | INFO | SELL: 34 shares of TCS.BSE at $596.50 (SELL_SIGNAL)
+2025-08-09 12:54:26 | INFO | SELL: 64 shares of INFY.BSE at $267.79 (SELL_SIGNAL)
+2025-08-09 12:54:27 | INFO | BUY: 89 shares of INFY.BSE at $232.57
+2025-08-09 12:54:27 | INFO | BUY: 33 shares of TCS.BSE at $502.27
+2025-08-09 12:54:27 | INFO | SELL: 89 shares of INFY.BSE at $217.98 (SELL_SIGNAL)
+2025-08-09 12:54:27 | INFO | SELL: 33 shares of TCS.BSE at $481.85 (SELL_SIGNAL)
+2025-08-09 12:54:27 | INFO | BUY: 42 shares of TCS.BSE at $480.40
+2025-08-09 12:54:27 | INFO | BUY: 85 shares of INFY.BSE at $191.28
+2025-08-09 12:54:27 | INFO | SELL: 42 shares of TCS.BSE at $417.95 (SELL_SIGNAL)
+2025-08-09 12:54:27 | INFO | SELL: 85 shares of INFY.BSE at $173.78 (STOP_LOSS)
+2025-08-09 12:54:27 | INFO | BUY: 44 shares of TCS.BSE at $442.98
+2025-08-09 12:54:27 | INFO | SELL: 44 shares of TCS.BSE at $428.90 (SELL_SIGNAL)
+2025-08-09 12:54:27 | INFO | BUY: 89 shares of INFY.BSE at $218.57
+2025-08-09 12:54:27 | INFO | SELL: 89 shares of INFY.BSE at $219.43 (SELL_SIGNAL)
+2025-08-09 12:54:27 | INFO | BUY: 94 shares of INFY.BSE at $190.46
+2025-08-09 12:54:27 | INFO | SELL: 94 shares of INFY.BSE at $173.99 (SELL_SIGNAL)
+2025-08-09 12:54:27 | INFO | BUY: 1 shares of INFY.BSE at $153.69
+2025-08-09 12:54:27 | INFO | BUY: 77 shares of TCS.BSE at $245.97
+2025-08-09 12:54:27 | INFO | SELL: 1 shares of INFY.BSE at $159.85 (SELL_SIGNAL)
+2025-08-09 12:54:27 | INFO | SELL: 77 shares of TCS.BSE at $249.53 (SELL_SIGNAL)
+2025-08-09 12:54:27 | INFO | BUY: 62 shares of INFY.BSE at $308.77
+2025-08-09 12:54:27 | INFO | BUY: 21 shares of TCS.BSE at $726.05
+2025-08-09 12:54:27 | INFO | SELL: 62 shares of INFY.BSE at $312.21 (SELL_SIGNAL)
+2025-08-09 12:54:27 | INFO | SELL: 21 shares of TCS.BSE at $766.75 (SELL_SIGNAL)
+2025-08-09 12:54:27 | INFO | BUY: 58 shares of INFY.BSE at $333.37
+2025-08-09 12:54:27 | INFO | SELL: 58 shares of INFY.BSE at $332.11 (SELL_SIGNAL)
+2025-08-09 12:54:27 | INFO | BUY: 57 shares of INFY.BSE at $338.61
+2025-08-09 12:54:27 | INFO | SELL: 57 shares of INFY.BSE at $338.39 (SELL_SIGNAL)
+2025-08-09 12:54:28 | INFO | BUY: 50 shares of INFY.BSE at $385.71
+2025-08-09 12:54:28 | INFO | SELL: 50 shares of INFY.BSE at $380.79 (SELL_SIGNAL)
+2025-08-09 12:54:28 | INFO | BUY: 17 shares of TCS.BSE at $1098.00
+2025-08-09 12:54:28 | INFO | SELL: 17 shares of TCS.BSE at $1136.65 (SELL_SIGNAL)
+2025-08-09 12:54:28 | INFO | BUY: 53 shares of INFY.BSE at $367.77
+2025-08-09 12:54:28 | INFO | SELL: 53 shares of INFY.BSE at $363.84 (SELL_SIGNAL)
+2025-08-09 12:54:28 | INFO | BUY: 17 shares of TCS.BSE at $1138.40
+2025-08-09 12:54:28 | INFO | SELL: 17 shares of TCS.BSE at $1151.60 (SELL_SIGNAL)
+2025-08-09 12:54:28 | INFO | BUY: 17 shares of TCS.BSE at $1139.35
+2025-08-09 12:54:28 | INFO | BUY: 45 shares of INFY.BSE at $345.91
+2025-08-09 12:54:28 | INFO | SELL: 17 shares of TCS.BSE at $1134.45 (SELL_SIGNAL)
+2025-08-09 12:54:28 | INFO | SELL: 45 shares of INFY.BSE at $345.85 (SELL_SIGNAL)
+2025-08-09 12:54:28 | INFO | BUY: 18 shares of TCS.BSE at $1064.95
+2025-08-09 12:54:28 | INFO | BUY: 47 shares of INFY.BSE at $332.65
+2025-08-09 12:54:28 | INFO | SELL: 18 shares of TCS.BSE at $1175.50 (TAKE_PROFIT)
+2025-08-09 12:54:28 | INFO | SELL: 47 shares of INFY.BSE at $342.61 (SELL_SIGNAL)
+2025-08-09 12:54:28 | INFO | BUY: 18 shares of TCS.BSE at $1092.90
+2025-08-09 12:54:28 | INFO | BUY: 49 shares of INFY.BSE at $322.94
+2025-08-09 12:54:28 | INFO | SELL: 18 shares of TCS.BSE at $1087.65 (SELL_SIGNAL)
+2025-08-09 12:54:28 | INFO | SELL: 49 shares of INFY.BSE at $342.92 (SELL_SIGNAL)
+2025-08-09 12:54:28 | INFO | BUY: 16 shares of TCS.BSE at $1197.55
+2025-08-09 12:54:28 | INFO | SELL: 16 shares of TCS.BSE at $1122.40 (STOP_LOSS)
+2025-08-09 12:54:28 | INFO | BUY: 17 shares of TCS.BSE at $1135.00
+2025-08-09 12:54:28 | INFO | SELL: 17 shares of TCS.BSE at $1143.25 (SELL_SIGNAL)
+2025-08-09 12:54:29 | INFO | BUY: 70 shares of INFY.BSE at $283.16
+2025-08-09 12:54:29 | INFO | SELL: 70 shares of INFY.BSE at $271.98 (SELL_SIGNAL)
+2025-08-09 12:54:29 | INFO | BUY: 16 shares of TCS.BSE at $1200.75
+2025-08-09 12:54:29 | INFO | SELL: 16 shares of TCS.BSE at $1212.70 (SELL_SIGNAL)
+2025-08-09 12:54:29 | INFO | BUY: 15 shares of TCS.BSE at $1269.30
+2025-08-09 12:54:29 | INFO | SELL: 15 shares of TCS.BSE at $1298.15 (SELL_SIGNAL)
+2025-08-09 12:54:29 | INFO | BUY: 67 shares of INFY.BSE at $295.71
+2025-08-09 12:54:29 | INFO | SELL: 67 shares of INFY.BSE at $18630.80 (SELL_SIGNAL)
+2025-08-09 12:54:29 | INFO | BUY: 10 shares of INFY.BSE at $292.73
+2025-08-09 12:54:29 | INFO | SELL: 10 shares of INFY.BSE at $302.07 (SELL_SIGNAL)
+2025-08-09 12:54:29 | INFO | BUY: 202 shares of TCS.BSE at $1314.85
+2025-08-09 12:54:29 | INFO | SELL: 202 shares of TCS.BSE at $1297.15 (SELL_SIGNAL)
+2025-08-09 12:54:29 | INFO | BUY: 742 shares of INFY.BSE at $356.79
+2025-08-09 12:54:29 | INFO | BUY: 143 shares of TCS.BSE at $1481.00
+2025-08-09 12:54:29 | INFO | SELL: 742 shares of INFY.BSE at $286.93 (SELL_SIGNAL)
+2025-08-09 12:54:29 | INFO | SELL: 143 shares of TCS.BSE at $1402.10 (SELL_SIGNAL)
+2025-08-09 12:54:29 | INFO | BUY: 179 shares of TCS.BSE at $1404.15
+2025-08-09 12:54:29 | INFO | SELL: 179 shares of TCS.BSE at $1488.80 (SELL_SIGNAL)
+2025-08-09 12:54:29 | INFO | BUY: 168 shares of TCS.BSE at $1518.40
+2025-08-09 12:54:29 | INFO | SELL: 168 shares of TCS.BSE at $1527.35 (SELL_SIGNAL)
+2025-08-09 12:54:29 | INFO | BUY: 678 shares of INFY.BSE at $376.93
+2025-08-09 12:54:29 | INFO | SELL: 678 shares of INFY.BSE at $388.44 (SELL_SIGNAL)
+2025-08-09 12:54:29 | INFO | BUY: 129 shares of TCS.BSE at $1984.90
+2025-08-09 12:54:29 | INFO | SELL: 129 shares of TCS.BSE at $2014.20 (SELL_SIGNAL)
+2025-08-09 12:54:29 | INFO | BUY: 119 shares of TCS.BSE at $2155.20
+2025-08-09 12:54:29 | INFO | BUY: 464 shares of INFY.BSE at $445.43
+2025-08-09 12:54:29 | INFO | SELL: 119 shares of TCS.BSE at $2198.45 (SELL_SIGNAL)
+2025-08-09 12:54:29 | INFO | SELL: 464 shares of INFY.BSE at $469.24 (TAKE_PROFIT)
+2025-08-09 12:54:30 | INFO | BUY: 622 shares of INFY.BSE at $419.69
+2025-08-09 12:54:30 | INFO | SELL: 622 shares of INFY.BSE at $413.16 (SELL_SIGNAL)
+2025-08-09 12:54:30 | INFO | BUY: 120 shares of TCS.BSE at $2166.35
+2025-08-09 12:54:30 | INFO | SELL: 120 shares of TCS.BSE at $2034.70 (STOP_LOSS)
+2025-08-09 12:54:30 | INFO | BUY: 103 shares of TCS.BSE at $2494.90
+2025-08-09 12:54:30 | INFO | SELL: 103 shares of TCS.BSE at $2601.30 (SELL_SIGNAL)
+2025-08-09 12:54:30 | INFO | BUY: 107 shares of TCS.BSE at $2423.35
+2025-08-09 12:54:30 | INFO | SELL: 107 shares of TCS.BSE at $2573.50 (SELL_SIGNAL)
+2025-08-09 12:54:30 | INFO | BUY: 263 shares of INFY.BSE at $998.50
+2025-08-09 12:54:30 | INFO | SELL: 263 shares of INFY.BSE at $1064.40 (SELL_SIGNAL)
+2025-08-09 12:54:30 | INFO | BUY: 108 shares of TCS.BSE at $2442.95
+2025-08-09 12:54:30 | INFO | SELL: 108 shares of TCS.BSE at $2633.90 (TAKE_PROFIT)
+2025-08-09 12:54:30 | INFO | BUY: 247 shares of INFY.BSE at $1091.80
+2025-08-09 12:54:30 | INFO | BUY: 83 shares of TCS.BSE at $2593.55
+2025-08-09 12:54:30 | INFO | SELL: 247 shares of INFY.BSE at $1086.12 (SELL_SIGNAL)
+2025-08-09 12:54:30 | INFO | SELL: 83 shares of TCS.BSE at $2586.10 (SELL_SIGNAL)
+2025-08-09 12:54:30 | INFO | BUY: 107 shares of TCS.BSE at $2511.05
+2025-08-09 12:54:31 | INFO | BUY: 216 shares of INFY.BSE at $997.70
+2025-08-09 12:54:31 | INFO | SELL: 216 shares of INFY.BSE at $957.20 (SELL_SIGNAL)
+2025-08-09 12:54:31 | INFO | SELL: 107 shares of TCS.BSE at $2562.85 (SELL_SIGNAL)
+2025-08-09 12:54:31 | INFO | BUY: 106 shares of TCS.BSE at $2539.50
+2025-08-09 12:54:31 | INFO | BUY: 203 shares of INFY.BSE at $1059.30
+2025-08-09 12:54:31 | INFO | SELL: 106 shares of TCS.BSE at $2554.15 (SELL_SIGNAL)
+2025-08-09 12:54:31 | INFO | SELL: 203 shares of INFY.BSE at $1108.20 (SELL_SIGNAL)
+2025-08-09 12:54:31 | INFO | BUY: 251 shares of INFY.BSE at $1080.20
+2025-08-09 12:54:31 | INFO | SELL: 251 shares of INFY.BSE at $1019.85 (STOP_LOSS)
+2025-08-09 12:54:31 | INFO | BUY: 256 shares of INFY.BSE at $1047.30
+2025-08-09 12:54:31 | INFO | SELL: 256 shares of INFY.BSE at $1053.50 (SELL_SIGNAL)
+2025-08-09 12:54:31 | INFO | BUY: 254 shares of INFY.BSE at $1057.10
+2025-08-09 12:54:31 | INFO | SELL: 254 shares of INFY.BSE at $1128.70 (TAKE_PROFIT)
+2025-08-09 12:54:31 | INFO | BUY: 231 shares of INFY.BSE at $1178.30
+2025-08-09 12:54:31 | INFO | SELL: 231 shares of INFY.BSE at $1161.05 (SELL_SIGNAL)
+2025-08-09 12:54:31 | INFO | BUY: 106 shares of TCS.BSE at $2551.45
+2025-08-09 12:54:31 | INFO | SELL: 106 shares of TCS.BSE at $2447.00 (STOP_LOSS)
+2025-08-09 12:54:31 | INFO | BUY: 116 shares of TCS.BSE at $2321.15
+2025-08-09 12:54:31 | INFO | SELL: 116 shares of TCS.BSE at $2359.10 (SELL_SIGNAL)
+2025-08-09 12:54:31 | INFO | BUY: 288 shares of INFY.BSE at $936.65
+2025-08-09 12:54:31 | INFO | SELL: 288 shares of INFY.BSE at $942.15 (SELL_SIGNAL)
+2025-08-09 12:54:32 | INFO | BUY: 112 shares of TCS.BSE at $2413.30
+2025-08-09 12:54:32 | INFO | BUY: 220 shares of INFY.BSE at $981.25
+2025-08-09 12:54:32 | INFO | SELL: 112 shares of TCS.BSE at $2327.85 (STOP_LOSS)
+2025-08-09 12:54:32 | INFO | SELL: 220 shares of INFY.BSE at $931.40 (STOP_LOSS)
+2025-08-09 12:54:32 | INFO | BUY: 114 shares of TCS.BSE at $2320.85
+2025-08-09 12:54:32 | INFO | BUY: 230 shares of INFY.BSE at $924.80
+2025-08-09 12:54:32 | INFO | SELL: 114 shares of TCS.BSE at $2308.65 (SELL_SIGNAL)
+2025-08-09 12:54:32 | INFO | SELL: 230 shares of INFY.BSE at $918.80 (SELL_SIGNAL)
+2025-08-09 12:54:32 | INFO | BUY: 286 shares of INFY.BSE at $929.45
+2025-08-09 12:54:32 | INFO | BUY: 90 shares of TCS.BSE at $2360.65
+2025-08-09 12:54:32 | INFO | SELL: 286 shares of INFY.BSE at $935.65 (SELL_SIGNAL)
+2025-08-09 12:54:32 | INFO | SELL: 90 shares of TCS.BSE at $2357.75 (SELL_SIGNAL)
+2025-08-09 12:54:32 | INFO | BUY: 304 shares of INFY.BSE at $873.50
+2025-08-09 12:54:32 | INFO | SELL: 304 shares of INFY.BSE at $927.55 (SELL_SIGNAL)
+2025-08-09 12:54:32 | INFO | BUY: 102 shares of TCS.BSE at $2630.55
+2025-08-09 12:54:32 | INFO | SELL: 102 shares of TCS.BSE at $2547.85 (STOP_LOSS)
+2025-08-09 12:54:32 | INFO | BUY: 243 shares of INFY.BSE at $1098.05
+2025-08-09 12:54:32 | INFO | BUY: 73 shares of TCS.BSE at $2925.75
+2025-08-09 12:54:32 | INFO | SELL: 73 shares of TCS.BSE at $2829.95 (SELL_SIGNAL)
+2025-08-09 12:54:32 | INFO | SELL: 243 shares of INFY.BSE at $1125.00 (SELL_SIGNAL)
+2025-08-09 12:54:32 | INFO | BUY: 68 shares of TCS.BSE at $1744.80
+2025-08-09 12:54:32 | INFO | SELL: 68 shares of TCS.BSE at $1721.20 (SELL_SIGNAL)
+2025-08-09 12:54:32 | INFO | BUY: 135 shares of TCS.BSE at $1976.35
+2025-08-09 12:54:32 | INFO | SELL: 135 shares of TCS.BSE at $2011.85 (SELL_SIGNAL)
+2025-08-09 12:54:32 | INFO | BUY: 171 shares of INFY.BSE at $735.65
+2025-08-09 12:54:32 | INFO | SELL: 171 shares of INFY.BSE at $727.95 (SELL_SIGNAL)
+2025-08-09 12:54:32 | INFO | BUY: 139 shares of TCS.BSE at $1917.05
+2025-08-09 12:54:32 | INFO | SELL: 139 shares of TCS.BSE at $1851.50 (SELL_SIGNAL)
+2025-08-09 12:54:33 | INFO | BUY: 140 shares of TCS.BSE at $1889.50
+2025-08-09 12:54:33 | INFO | BUY: 322 shares of INFY.BSE at $660.75
+2025-08-09 12:54:33 | INFO | SELL: 140 shares of TCS.BSE at $1888.15 (SELL_SIGNAL)
+2025-08-09 12:54:33 | INFO | SELL: 322 shares of INFY.BSE at $683.70 (SELL_SIGNAL)
+2025-08-09 12:54:33 | INFO | BUY: 139 shares of TCS.BSE at $1925.90
+2025-08-09 12:54:33 | INFO | SELL: 139 shares of TCS.BSE at $2079.50 (TAKE_PROFIT)
+2025-08-09 12:54:33 | INFO | BUY: 128 shares of TCS.BSE at $2109.20
+2025-08-09 12:54:33 | INFO | SELL: 128 shares of TCS.BSE at $2240.35 (SELL_SIGNAL)
+2025-08-09 12:54:33 | INFO | BUY: 376 shares of INFY.BSE at $731.15
+2025-08-09 12:54:33 | INFO | BUY: 103 shares of TCS.BSE at $2131.45
+2025-08-09 12:54:33 | INFO | SELL: 376 shares of INFY.BSE at $779.45 (TAKE_PROFIT)
+2025-08-09 12:54:33 | INFO | SELL: 103 shares of TCS.BSE at $2109.70 (SELL_SIGNAL)
+2025-08-09 12:54:33 | INFO | BUY: 129 shares of TCS.BSE at $2149.15
+2025-08-09 12:54:33 | INFO | SELL: 129 shares of TCS.BSE at $2014.75 (STOP_LOSS)
+2025-08-09 12:54:33 | INFO | BUY: 134 shares of TCS.BSE at $2044.30
+2025-08-09 12:54:33 | INFO | SELL: 134 shares of TCS.BSE at $2087.80 (SELL_SIGNAL)
+2025-08-09 12:54:33 | INFO | BUY: 130 shares of TCS.BSE at $2117.05
+2025-08-09 12:54:33 | INFO | SELL: 130 shares of TCS.BSE at $2020.95 (STOP_LOSS)
+2025-08-09 12:54:33 | INFO | BUY: 133 shares of TCS.BSE at $2050.40
+2025-08-09 12:54:33 | INFO | SELL: 133 shares of TCS.BSE at $2060.70 (SELL_SIGNAL)
+2025-08-09 12:54:33 | INFO | BUY: 389 shares of INFY.BSE at $703.90
+2025-08-09 12:54:33 | INFO | SELL: 389 shares of INFY.BSE at $631.55 (SELL_SIGNAL)
+2025-08-09 12:54:33 | INFO | BUY: 119 shares of TCS.BSE at $2254.65
+2025-08-09 12:54:33 | INFO | BUY: 234 shares of INFY.BSE at $914.30
+2025-08-09 12:54:33 | INFO | SELL: 119 shares of TCS.BSE at $2348.95 (SELL_SIGNAL)
+2025-08-09 12:54:33 | INFO | SELL: 234 shares of INFY.BSE at $977.95 (TAKE_PROFIT)
+2025-08-09 12:54:34 | INFO | BUY: 104 shares of TCS.BSE at $2621.75
+2025-08-09 12:54:34 | INFO | BUY: 204 shares of INFY.BSE at $1072.00
+2025-08-09 12:54:34 | INFO | SELL: 104 shares of TCS.BSE at $2796.40 (TAKE_PROFIT)
+2025-08-09 12:54:34 | INFO | SELL: 204 shares of INFY.BSE at $1175.15 (TAKE_PROFIT)
+2025-08-09 12:54:34 | INFO | BUY: 223 shares of INFY.BSE at $1261.45
+2025-08-09 12:54:34 | INFO | BUY: 76 shares of TCS.BSE at $2958.75
+2025-08-09 12:54:34 | INFO | SELL: 223 shares of INFY.BSE at $1252.35 (SELL_SIGNAL)
+2025-08-09 12:54:34 | INFO | SELL: 76 shares of TCS.BSE at $3010.55 (SELL_SIGNAL)
+2025-08-09 12:54:34 | INFO | BUY: 207 shares of INFY.BSE at $1355.55
+2025-08-09 12:54:34 | INFO | BUY: 74 shares of TCS.BSE at $3038.40
+2025-08-09 12:54:34 | INFO | SELL: 207 shares of INFY.BSE at $1330.70 (SELL_SIGNAL)
+2025-08-09 12:54:34 | INFO | SELL: 74 shares of TCS.BSE at $3069.80 (SELL_SIGNAL)
+2025-08-09 12:54:34 | INFO | BUY: 87 shares of TCS.BSE at $3213.85
+2025-08-09 12:54:34 | INFO | SELL: 87 shares of TCS.BSE at $3167.50 (SELL_SIGNAL)
+2025-08-09 12:54:34 | INFO | BUY: 161 shares of INFY.BSE at $1740.95
+2025-08-09 12:54:34 | INFO | SELL: 161 shares of INFY.BSE at $1716.55 (SELL_SIGNAL)
+2025-08-09 12:54:34 | INFO | BUY: 158 shares of INFY.BSE at $1766.65
+2025-08-09 12:54:34 | INFO | BUY: 63 shares of TCS.BSE at $3528.45
+2025-08-09 12:54:34 | INFO | SELL: 158 shares of INFY.BSE at $1621.45 (STOP_LOSS)
+2025-08-09 12:54:34 | INFO | BUY: 147 shares of INFY.BSE at $1563.95
+2025-08-09 12:54:34 | INFO | SELL: 147 shares of INFY.BSE at $1561.45 (SELL_SIGNAL)
+2025-08-09 12:54:34 | INFO | SELL: 63 shares of TCS.BSE at $3550.10 (SELL_SIGNAL)
+2025-08-09 12:54:34 | INFO | BUY: 87 shares of TCS.BSE at $3133.70
+2025-08-09 12:54:34 | INFO | BUY: 151 shares of INFY.BSE at $1462.00
+2025-08-09 12:54:34 | INFO | SELL: 87 shares of TCS.BSE at $3120.85 (SELL_SIGNAL)
+2025-08-09 12:54:34 | INFO | SELL: 151 shares of INFY.BSE at $1475.00 (SELL_SIGNAL)
+2025-08-09 12:54:35 | INFO | BUY: 182 shares of INFY.BSE at $1507.60
+2025-08-09 12:54:35 | INFO | BUY: 67 shares of TCS.BSE at $3267.15
+2025-08-09 12:54:35 | INFO | SELL: 182 shares of INFY.BSE at $1517.50 (SELL_SIGNAL)
+2025-08-09 12:54:35 | INFO | SELL: 67 shares of TCS.BSE at $3260.65 (SELL_SIGNAL)
+2025-08-09 12:54:35 | INFO | BUY: 83 shares of TCS.BSE at $3314.15
+2025-08-09 12:54:35 | INFO | BUY: 148 shares of INFY.BSE at $1487.30
+2025-08-09 12:54:35 | INFO | SELL: 148 shares of INFY.BSE at $1434.80 (SELL_SIGNAL)
+2025-08-09 12:54:35 | INFO | SELL: 83 shares of TCS.BSE at $3198.75 (SELL_SIGNAL)
+2025-08-09 12:54:35 | INFO | BUY: 209 shares of INFY.BSE at $1301.45
+2025-08-09 12:54:35 | INFO | SELL: 209 shares of INFY.BSE at $1265.65 (STOP_LOSS)
+2025-08-09 12:54:35 | INFO | BUY: 79 shares of TCS.BSE at $3399.70
+2025-08-09 12:54:35 | INFO | SELL: 79 shares of TCS.BSE at $3479.35 (SELL_SIGNAL)
+2025-08-09 12:54:35 | INFO | BUY: 81 shares of TCS.BSE at $3337.75
+2025-08-09 12:54:35 | INFO | SELL: 81 shares of TCS.BSE at $3359.95 (SELL_SIGNAL)
+2025-08-09 12:54:35 | INFO | BUY: 168 shares of INFY.BSE at $1616.95
+2025-08-09 12:54:35 | INFO | SELL: 168 shares of INFY.BSE at $1561.95 (SELL_SIGNAL)
+2025-08-09 12:54:35 | INFO | BUY: 62 shares of TCS.BSE at $4296.85
+2025-08-09 12:54:35 | INFO | SELL: 62 shares of TCS.BSE at $4232.40 (SELL_SIGNAL)
+2025-08-09 12:54:35 | INFO | BUY: 64 shares of TCS.BSE at $4168.60
+2025-08-09 12:54:35 | INFO | BUY: 114 shares of INFY.BSE at $1882.65
+2025-08-09 12:54:35 | INFO | SELL: 64 shares of TCS.BSE at $4036.65 (SELL_SIGNAL)
+2025-08-09 12:54:35 | INFO | SELL: 114 shares of INFY.BSE at $1799.80 (STOP_LOSS)
+2025-08-09 12:54:36 | INFO | BUY: 78 shares of TCS.BSE at $3380.55
+2025-08-09 12:54:36 | INFO | SELL: 78 shares of TCS.BSE at $3390.20 (SELL_SIGNAL)
+2025-08-09 12:54:36 | INFO | BUY: 186 shares of RELIANCE.BSE at $1428.20
+2025-08-09 12:54:36 | INFO | BUY: 137 shares of INFY.BSE at $1553.55
+2025-08-09 12:54:36 | INFO | SELL: 137 shares of INFY.BSE at $1513.85 (SELL_SIGNAL)
+2025-08-09 12:54:36 | INFO | SELL: 186 shares of RELIANCE.BSE at $1411.30 (SELL_SIGNAL)
+2025-08-09 12:54:36 | SUCCESS | Backtesting completed. Total return: 1223.12%
+2025-08-09 12:54:41 | INFO | Backtest plot saved to backtest_results.png
+2025-08-09 12:57:02 | INFO | Running market scan...
+2025-08-09 12:57:02 | SUCCESS | Logging system configured
+2025-08-09 12:57:02 | INFO | Initializing data fetcher...
+2025-08-09 12:57:02 | INFO | DataFetcher initialized successfully
+2025-08-09 12:57:02 | INFO | Initializing trading strategy...
+2025-08-09 12:57:02 | INFO | RSI MA Crossover Strategy initialized with $100,000.00 capital
+2025-08-09 12:57:02 | INFO | Initializing ML model...
+2025-08-09 12:57:02 | INFO | Initialized random_forest model
+2025-08-09 12:57:02 | INFO | Initializing Google Sheets logger...
+2025-08-09 12:57:03 | SUCCESS | Connected to Google Sheets successfully
+2025-08-09 12:57:15 | INFO | Google Sheets logger initialized successfully
+2025-08-09 12:57:15 | INFO | Initializing Telegram bot...
+2025-08-09 12:57:15 | SUCCESS | Telegram bot initialized successfully
+2025-08-09 12:57:15 | SUCCESS | All components initialized successfully
+2025-08-09 12:57:15 | INFO | Trading Engine initialized successfully
+2025-08-09 12:57:15 | INFO | Running single market scan...
+2025-08-09 12:57:16 | INFO | Starting market scan and analysis...
+2025-08-09 12:57:16 | INFO | Fetching market data...
+2025-08-09 12:57:16 | INFO | Processing RELIANCE.BSE...
+2025-08-09 12:57:16 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-09 12:57:16 | SUCCESS | Successfully processed RELIANCE.BSE
+2025-08-09 12:57:16 | INFO | Processing TCS.BSE...
+2025-08-09 12:57:16 | INFO | Loading TCS.BSE daily data from cache
+2025-08-09 12:57:16 | SUCCESS | Successfully processed TCS.BSE
+2025-08-09 12:57:16 | INFO | Processing INFY.BSE...
+2025-08-09 12:57:16 | INFO | Loading INFY.BSE daily data from cache
+2025-08-09 12:57:16 | SUCCESS | Successfully processed INFY.BSE
+2025-08-09 12:57:16 | INFO | Successfully fetched data for 3 out of 3 stocks
+2025-08-09 12:57:16 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 12:57:18 | INFO | Generated SELL signal for RELIANCE.BSE (Strength: STRONG)
+2025-08-09 12:57:18 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 12:57:19 | INFO | Generated SELL signal for TCS.BSE (Strength: MODERATE)
+2025-08-09 12:57:19 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 12:57:20 | INFO | Generated SELL signal for INFY.BSE (Strength: STRONG)
+2025-08-09 12:57:20 | SUCCESS | Market scan completed. Scanned 3 symbols, generated 3 signals
+2025-08-09 12:58:46 | INFO | Training ML model...
+2025-08-09 12:58:46 | INFO | DataFetcher initialized successfully
+2025-08-09 12:58:46 | INFO | Initialized random_forest model
+2025-08-09 12:58:46 | INFO | Fetching training data...
+2025-08-09 12:58:46 | INFO | Processing RELIANCE.BSE...
+2025-08-09 12:58:46 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-09 12:58:46 | SUCCESS | Successfully processed RELIANCE.BSE
+2025-08-09 12:58:46 | INFO | Processing TCS.BSE...
+2025-08-09 12:58:46 | INFO | Loading TCS.BSE daily data from cache
+2025-08-09 12:58:46 | SUCCESS | Successfully processed TCS.BSE
+2025-08-09 12:58:46 | INFO | Processing INFY.BSE...
+2025-08-09 12:58:46 | INFO | Loading INFY.BSE daily data from cache
+2025-08-09 12:58:46 | SUCCESS | Successfully processed INFY.BSE
+2025-08-09 12:58:46 | INFO | Successfully fetched data for 3 out of 3 stocks
+2025-08-09 12:58:46 | INFO | Starting model training...
+2025-08-09 12:58:46 | INFO | Preparing data for RELIANCE.BSE...
+2025-08-09 12:58:47 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 12:58:47 | INFO | Selected 28 features for ML model
+2025-08-09 12:58:47 | WARNING | Insufficient valid data for RELIANCE.BSE: 51 samples
+2025-08-09 12:58:47 | INFO | Preparing data for TCS.BSE...
+2025-08-09 12:58:47 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 12:58:47 | INFO | Selected 28 features for ML model
+2025-08-09 12:58:47 | SUCCESS | Added 5037 valid samples from TCS.BSE
+2025-08-09 12:58:47 | INFO | Preparing data for INFY.BSE...
+2025-08-09 12:58:47 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 12:58:47 | INFO | Selected 28 features for ML model
+2025-08-09 12:58:48 | SUCCESS | Added 5039 valid samples from INFY.BSE
+2025-08-09 12:58:48 | INFO | Data cleaning completed. Removed 0 problematic rows
+2025-08-09 12:58:48 | SUCCESS | Prepared dataset with 10076 samples and 28 features
+2025-08-09 12:58:48 | INFO | Training random_forest on 8060 samples...
+2025-08-09 13:00:07 | SUCCESS | Model training completed. Test accuracy: 0.5670
+2025-08-09 13:00:07 | INFO | Model saved to models/trading_model.pkl
+2025-08-09 13:00:12 | INFO | Model analysis plot saved to ml_model_analysis.png
+2025-08-09 13:11:11 | INFO | Testing integrations...
+2025-08-09 13:11:11 | INFO | DataFetcher initialized successfully
+2025-08-09 13:11:11 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-09 13:11:12 | SUCCESS | Connected to Google Sheets successfully
+2025-08-09 13:11:25 | INFO | Google Sheets logger initialized successfully
+2025-08-09 13:11:25 | SUCCESS | Telegram bot initialized successfully
+2025-08-09 13:11:26 | SUCCESS | Telegram connection test passed
+2025-08-09 13:12:21 | INFO | Running backtest...
+2025-08-09 13:12:21 | INFO | DataFetcher initialized successfully
+2025-08-09 13:12:21 | INFO | RSI MA Crossover Strategy initialized with $100,000.00 capital
+2025-08-09 13:12:21 | INFO | Fetching historical data...
+2025-08-09 13:12:21 | INFO | Processing RELIANCE.BSE...
+2025-08-09 13:12:21 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-09 13:12:21 | SUCCESS | Successfully processed RELIANCE.BSE
+2025-08-09 13:12:21 | INFO | Processing TCS.BSE...
+2025-08-09 13:12:21 | INFO | Loading TCS.BSE daily data from cache
+2025-08-09 13:12:22 | SUCCESS | Successfully processed TCS.BSE
+2025-08-09 13:12:22 | INFO | Processing INFY.BSE...
+2025-08-09 13:12:22 | INFO | Loading INFY.BSE daily data from cache
+2025-08-09 13:12:22 | SUCCESS | Successfully processed INFY.BSE
+2025-08-09 13:12:22 | INFO | Successfully fetched data for 3 out of 3 stocks
+2025-08-09 13:12:22 | INFO | Starting backtesting...
+2025-08-09 13:12:22 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 13:12:22 | INFO | RELIANCE.BSE: Generated 10 buy signals and 19 sell signals out of 100 periods
+2025-08-09 13:12:22 | INFO | RELIANCE.BSE signal distribution: {0: 71, -1: 19, 1: 10}
+2025-08-09 13:12:22 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 13:12:22 | INFO | TCS.BSE: Generated 215 buy signals and 1043 sell signals out of 5093 periods
+2025-08-09 13:12:22 | INFO | TCS.BSE signal distribution: {0: 3835, -1: 1043, 1: 215}
+2025-08-09 13:12:22 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 13:12:22 | INFO | INFY.BSE: Generated 166 buy signals and 1005 sell signals out of 5095 periods
+2025-08-09 13:12:22 | INFO | INFY.BSE signal distribution: {0: 3924, -1: 1005, 1: 166}
+2025-08-09 13:12:22 | INFO | BUY: 130 shares of TCS.BSE at $153.07
+2025-08-09 13:12:22 | INFO | SELL: 130 shares of TCS.BSE at $156.57 (SELL_SIGNAL)
+2025-08-09 13:12:22 | INFO | BUY: 465 shares of INFY.BSE at $43.16
+2025-08-09 13:12:22 | INFO | SELL: 465 shares of INFY.BSE at $44.31 (SELL_SIGNAL)
+2025-08-09 13:12:22 | INFO | BUY: 90 shares of TCS.BSE at $223.07
+2025-08-09 13:12:22 | INFO | BUY: 366 shares of INFY.BSE at $44.16
+2025-08-09 13:12:22 | INFO | SELL: 366 shares of INFY.BSE at $47.31 (SELL_SIGNAL)
+2025-08-09 13:12:22 | INFO | SELL: 90 shares of TCS.BSE at $222.82 (SELL_SIGNAL)
+2025-08-09 13:12:23 | INFO | BUY: 38 shares of TCS.BSE at $530.95
+2025-08-09 13:12:23 | INFO | SELL: 38 shares of TCS.BSE at $573.85 (SELL_SIGNAL)
+2025-08-09 13:12:23 | INFO | BUY: 34 shares of TCS.BSE at $594.23
+2025-08-09 13:12:23 | INFO | BUY: 64 shares of INFY.BSE at $259.79
+2025-08-09 13:12:23 | INFO | SELL: 34 shares of TCS.BSE at $596.50 (SELL_SIGNAL)
+2025-08-09 13:12:23 | INFO | SELL: 64 shares of INFY.BSE at $267.79 (SELL_SIGNAL)
+2025-08-09 13:12:23 | INFO | BUY: 89 shares of INFY.BSE at $232.57
+2025-08-09 13:12:23 | INFO | BUY: 33 shares of TCS.BSE at $502.27
+2025-08-09 13:12:23 | INFO | SELL: 89 shares of INFY.BSE at $217.98 (SELL_SIGNAL)
+2025-08-09 13:12:23 | INFO | SELL: 33 shares of TCS.BSE at $481.85 (SELL_SIGNAL)
+2025-08-09 13:12:23 | INFO | BUY: 42 shares of TCS.BSE at $480.40
+2025-08-09 13:12:23 | INFO | BUY: 85 shares of INFY.BSE at $191.28
+2025-08-09 13:12:23 | INFO | SELL: 42 shares of TCS.BSE at $417.95 (SELL_SIGNAL)
+2025-08-09 13:12:23 | INFO | SELL: 85 shares of INFY.BSE at $173.78 (STOP_LOSS)
+2025-08-09 13:12:23 | INFO | BUY: 44 shares of TCS.BSE at $442.98
+2025-08-09 13:12:23 | INFO | SELL: 44 shares of TCS.BSE at $428.90 (SELL_SIGNAL)
+2025-08-09 13:12:23 | INFO | BUY: 89 shares of INFY.BSE at $218.57
+2025-08-09 13:12:23 | INFO | SELL: 89 shares of INFY.BSE at $219.43 (SELL_SIGNAL)
+2025-08-09 13:12:23 | INFO | BUY: 94 shares of INFY.BSE at $190.46
+2025-08-09 13:12:23 | INFO | SELL: 94 shares of INFY.BSE at $173.99 (SELL_SIGNAL)
+2025-08-09 13:12:23 | INFO | BUY: 1 shares of INFY.BSE at $153.69
+2025-08-09 13:12:23 | INFO | BUY: 77 shares of TCS.BSE at $245.97
+2025-08-09 13:12:23 | INFO | SELL: 1 shares of INFY.BSE at $159.85 (SELL_SIGNAL)
+2025-08-09 13:12:23 | INFO | SELL: 77 shares of TCS.BSE at $249.53 (SELL_SIGNAL)
+2025-08-09 13:12:23 | INFO | BUY: 62 shares of INFY.BSE at $308.77
+2025-08-09 13:12:23 | INFO | BUY: 21 shares of TCS.BSE at $726.05
+2025-08-09 13:12:23 | INFO | SELL: 62 shares of INFY.BSE at $312.21 (SELL_SIGNAL)
+2025-08-09 13:12:23 | INFO | SELL: 21 shares of TCS.BSE at $766.75 (SELL_SIGNAL)
+2025-08-09 13:12:23 | INFO | BUY: 58 shares of INFY.BSE at $333.37
+2025-08-09 13:12:23 | INFO | SELL: 58 shares of INFY.BSE at $332.11 (SELL_SIGNAL)
+2025-08-09 13:12:23 | INFO | BUY: 57 shares of INFY.BSE at $338.61
+2025-08-09 13:12:23 | INFO | SELL: 57 shares of INFY.BSE at $338.39 (SELL_SIGNAL)
+2025-08-09 13:12:23 | INFO | BUY: 50 shares of INFY.BSE at $385.71
+2025-08-09 13:12:23 | INFO | SELL: 50 shares of INFY.BSE at $380.79 (SELL_SIGNAL)
+2025-08-09 13:12:23 | INFO | BUY: 17 shares of TCS.BSE at $1098.00
+2025-08-09 13:12:23 | INFO | SELL: 17 shares of TCS.BSE at $1136.65 (SELL_SIGNAL)
+2025-08-09 13:12:23 | INFO | BUY: 53 shares of INFY.BSE at $367.77
+2025-08-09 13:12:23 | INFO | SELL: 53 shares of INFY.BSE at $363.84 (SELL_SIGNAL)
+2025-08-09 13:12:23 | INFO | BUY: 17 shares of TCS.BSE at $1138.40
+2025-08-09 13:12:24 | INFO | SELL: 17 shares of TCS.BSE at $1151.60 (SELL_SIGNAL)
+2025-08-09 13:12:24 | INFO | BUY: 17 shares of TCS.BSE at $1139.35
+2025-08-09 13:12:24 | INFO | BUY: 45 shares of INFY.BSE at $345.91
+2025-08-09 13:12:24 | INFO | SELL: 17 shares of TCS.BSE at $1134.45 (SELL_SIGNAL)
+2025-08-09 13:12:24 | INFO | SELL: 45 shares of INFY.BSE at $345.85 (SELL_SIGNAL)
+2025-08-09 13:12:24 | INFO | BUY: 18 shares of TCS.BSE at $1064.95
+2025-08-09 13:12:24 | INFO | BUY: 47 shares of INFY.BSE at $332.65
+2025-08-09 13:12:24 | INFO | SELL: 18 shares of TCS.BSE at $1175.50 (TAKE_PROFIT)
+2025-08-09 13:12:24 | INFO | SELL: 47 shares of INFY.BSE at $342.61 (SELL_SIGNAL)
+2025-08-09 13:12:24 | INFO | BUY: 18 shares of TCS.BSE at $1092.90
+2025-08-09 13:12:24 | INFO | BUY: 49 shares of INFY.BSE at $322.94
+2025-08-09 13:12:24 | INFO | SELL: 18 shares of TCS.BSE at $1087.65 (SELL_SIGNAL)
+2025-08-09 13:12:24 | INFO | SELL: 49 shares of INFY.BSE at $342.92 (SELL_SIGNAL)
+2025-08-09 13:12:24 | INFO | BUY: 16 shares of TCS.BSE at $1197.55
+2025-08-09 13:12:24 | INFO | SELL: 16 shares of TCS.BSE at $1122.40 (STOP_LOSS)
+2025-08-09 13:12:24 | INFO | BUY: 17 shares of TCS.BSE at $1135.00
+2025-08-09 13:12:24 | INFO | SELL: 17 shares of TCS.BSE at $1143.25 (SELL_SIGNAL)
+2025-08-09 13:12:24 | INFO | BUY: 70 shares of INFY.BSE at $283.16
+2025-08-09 13:12:24 | INFO | SELL: 70 shares of INFY.BSE at $271.98 (SELL_SIGNAL)
+2025-08-09 13:12:24 | INFO | BUY: 16 shares of TCS.BSE at $1200.75
+2025-08-09 13:12:24 | INFO | SELL: 16 shares of TCS.BSE at $1212.70 (SELL_SIGNAL)
+2025-08-09 13:12:24 | INFO | BUY: 15 shares of TCS.BSE at $1269.30
+2025-08-09 13:12:24 | INFO | SELL: 15 shares of TCS.BSE at $1298.15 (SELL_SIGNAL)
+2025-08-09 13:12:24 | INFO | BUY: 67 shares of INFY.BSE at $295.71
+2025-08-09 13:12:24 | INFO | SELL: 67 shares of INFY.BSE at $18630.80 (SELL_SIGNAL)
+2025-08-09 13:12:24 | INFO | BUY: 10 shares of INFY.BSE at $292.73
+2025-08-09 13:12:24 | INFO | SELL: 10 shares of INFY.BSE at $302.07 (SELL_SIGNAL)
+2025-08-09 13:12:24 | INFO | BUY: 202 shares of TCS.BSE at $1314.85
+2025-08-09 13:12:24 | INFO | SELL: 202 shares of TCS.BSE at $1297.15 (SELL_SIGNAL)
+2025-08-09 13:12:24 | INFO | BUY: 742 shares of INFY.BSE at $356.79
+2025-08-09 13:12:24 | INFO | BUY: 143 shares of TCS.BSE at $1481.00
+2025-08-09 13:12:24 | INFO | SELL: 742 shares of INFY.BSE at $286.93 (SELL_SIGNAL)
+2025-08-09 13:12:24 | INFO | SELL: 143 shares of TCS.BSE at $1402.10 (SELL_SIGNAL)
+2025-08-09 13:12:24 | INFO | BUY: 179 shares of TCS.BSE at $1404.15
+2025-08-09 13:12:24 | INFO | SELL: 179 shares of TCS.BSE at $1488.80 (SELL_SIGNAL)
+2025-08-09 13:12:24 | INFO | BUY: 168 shares of TCS.BSE at $1518.40
+2025-08-09 13:12:24 | INFO | SELL: 168 shares of TCS.BSE at $1527.35 (SELL_SIGNAL)
+2025-08-09 13:12:24 | INFO | BUY: 678 shares of INFY.BSE at $376.93
+2025-08-09 13:12:24 | INFO | SELL: 678 shares of INFY.BSE at $388.44 (SELL_SIGNAL)
+2025-08-09 13:12:24 | INFO | BUY: 129 shares of TCS.BSE at $1984.90
+2025-08-09 13:12:24 | INFO | SELL: 129 shares of TCS.BSE at $2014.20 (SELL_SIGNAL)
+2025-08-09 13:12:25 | INFO | BUY: 119 shares of TCS.BSE at $2155.20
+2025-08-09 13:12:25 | INFO | BUY: 464 shares of INFY.BSE at $445.43
+2025-08-09 13:12:25 | INFO | SELL: 119 shares of TCS.BSE at $2198.45 (SELL_SIGNAL)
+2025-08-09 13:12:25 | INFO | SELL: 464 shares of INFY.BSE at $469.24 (TAKE_PROFIT)
+2025-08-09 13:12:25 | INFO | BUY: 622 shares of INFY.BSE at $419.69
+2025-08-09 13:12:25 | INFO | SELL: 622 shares of INFY.BSE at $413.16 (SELL_SIGNAL)
+2025-08-09 13:12:25 | INFO | BUY: 120 shares of TCS.BSE at $2166.35
+2025-08-09 13:12:25 | INFO | SELL: 120 shares of TCS.BSE at $2034.70 (STOP_LOSS)
+2025-08-09 13:12:25 | INFO | BUY: 103 shares of TCS.BSE at $2494.90
+2025-08-09 13:12:25 | INFO | SELL: 103 shares of TCS.BSE at $2601.30 (SELL_SIGNAL)
+2025-08-09 13:12:25 | INFO | BUY: 107 shares of TCS.BSE at $2423.35
+2025-08-09 13:12:25 | INFO | SELL: 107 shares of TCS.BSE at $2573.50 (SELL_SIGNAL)
+2025-08-09 13:12:25 | INFO | BUY: 263 shares of INFY.BSE at $998.50
+2025-08-09 13:12:25 | INFO | SELL: 263 shares of INFY.BSE at $1064.40 (SELL_SIGNAL)
+2025-08-09 13:12:25 | INFO | BUY: 108 shares of TCS.BSE at $2442.95
+2025-08-09 13:12:25 | INFO | SELL: 108 shares of TCS.BSE at $2633.90 (TAKE_PROFIT)
+2025-08-09 13:12:25 | INFO | BUY: 247 shares of INFY.BSE at $1091.80
+2025-08-09 13:12:25 | INFO | BUY: 83 shares of TCS.BSE at $2593.55
+2025-08-09 13:12:25 | INFO | SELL: 247 shares of INFY.BSE at $1086.12 (SELL_SIGNAL)
+2025-08-09 13:12:25 | INFO | SELL: 83 shares of TCS.BSE at $2586.10 (SELL_SIGNAL)
+2025-08-09 13:12:25 | INFO | BUY: 107 shares of TCS.BSE at $2511.05
+2025-08-09 13:12:25 | INFO | BUY: 216 shares of INFY.BSE at $997.70
+2025-08-09 13:12:25 | INFO | SELL: 216 shares of INFY.BSE at $957.20 (SELL_SIGNAL)
+2025-08-09 13:12:25 | INFO | SELL: 107 shares of TCS.BSE at $2562.85 (SELL_SIGNAL)
+2025-08-09 13:12:25 | INFO | BUY: 106 shares of TCS.BSE at $2539.50
+2025-08-09 13:12:25 | INFO | BUY: 203 shares of INFY.BSE at $1059.30
+2025-08-09 13:12:25 | INFO | SELL: 106 shares of TCS.BSE at $2554.15 (SELL_SIGNAL)
+2025-08-09 13:12:25 | INFO | SELL: 203 shares of INFY.BSE at $1108.20 (SELL_SIGNAL)
+2025-08-09 13:12:25 | INFO | BUY: 251 shares of INFY.BSE at $1080.20
+2025-08-09 13:12:25 | INFO | SELL: 251 shares of INFY.BSE at $1019.85 (STOP_LOSS)
+2025-08-09 13:12:25 | INFO | BUY: 256 shares of INFY.BSE at $1047.30
+2025-08-09 13:12:25 | INFO | SELL: 256 shares of INFY.BSE at $1053.50 (SELL_SIGNAL)
+2025-08-09 13:12:25 | INFO | BUY: 254 shares of INFY.BSE at $1057.10
+2025-08-09 13:12:25 | INFO | SELL: 254 shares of INFY.BSE at $1128.70 (TAKE_PROFIT)
+2025-08-09 13:12:26 | INFO | BUY: 231 shares of INFY.BSE at $1178.30
+2025-08-09 13:12:26 | INFO | SELL: 231 shares of INFY.BSE at $1161.05 (SELL_SIGNAL)
+2025-08-09 13:12:26 | INFO | BUY: 106 shares of TCS.BSE at $2551.45
+2025-08-09 13:12:26 | INFO | SELL: 106 shares of TCS.BSE at $2447.00 (STOP_LOSS)
+2025-08-09 13:12:26 | INFO | BUY: 116 shares of TCS.BSE at $2321.15
+2025-08-09 13:12:26 | INFO | SELL: 116 shares of TCS.BSE at $2359.10 (SELL_SIGNAL)
+2025-08-09 13:12:26 | INFO | BUY: 288 shares of INFY.BSE at $936.65
+2025-08-09 13:12:26 | INFO | SELL: 288 shares of INFY.BSE at $942.15 (SELL_SIGNAL)
+2025-08-09 13:12:26 | INFO | BUY: 112 shares of TCS.BSE at $2413.30
+2025-08-09 13:12:26 | INFO | BUY: 220 shares of INFY.BSE at $981.25
+2025-08-09 13:12:26 | INFO | SELL: 112 shares of TCS.BSE at $2327.85 (STOP_LOSS)
+2025-08-09 13:12:26 | INFO | SELL: 220 shares of INFY.BSE at $931.40 (STOP_LOSS)
+2025-08-09 13:12:26 | INFO | BUY: 114 shares of TCS.BSE at $2320.85
+2025-08-09 13:12:26 | INFO | BUY: 230 shares of INFY.BSE at $924.80
+2025-08-09 13:12:26 | INFO | SELL: 114 shares of TCS.BSE at $2308.65 (SELL_SIGNAL)
+2025-08-09 13:12:26 | INFO | SELL: 230 shares of INFY.BSE at $918.80 (SELL_SIGNAL)
+2025-08-09 13:12:26 | INFO | BUY: 286 shares of INFY.BSE at $929.45
+2025-08-09 13:12:26 | INFO | BUY: 90 shares of TCS.BSE at $2360.65
+2025-08-09 13:12:26 | INFO | SELL: 286 shares of INFY.BSE at $935.65 (SELL_SIGNAL)
+2025-08-09 13:12:26 | INFO | SELL: 90 shares of TCS.BSE at $2357.75 (SELL_SIGNAL)
+2025-08-09 13:12:26 | INFO | BUY: 304 shares of INFY.BSE at $873.50
+2025-08-09 13:12:26 | INFO | SELL: 304 shares of INFY.BSE at $927.55 (SELL_SIGNAL)
+2025-08-09 13:12:26 | INFO | BUY: 102 shares of TCS.BSE at $2630.55
+2025-08-09 13:12:26 | INFO | SELL: 102 shares of TCS.BSE at $2547.85 (STOP_LOSS)
+2025-08-09 13:12:26 | INFO | BUY: 243 shares of INFY.BSE at $1098.05
+2025-08-09 13:12:26 | INFO | BUY: 73 shares of TCS.BSE at $2925.75
+2025-08-09 13:12:26 | INFO | SELL: 73 shares of TCS.BSE at $2829.95 (SELL_SIGNAL)
+2025-08-09 13:12:26 | INFO | SELL: 243 shares of INFY.BSE at $1125.00 (SELL_SIGNAL)
+2025-08-09 13:12:26 | INFO | BUY: 68 shares of TCS.BSE at $1744.80
+2025-08-09 13:12:26 | INFO | SELL: 68 shares of TCS.BSE at $1721.20 (SELL_SIGNAL)
+2025-08-09 13:12:26 | INFO | BUY: 135 shares of TCS.BSE at $1976.35
+2025-08-09 13:12:26 | INFO | SELL: 135 shares of TCS.BSE at $2011.85 (SELL_SIGNAL)
+2025-08-09 13:12:26 | INFO | BUY: 171 shares of INFY.BSE at $735.65
+2025-08-09 13:12:26 | INFO | SELL: 171 shares of INFY.BSE at $727.95 (SELL_SIGNAL)
+2025-08-09 13:12:26 | INFO | BUY: 139 shares of TCS.BSE at $1917.05
+2025-08-09 13:12:26 | INFO | SELL: 139 shares of TCS.BSE at $1851.50 (SELL_SIGNAL)
+2025-08-09 13:12:26 | INFO | BUY: 140 shares of TCS.BSE at $1889.50
+2025-08-09 13:12:27 | INFO | BUY: 322 shares of INFY.BSE at $660.75
+2025-08-09 13:12:27 | INFO | SELL: 140 shares of TCS.BSE at $1888.15 (SELL_SIGNAL)
+2025-08-09 13:12:27 | INFO | SELL: 322 shares of INFY.BSE at $683.70 (SELL_SIGNAL)
+2025-08-09 13:12:27 | INFO | BUY: 139 shares of TCS.BSE at $1925.90
+2025-08-09 13:12:27 | INFO | SELL: 139 shares of TCS.BSE at $2079.50 (TAKE_PROFIT)
+2025-08-09 13:12:27 | INFO | BUY: 128 shares of TCS.BSE at $2109.20
+2025-08-09 13:12:27 | INFO | SELL: 128 shares of TCS.BSE at $2240.35 (SELL_SIGNAL)
+2025-08-09 13:12:27 | INFO | BUY: 376 shares of INFY.BSE at $731.15
+2025-08-09 13:12:27 | INFO | BUY: 103 shares of TCS.BSE at $2131.45
+2025-08-09 13:12:27 | INFO | SELL: 376 shares of INFY.BSE at $779.45 (TAKE_PROFIT)
+2025-08-09 13:12:27 | INFO | SELL: 103 shares of TCS.BSE at $2109.70 (SELL_SIGNAL)
+2025-08-09 13:12:27 | INFO | BUY: 129 shares of TCS.BSE at $2149.15
+2025-08-09 13:12:27 | INFO | SELL: 129 shares of TCS.BSE at $2014.75 (STOP_LOSS)
+2025-08-09 13:12:27 | INFO | BUY: 134 shares of TCS.BSE at $2044.30
+2025-08-09 13:12:27 | INFO | SELL: 134 shares of TCS.BSE at $2087.80 (SELL_SIGNAL)
+2025-08-09 13:12:27 | INFO | BUY: 130 shares of TCS.BSE at $2117.05
+2025-08-09 13:12:27 | INFO | SELL: 130 shares of TCS.BSE at $2020.95 (STOP_LOSS)
+2025-08-09 13:12:27 | INFO | BUY: 133 shares of TCS.BSE at $2050.40
+2025-08-09 13:12:27 | INFO | SELL: 133 shares of TCS.BSE at $2060.70 (SELL_SIGNAL)
+2025-08-09 13:12:27 | INFO | BUY: 389 shares of INFY.BSE at $703.90
+2025-08-09 13:12:27 | INFO | SELL: 389 shares of INFY.BSE at $631.55 (SELL_SIGNAL)
+2025-08-09 13:12:27 | INFO | BUY: 119 shares of TCS.BSE at $2254.65
+2025-08-09 13:12:27 | INFO | BUY: 234 shares of INFY.BSE at $914.30
+2025-08-09 13:12:27 | INFO | SELL: 119 shares of TCS.BSE at $2348.95 (SELL_SIGNAL)
+2025-08-09 13:12:27 | INFO | SELL: 234 shares of INFY.BSE at $977.95 (TAKE_PROFIT)
+2025-08-09 13:12:27 | INFO | BUY: 104 shares of TCS.BSE at $2621.75
+2025-08-09 13:12:27 | INFO | BUY: 204 shares of INFY.BSE at $1072.00
+2025-08-09 13:12:27 | INFO | SELL: 104 shares of TCS.BSE at $2796.40 (TAKE_PROFIT)
+2025-08-09 13:12:27 | INFO | SELL: 204 shares of INFY.BSE at $1175.15 (TAKE_PROFIT)
+2025-08-09 13:12:27 | INFO | BUY: 223 shares of INFY.BSE at $1261.45
+2025-08-09 13:12:28 | INFO | BUY: 76 shares of TCS.BSE at $2958.75
+2025-08-09 13:12:28 | INFO | SELL: 223 shares of INFY.BSE at $1252.35 (SELL_SIGNAL)
+2025-08-09 13:12:28 | INFO | SELL: 76 shares of TCS.BSE at $3010.55 (SELL_SIGNAL)
+2025-08-09 13:12:28 | INFO | BUY: 207 shares of INFY.BSE at $1355.55
+2025-08-09 13:12:28 | INFO | BUY: 74 shares of TCS.BSE at $3038.40
+2025-08-09 13:12:28 | INFO | SELL: 207 shares of INFY.BSE at $1330.70 (SELL_SIGNAL)
+2025-08-09 13:12:28 | INFO | SELL: 74 shares of TCS.BSE at $3069.80 (SELL_SIGNAL)
+2025-08-09 13:12:28 | INFO | BUY: 87 shares of TCS.BSE at $3213.85
+2025-08-09 13:12:28 | INFO | SELL: 87 shares of TCS.BSE at $3167.50 (SELL_SIGNAL)
+2025-08-09 13:12:28 | INFO | BUY: 161 shares of INFY.BSE at $1740.95
+2025-08-09 13:12:28 | INFO | SELL: 161 shares of INFY.BSE at $1716.55 (SELL_SIGNAL)
+2025-08-09 13:12:28 | INFO | BUY: 158 shares of INFY.BSE at $1766.65
+2025-08-09 13:12:28 | INFO | BUY: 63 shares of TCS.BSE at $3528.45
+2025-08-09 13:12:28 | INFO | SELL: 158 shares of INFY.BSE at $1621.45 (STOP_LOSS)
+2025-08-09 13:12:28 | INFO | BUY: 147 shares of INFY.BSE at $1563.95
+2025-08-09 13:12:28 | INFO | SELL: 147 shares of INFY.BSE at $1561.45 (SELL_SIGNAL)
+2025-08-09 13:12:28 | INFO | SELL: 63 shares of TCS.BSE at $3550.10 (SELL_SIGNAL)
+2025-08-09 13:12:28 | INFO | BUY: 87 shares of TCS.BSE at $3133.70
+2025-08-09 13:12:28 | INFO | BUY: 151 shares of INFY.BSE at $1462.00
+2025-08-09 13:12:28 | INFO | SELL: 87 shares of TCS.BSE at $3120.85 (SELL_SIGNAL)
+2025-08-09 13:12:28 | INFO | SELL: 151 shares of INFY.BSE at $1475.00 (SELL_SIGNAL)
+2025-08-09 13:12:28 | INFO | BUY: 182 shares of INFY.BSE at $1507.60
+2025-08-09 13:12:28 | INFO | BUY: 67 shares of TCS.BSE at $3267.15
+2025-08-09 13:12:28 | INFO | SELL: 182 shares of INFY.BSE at $1517.50 (SELL_SIGNAL)
+2025-08-09 13:12:28 | INFO | SELL: 67 shares of TCS.BSE at $3260.65 (SELL_SIGNAL)
+2025-08-09 13:12:28 | INFO | BUY: 83 shares of TCS.BSE at $3314.15
+2025-08-09 13:12:28 | INFO | BUY: 148 shares of INFY.BSE at $1487.30
+2025-08-09 13:12:28 | INFO | SELL: 148 shares of INFY.BSE at $1434.80 (SELL_SIGNAL)
+2025-08-09 13:12:29 | INFO | SELL: 83 shares of TCS.BSE at $3198.75 (SELL_SIGNAL)
+2025-08-09 13:12:29 | INFO | BUY: 209 shares of INFY.BSE at $1301.45
+2025-08-09 13:12:29 | INFO | SELL: 209 shares of INFY.BSE at $1265.65 (STOP_LOSS)
+2025-08-09 13:12:29 | INFO | BUY: 79 shares of TCS.BSE at $3399.70
+2025-08-09 13:12:29 | INFO | SELL: 79 shares of TCS.BSE at $3479.35 (SELL_SIGNAL)
+2025-08-09 13:12:29 | INFO | BUY: 81 shares of TCS.BSE at $3337.75
+2025-08-09 13:12:29 | INFO | SELL: 81 shares of TCS.BSE at $3359.95 (SELL_SIGNAL)
+2025-08-09 13:12:29 | INFO | BUY: 168 shares of INFY.BSE at $1616.95
+2025-08-09 13:12:29 | INFO | SELL: 168 shares of INFY.BSE at $1561.95 (SELL_SIGNAL)
+2025-08-09 13:12:29 | INFO | BUY: 62 shares of TCS.BSE at $4296.85
+2025-08-09 13:12:29 | INFO | SELL: 62 shares of TCS.BSE at $4232.40 (SELL_SIGNAL)
+2025-08-09 13:12:29 | INFO | BUY: 64 shares of TCS.BSE at $4168.60
+2025-08-09 13:12:29 | INFO | BUY: 114 shares of INFY.BSE at $1882.65
+2025-08-09 13:12:29 | INFO | SELL: 64 shares of TCS.BSE at $4036.65 (SELL_SIGNAL)
+2025-08-09 13:12:29 | INFO | SELL: 114 shares of INFY.BSE at $1799.80 (STOP_LOSS)
+2025-08-09 13:12:29 | INFO | BUY: 78 shares of TCS.BSE at $3380.55
+2025-08-09 13:12:29 | INFO | SELL: 78 shares of TCS.BSE at $3390.20 (SELL_SIGNAL)
+2025-08-09 13:12:29 | INFO | BUY: 186 shares of RELIANCE.BSE at $1428.20
+2025-08-09 13:12:29 | INFO | BUY: 137 shares of INFY.BSE at $1553.55
+2025-08-09 13:12:29 | INFO | SELL: 137 shares of INFY.BSE at $1513.85 (SELL_SIGNAL)
+2025-08-09 13:12:29 | INFO | SELL: 186 shares of RELIANCE.BSE at $1411.30 (SELL_SIGNAL)
+2025-08-09 13:12:30 | SUCCESS | Backtesting completed. Total return: 1223.12%
+2025-08-09 13:12:33 | INFO | Backtest plot saved to backtest_results.png
+2025-08-09 13:23:43 | INFO | Testing integrations...
+2025-08-09 13:23:43 | INFO | DataFetcher initialized successfully
+2025-08-09 13:23:43 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-09 13:23:44 | SUCCESS | Connected to Google Sheets successfully
+2025-08-09 13:23:56 | INFO | Google Sheets logger initialized successfully
+2025-08-09 13:23:56 | SUCCESS | Telegram bot initialized successfully
+2025-08-09 13:23:57 | SUCCESS | Telegram connection test passed
+2025-08-09 13:24:33 | INFO | Training ML model...
+2025-08-09 13:24:33 | INFO | DataFetcher initialized successfully
+2025-08-09 13:24:33 | INFO | Initialized random_forest model
+2025-08-09 13:24:33 | INFO | Fetching training data...
+2025-08-09 13:24:33 | INFO | Processing RELIANCE.BSE...
+2025-08-09 13:24:33 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-09 13:24:33 | SUCCESS | Successfully processed RELIANCE.BSE
+2025-08-09 13:24:33 | INFO | Processing TCS.BSE...
+2025-08-09 13:24:33 | INFO | Loading TCS.BSE daily data from cache
+2025-08-09 13:24:34 | SUCCESS | Successfully processed TCS.BSE
+2025-08-09 13:24:34 | INFO | Processing INFY.BSE...
+2025-08-09 13:24:34 | INFO | Loading INFY.BSE daily data from cache
+2025-08-09 13:24:34 | SUCCESS | Successfully processed INFY.BSE
+2025-08-09 13:24:34 | INFO | Successfully fetched data for 3 out of 3 stocks
+2025-08-09 13:24:34 | INFO | Starting model training...
+2025-08-09 13:24:34 | INFO | Preparing data for RELIANCE.BSE...
+2025-08-09 13:24:34 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 13:24:34 | INFO | Selected 28 features for ML model
+2025-08-09 13:24:34 | WARNING | Insufficient valid data for RELIANCE.BSE: 51 samples
+2025-08-09 13:24:34 | INFO | Preparing data for TCS.BSE...
+2025-08-09 13:24:34 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 13:24:34 | INFO | Selected 28 features for ML model
+2025-08-09 13:24:34 | SUCCESS | Added 5037 valid samples from TCS.BSE
+2025-08-09 13:24:34 | INFO | Preparing data for INFY.BSE...
+2025-08-09 13:24:34 | SUCCESS | Successfully calculated all technical indicators
+2025-08-09 13:24:34 | INFO | Selected 28 features for ML model
+2025-08-09 13:24:34 | SUCCESS | Added 5039 valid samples from INFY.BSE
+2025-08-09 13:24:34 | INFO | Data cleaning completed. Removed 0 problematic rows
+2025-08-09 13:24:34 | SUCCESS | Prepared dataset with 10076 samples and 28 features
+2025-08-09 13:24:34 | INFO | Training random_forest on 8060 samples...
+2025-08-09 13:25:28 | SUCCESS | Model training completed. Test accuracy: 0.5670
+2025-08-09 13:25:28 | INFO | Model saved to models/trading_model.pkl
+2025-08-09 13:25:31 | INFO | Model analysis plot saved to ml_model_analysis.png
+2025-08-10 11:02:50 | INFO | Testing integrations...
+2025-08-10 11:02:50 | INFO | DataFetcher initialized successfully
+2025-08-10 11:02:50 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-10 11:02:52 | SUCCESS | Connected to Google Sheets successfully
+2025-08-10 11:03:04 | INFO | Google Sheets logger initialized successfully
+2025-08-10 11:03:05 | SUCCESS | Telegram bot initialized successfully
+2025-08-10 11:03:05 | SUCCESS | Telegram connection test passed
+2025-08-10 11:03:25 | INFO | Running 6-month backtest...
+2025-08-10 11:03:25 | INFO | DataFetcher initialized successfully
+2025-08-10 11:03:25 | INFO | RSI MA Crossover Strategy initialized with $100,000.00 capital
+2025-08-10 11:03:26 | SUCCESS | Connected to Google Sheets successfully
+2025-08-10 11:03:39 | INFO | Google Sheets logger initialized successfully
+2025-08-10 11:03:39 | INFO | Google Sheets integration enabled for backtest logging
+2025-08-10 11:03:39 | INFO | Fetching historical data for 6-month backtest...
+2025-08-10 11:03:39 | INFO | Processing RELIANCE.BSE...
+2025-08-10 11:03:39 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-10 11:03:39 | SUCCESS | Successfully processed RELIANCE.BSE
+2025-08-10 11:03:39 | INFO | Processing TCS.BSE...
+2025-08-10 11:03:39 | INFO | Loading TCS.BSE daily data from cache
+2025-08-10 11:03:39 | SUCCESS | Successfully processed TCS.BSE
+2025-08-10 11:03:39 | INFO | Processing INFY.BSE...
+2025-08-10 11:03:39 | INFO | Loading INFY.BSE daily data from cache
+2025-08-10 11:03:39 | SUCCESS | Successfully processed INFY.BSE
+2025-08-10 11:03:39 | INFO | Successfully fetched data for 3 out of 3 stocks
+2025-08-10 11:03:39 | INFO | Backtest period: 2025-02-09 to 2025-08-08
+2025-08-10 11:03:39 | INFO | Filtered RELIANCE.BSE: 100 trading days
+2025-08-10 11:03:39 | INFO | Filtered TCS.BSE: 123 trading days
+2025-08-10 11:03:39 | INFO | Filtered INFY.BSE: 123 trading days
+2025-08-10 11:03:39 | INFO | Running strategy backtest...
+2025-08-10 11:03:39 | INFO | Starting backtesting...
+2025-08-10 11:03:39 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 11:03:39 | INFO | RELIANCE.BSE: Generated 10 buy signals and 19 sell signals out of 100 periods
+2025-08-10 11:03:39 | INFO | RELIANCE.BSE signal distribution: {0: 71, -1: 19, 1: 10}
+2025-08-10 11:03:39 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 11:03:40 | INFO | TCS.BSE: Generated 3 buy signals and 12 sell signals out of 123 periods
+2025-08-10 11:03:40 | INFO | TCS.BSE signal distribution: {0: 108, -1: 12, 1: 3}
+2025-08-10 11:03:40 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 11:03:40 | INFO | INFY.BSE: Generated 3 buy signals and 14 sell signals out of 123 periods
+2025-08-10 11:03:40 | INFO | INFY.BSE signal distribution: {0: 106, -1: 14, 1: 3}
+2025-08-10 11:03:40 | INFO | BUY: 5 shares of TCS.BSE at $3380.55
+2025-08-10 11:03:40 | INFO | SELL: 5 shares of TCS.BSE at $3390.20 (SELL_SIGNAL)
+2025-08-10 11:03:40 | INFO | BUY: 14 shares of RELIANCE.BSE at $1428.20
+2025-08-10 11:03:40 | INFO | BUY: 10 shares of INFY.BSE at $1553.55
+2025-08-10 11:03:40 | INFO | SELL: 10 shares of INFY.BSE at $1513.85 (SELL_SIGNAL)
+2025-08-10 11:03:40 | INFO | SELL: 14 shares of RELIANCE.BSE at $1411.30 (SELL_SIGNAL)
+2025-08-10 11:03:40 | SUCCESS | Backtesting completed. Total return: -0.59%
+2025-08-10 11:03:40 | INFO | Logging backtest results to Google Sheets...
+2025-08-10 11:03:41 | SUCCESS | Updated portfolio summary in Google Sheets
+2025-08-10 11:03:45 | SUCCESS | Updated performance metrics in Google Sheets
+2025-08-10 11:03:47 | INFO | Backtest plot saved to backtest_results.png
+2025-08-10 11:04:22 | INFO | Operation interrupted by user
+2025-08-10 11:06:50 | INFO | Training ML model...
+2025-08-10 11:06:50 | INFO | DataFetcher initialized successfully
+2025-08-10 11:06:50 | INFO | Initialized random_forest model
+2025-08-10 11:06:50 | INFO | Fetching training data...
+2025-08-10 11:06:50 | INFO | Processing RELIANCE.BSE...
+2025-08-10 11:06:50 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-10 11:06:50 | SUCCESS | Successfully processed RELIANCE.BSE
+2025-08-10 11:06:50 | INFO | Processing TCS.BSE...
+2025-08-10 11:06:50 | INFO | Loading TCS.BSE daily data from cache
+2025-08-10 11:06:50 | SUCCESS | Successfully processed TCS.BSE
+2025-08-10 11:06:50 | INFO | Processing INFY.BSE...
+2025-08-10 11:06:50 | INFO | Loading INFY.BSE daily data from cache
+2025-08-10 11:06:50 | SUCCESS | Successfully processed INFY.BSE
+2025-08-10 11:06:50 | INFO | Successfully fetched data for 3 out of 3 stocks
+2025-08-10 11:06:50 | INFO | Starting model training...
+2025-08-10 11:06:50 | INFO | Preparing data for RELIANCE.BSE...
+2025-08-10 11:06:50 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 11:06:50 | INFO | Selected 28 features for ML model
+2025-08-10 11:06:50 | WARNING | Insufficient valid data for RELIANCE.BSE: 51 samples
+2025-08-10 11:06:50 | INFO | Preparing data for TCS.BSE...
+2025-08-10 11:06:50 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 11:06:50 | INFO | Selected 28 features for ML model
+2025-08-10 11:06:50 | SUCCESS | Added 5037 valid samples from TCS.BSE
+2025-08-10 11:06:50 | INFO | Preparing data for INFY.BSE...
+2025-08-10 11:06:50 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 11:06:50 | INFO | Selected 28 features for ML model
+2025-08-10 11:06:50 | SUCCESS | Added 5039 valid samples from INFY.BSE
+2025-08-10 11:06:51 | INFO | Data cleaning completed. Removed 0 problematic rows
+2025-08-10 11:06:51 | SUCCESS | Prepared dataset with 10076 samples and 28 features
+2025-08-10 11:06:51 | INFO | Training random_forest on 8060 samples...
+2025-08-10 11:07:25 | SUCCESS | Model training completed. Test accuracy: 0.5670
+2025-08-10 11:07:26 | INFO | Model saved to models/trading_model.pkl
+2025-08-10 11:07:28 | INFO | Model analysis plot saved to ml_model_analysis.png
+2025-08-10 11:08:15 | INFO | Running market scan...
+2025-08-10 11:08:15 | SUCCESS | Logging system configured
+2025-08-10 11:08:15 | INFO | Initializing data fetcher...
+2025-08-10 11:08:15 | INFO | DataFetcher initialized successfully
+2025-08-10 11:08:15 | INFO | Initializing trading strategy...
+2025-08-10 11:08:15 | INFO | RSI MA Crossover Strategy initialized with $100,000.00 capital
+2025-08-10 11:08:15 | INFO | Initializing ML model...
+2025-08-10 11:08:15 | INFO | Initialized random_forest model
+2025-08-10 11:08:15 | INFO | Initializing Google Sheets logger...
+2025-08-10 11:08:16 | SUCCESS | Connected to Google Sheets successfully
+2025-08-10 11:08:27 | INFO | Google Sheets logger initialized successfully
+2025-08-10 11:08:27 | INFO | Initializing Telegram bot...
+2025-08-10 11:08:27 | SUCCESS | Telegram bot initialized successfully
+2025-08-10 11:08:27 | SUCCESS | All components initialized successfully
+2025-08-10 11:08:27 | INFO | Trading Engine initialized successfully
+2025-08-10 11:08:27 | INFO | Running single market scan...
+2025-08-10 11:08:27 | INFO | Starting market scan and analysis...
+2025-08-10 11:08:27 | INFO | Fetching market data...
+2025-08-10 11:08:27 | INFO | Processing RELIANCE.BSE...
+2025-08-10 11:08:27 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-10 11:08:27 | SUCCESS | Successfully processed RELIANCE.BSE
+2025-08-10 11:08:27 | INFO | Processing TCS.BSE...
+2025-08-10 11:08:27 | INFO | Loading TCS.BSE daily data from cache
+2025-08-10 11:08:27 | SUCCESS | Successfully processed TCS.BSE
+2025-08-10 11:08:27 | INFO | Processing INFY.BSE...
+2025-08-10 11:08:27 | INFO | Loading INFY.BSE daily data from cache
+2025-08-10 11:08:27 | SUCCESS | Successfully processed INFY.BSE
+2025-08-10 11:08:27 | INFO | Successfully fetched data for 3 out of 3 stocks
+2025-08-10 11:08:27 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 11:08:29 | INFO | Generated SELL signal for RELIANCE.BSE (Strength: STRONG)
+2025-08-10 11:08:29 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 11:08:30 | INFO | Generated SELL signal for TCS.BSE (Strength: MODERATE)
+2025-08-10 11:08:30 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 11:08:30 | INFO | Generated SELL signal for INFY.BSE (Strength: STRONG)
+2025-08-10 11:08:30 | SUCCESS | Market scan completed. Scanned 3 symbols, generated 3 signals
+2025-08-10 11:09:29 | INFO | Starting Algo-Trading Engine...
+2025-08-10 11:09:29 | SUCCESS | Logging system configured
+2025-08-10 11:09:29 | INFO | Initializing data fetcher...
+2025-08-10 11:09:29 | INFO | DataFetcher initialized successfully
+2025-08-10 11:09:29 | INFO | Initializing trading strategy...
+2025-08-10 11:09:29 | INFO | RSI MA Crossover Strategy initialized with $100,000.00 capital
+2025-08-10 11:09:29 | INFO | Initializing ML model...
+2025-08-10 11:09:29 | INFO | Initialized random_forest model
+2025-08-10 11:09:29 | INFO | Initializing Google Sheets logger...
+2025-08-10 11:09:30 | SUCCESS | Connected to Google Sheets successfully
+2025-08-10 11:09:41 | INFO | Google Sheets logger initialized successfully
+2025-08-10 11:09:41 | INFO | Initializing Telegram bot...
+2025-08-10 11:09:41 | SUCCESS | Telegram bot initialized successfully
+2025-08-10 11:09:41 | SUCCESS | All components initialized successfully
+2025-08-10 11:09:41 | INFO | Trading Engine initialized successfully
+2025-08-10 11:09:41 | INFO | Starting automated trading engine...
+2025-08-10 11:09:41 | INFO | Validating system configuration...
+2025-08-10 11:09:41 | INFO | Configuration validation completed: OK
+2025-08-10 11:09:41 | INFO | Training ML model...
+2025-08-10 11:09:41 | INFO | Model loaded from models/trading_model.pkl
+2025-08-10 11:09:41 | SUCCESS | ML model loaded from disk
+2025-08-10 11:09:41 | INFO | Automated tasks scheduled successfully
+2025-08-10 11:09:42 | SUCCESS | Automated trading engine started successfully
+2025-08-10 11:11:43 | INFO | Received shutdown signal
+2025-08-10 11:11:43 | INFO | Stopping automated trading engine...
+2025-08-10 11:11:44 | SUCCESS | Automated trading engine stopped successfully
+2025-08-10 11:17:02 | INFO | Running 6-month backtest...
+2025-08-10 11:17:02 | INFO | DataFetcher initialized successfully
+2025-08-10 11:17:02 | INFO | RSI MA Crossover Strategy initialized with $100,000.00 capital
+2025-08-10 11:17:03 | SUCCESS | Connected to Google Sheets successfully
+2025-08-10 11:17:15 | INFO | Google Sheets logger initialized successfully
+2025-08-10 11:17:15 | INFO | Google Sheets integration enabled for backtest logging
+2025-08-10 11:17:15 | INFO | Fetching historical data for 6-month backtest...
+2025-08-10 11:17:15 | INFO | Processing RELIANCE.BSE...
+2025-08-10 11:17:15 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-10 11:17:15 | SUCCESS | Successfully processed RELIANCE.BSE
+2025-08-10 11:17:15 | INFO | Processing TCS.BSE...
+2025-08-10 11:17:15 | INFO | Loading TCS.BSE daily data from cache
+2025-08-10 11:17:16 | SUCCESS | Successfully processed TCS.BSE
+2025-08-10 11:17:16 | INFO | Processing INFY.BSE...
+2025-08-10 11:17:16 | INFO | Loading INFY.BSE daily data from cache
+2025-08-10 11:17:16 | SUCCESS | Successfully processed INFY.BSE
+2025-08-10 11:17:16 | INFO | Successfully fetched data for 3 out of 3 stocks
+2025-08-10 11:17:16 | INFO | Backtest period: 2025-02-09 to 2025-08-08
+2025-08-10 11:17:16 | INFO | Filtered RELIANCE.BSE: 100 trading days
+2025-08-10 11:17:16 | INFO | Filtered TCS.BSE: 123 trading days
+2025-08-10 11:17:16 | INFO | Filtered INFY.BSE: 123 trading days
+2025-08-10 11:17:16 | INFO | Running strategy backtest...
+2025-08-10 11:17:16 | INFO | Starting backtesting...
+2025-08-10 11:17:16 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 11:17:16 | INFO | RELIANCE.BSE: Generated 10 buy signals and 19 sell signals out of 100 periods
+2025-08-10 11:17:16 | INFO | RELIANCE.BSE signal distribution: {0: 71, -1: 19, 1: 10}
+2025-08-10 11:17:16 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 11:17:16 | INFO | TCS.BSE: Generated 3 buy signals and 12 sell signals out of 123 periods
+2025-08-10 11:17:16 | INFO | TCS.BSE signal distribution: {0: 108, -1: 12, 1: 3}
+2025-08-10 11:17:16 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 11:17:16 | INFO | INFY.BSE: Generated 3 buy signals and 14 sell signals out of 123 periods
+2025-08-10 11:17:16 | INFO | INFY.BSE signal distribution: {0: 106, -1: 14, 1: 3}
+2025-08-10 11:17:16 | INFO | BUY: 5 shares of TCS.BSE at $3380.55
+2025-08-10 11:17:16 | INFO | SELL: 5 shares of TCS.BSE at $3390.20 (SELL_SIGNAL)
+2025-08-10 11:17:16 | INFO | BUY: 14 shares of RELIANCE.BSE at $1428.20
+2025-08-10 11:17:16 | INFO | BUY: 10 shares of INFY.BSE at $1553.55
+2025-08-10 11:17:16 | INFO | SELL: 10 shares of INFY.BSE at $1513.85 (SELL_SIGNAL)
+2025-08-10 11:17:16 | INFO | SELL: 14 shares of RELIANCE.BSE at $1411.30 (SELL_SIGNAL)
+2025-08-10 11:17:16 | SUCCESS | Backtesting completed. Total return: -0.59%
+2025-08-10 11:17:16 | INFO | Logging backtest results to Google Sheets...
+2025-08-10 11:17:17 | SUCCESS | Updated portfolio summary in Google Sheets
+2025-08-10 11:17:21 | SUCCESS | Updated performance metrics in Google Sheets
+2025-08-10 11:17:23 | INFO | Backtest plot saved to backtest_results.png
+2025-08-10 11:18:34 | INFO | Running 6-month backtest...
+2025-08-10 11:18:34 | INFO | DataFetcher initialized successfully
+2025-08-10 11:18:34 | INFO | RSI MA Crossover Strategy initialized with $100,000.00 capital
+2025-08-10 11:18:35 | SUCCESS | Connected to Google Sheets successfully
+2025-08-10 11:18:47 | INFO | Google Sheets logger initialized successfully
+2025-08-10 11:18:47 | INFO | Google Sheets integration enabled for backtest logging
+2025-08-10 11:18:47 | INFO | Fetching historical data for 6-month backtest...
+2025-08-10 11:18:47 | INFO | Processing RELIANCE.BSE...
+2025-08-10 11:18:47 | INFO | Fetching daily data for RELIANCE.BSE
+2025-08-10 11:18:50 | SUCCESS | Successfully fetched 5075 days of data for RELIANCE.BSE
+2025-08-10 11:18:50 | SUCCESS | Successfully processed RELIANCE.BSE
+2025-08-10 11:18:50 | INFO | Processing TCS.BSE...
+2025-08-10 11:18:50 | INFO | Rate limiting: sleeping for 9.22 seconds
+2025-08-10 11:18:59 | INFO | Fetching daily data for TCS.BSE
+2025-08-10 11:19:02 | SUCCESS | Successfully fetched 5093 days of data for TCS.BSE
+2025-08-10 11:19:02 | SUCCESS | Successfully processed TCS.BSE
+2025-08-10 11:19:02 | INFO | Processing INFY.BSE...
+2025-08-10 11:19:02 | INFO | Rate limiting: sleeping for 9.22 seconds
+2025-08-10 11:19:11 | INFO | Fetching daily data for INFY.BSE
+2025-08-10 11:19:13 | SUCCESS | Successfully fetched 5095 days of data for INFY.BSE
+2025-08-10 11:19:13 | SUCCESS | Successfully processed INFY.BSE
+2025-08-10 11:19:13 | INFO | Successfully fetched data for 3 out of 3 stocks
+2025-08-10 11:19:13 | INFO | Backtest period: 2025-02-09 to 2025-08-08
+2025-08-10 11:19:13 | INFO | Filtered RELIANCE.BSE: 123 trading days
+2025-08-10 11:19:13 | INFO | Filtered TCS.BSE: 123 trading days
+2025-08-10 11:19:13 | INFO | Filtered INFY.BSE: 123 trading days
+2025-08-10 11:19:13 | INFO | Running strategy backtest...
+2025-08-10 11:19:13 | INFO | Starting backtesting...
+2025-08-10 11:19:13 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 11:19:13 | INFO | RELIANCE.BSE: Generated 10 buy signals and 22 sell signals out of 123 periods
+2025-08-10 11:19:13 | INFO | RELIANCE.BSE signal distribution: {0: 91, -1: 22, 1: 10}
+2025-08-10 11:19:13 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 11:19:13 | INFO | TCS.BSE: Generated 3 buy signals and 12 sell signals out of 123 periods
+2025-08-10 11:19:13 | INFO | TCS.BSE signal distribution: {0: 108, -1: 12, 1: 3}
+2025-08-10 11:19:13 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 11:19:13 | INFO | INFY.BSE: Generated 3 buy signals and 14 sell signals out of 123 periods
+2025-08-10 11:19:13 | INFO | INFY.BSE signal distribution: {0: 106, -1: 14, 1: 3}
+2025-08-10 11:19:13 | INFO | BUY: 5 shares of TCS.BSE at $3380.55
+2025-08-10 11:19:14 | INFO | SELL: 5 shares of TCS.BSE at $3390.20 (SELL_SIGNAL)
+2025-08-10 11:19:14 | INFO | BUY: 14 shares of RELIANCE.BSE at $1428.20
+2025-08-10 11:19:14 | INFO | BUY: 10 shares of INFY.BSE at $1553.55
+2025-08-10 11:19:14 | INFO | SELL: 10 shares of INFY.BSE at $1513.85 (SELL_SIGNAL)
+2025-08-10 11:19:14 | INFO | SELL: 14 shares of RELIANCE.BSE at $1411.30 (SELL_SIGNAL)
+2025-08-10 11:19:14 | SUCCESS | Backtesting completed. Total return: -0.59%
+2025-08-10 11:19:14 | INFO | Logging backtest results to Google Sheets...
+2025-08-10 11:19:14 | SUCCESS | Updated portfolio summary in Google Sheets
+2025-08-10 11:19:18 | SUCCESS | Updated performance metrics in Google Sheets
+2025-08-10 11:19:19 | INFO | Backtest plot saved to backtest_results.png
+2025-08-10 11:20:09 | INFO | Testing integrations...
+2025-08-10 11:20:09 | INFO | DataFetcher initialized successfully
+2025-08-10 11:20:09 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-10 11:20:10 | SUCCESS | Connected to Google Sheets successfully
+2025-08-10 11:20:22 | INFO | Google Sheets logger initialized successfully
+2025-08-10 11:20:22 | SUCCESS | Telegram bot initialized successfully
+2025-08-10 11:20:23 | SUCCESS | Telegram connection test passed
+2025-08-10 11:20:44 | INFO | Running market scan...
+2025-08-10 11:20:44 | SUCCESS | Logging system configured
+2025-08-10 11:20:44 | INFO | Initializing data fetcher...
+2025-08-10 11:20:44 | INFO | DataFetcher initialized successfully
+2025-08-10 11:20:44 | INFO | Initializing trading strategy...
+2025-08-10 11:20:44 | INFO | RSI MA Crossover Strategy initialized with $100,000.00 capital
+2025-08-10 11:20:44 | INFO | Initializing ML model...
+2025-08-10 11:20:44 | INFO | Initialized random_forest model
+2025-08-10 11:20:44 | INFO | Initializing Google Sheets logger...
+2025-08-10 11:20:45 | SUCCESS | Connected to Google Sheets successfully
+2025-08-10 11:20:57 | INFO | Google Sheets logger initialized successfully
+2025-08-10 11:20:57 | INFO | Initializing Telegram bot...
+2025-08-10 11:20:57 | SUCCESS | Telegram bot initialized successfully
+2025-08-10 11:20:57 | SUCCESS | All components initialized successfully
+2025-08-10 11:20:57 | INFO | Trading Engine initialized successfully
+2025-08-10 11:20:57 | INFO | Running single market scan...
+2025-08-10 11:20:57 | INFO | Starting market scan and analysis...
+2025-08-10 11:20:57 | INFO | Fetching market data...
+2025-08-10 11:20:57 | INFO | Processing RELIANCE.BSE...
+2025-08-10 11:20:57 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-10 11:20:57 | SUCCESS | Successfully processed RELIANCE.BSE
+2025-08-10 11:20:57 | INFO | Processing TCS.BSE...
+2025-08-10 11:20:58 | INFO | Loading TCS.BSE daily data from cache
+2025-08-10 11:20:58 | SUCCESS | Successfully processed TCS.BSE
+2025-08-10 11:20:58 | INFO | Processing INFY.BSE...
+2025-08-10 11:20:58 | INFO | Loading INFY.BSE daily data from cache
+2025-08-10 11:20:58 | SUCCESS | Successfully processed INFY.BSE
+2025-08-10 11:20:58 | INFO | Successfully fetched data for 3 out of 3 stocks
+2025-08-10 11:20:58 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 11:20:59 | INFO | Generated SELL signal for RELIANCE.BSE (Strength: STRONG)
+2025-08-10 11:20:59 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 11:21:00 | INFO | Generated SELL signal for TCS.BSE (Strength: MODERATE)
+2025-08-10 11:21:00 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 11:21:01 | INFO | Generated SELL signal for INFY.BSE (Strength: STRONG)
+2025-08-10 11:21:01 | SUCCESS | Market scan completed. Scanned 3 symbols, generated 3 signals
+2025-08-10 12:31:09 | INFO | Testing integrations...
+2025-08-10 12:31:09 | INFO | DataFetcher initialized successfully
+2025-08-10 12:31:09 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-10 12:31:11 | SUCCESS | Connected to Google Sheets successfully
+2025-08-10 12:31:21 | INFO | Google Sheets logger initialized successfully
+2025-08-10 12:31:21 | SUCCESS | Telegram bot initialized successfully
+2025-08-10 12:31:22 | SUCCESS | Telegram connection test passed
+2025-08-10 12:31:39 | INFO | Running 6-month backtest...
+2025-08-10 12:31:39 | INFO | DataFetcher initialized successfully
+2025-08-10 12:31:39 | INFO | RSI MA Crossover Strategy initialized with $100,000.00 capital
+2025-08-10 12:31:40 | SUCCESS | Connected to Google Sheets successfully
+2025-08-10 12:31:50 | INFO | Google Sheets logger initialized successfully
+2025-08-10 12:31:50 | INFO | Google Sheets integration enabled for backtest logging
+2025-08-10 12:31:50 | INFO | Fetching historical data for 6-month backtest...
+2025-08-10 12:31:50 | INFO | Processing RELIANCE.BSE...
+2025-08-10 12:31:50 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-10 12:31:50 | SUCCESS | Successfully processed RELIANCE.BSE
+2025-08-10 12:31:50 | INFO | Processing TCS.BSE...
+2025-08-10 12:31:50 | INFO | Loading TCS.BSE daily data from cache
+2025-08-10 12:31:50 | SUCCESS | Successfully processed TCS.BSE
+2025-08-10 12:31:50 | INFO | Processing INFY.BSE...
+2025-08-10 12:31:50 | INFO | Loading INFY.BSE daily data from cache
+2025-08-10 12:31:50 | SUCCESS | Successfully processed INFY.BSE
+2025-08-10 12:31:50 | INFO | Successfully fetched data for 3 out of 3 stocks
+2025-08-10 12:31:51 | INFO | Backtest period: 2025-02-09 to 2025-08-08
+2025-08-10 12:31:51 | INFO | Filtered RELIANCE.BSE: 123 trading days
+2025-08-10 12:31:51 | INFO | Filtered TCS.BSE: 123 trading days
+2025-08-10 12:31:51 | INFO | Filtered INFY.BSE: 123 trading days
+2025-08-10 12:31:51 | INFO | Running strategy backtest...
+2025-08-10 12:31:51 | INFO | Starting backtesting...
+2025-08-10 12:31:51 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 12:31:51 | INFO | RELIANCE.BSE: Generated 10 buy signals and 22 sell signals out of 123 periods
+2025-08-10 12:31:51 | INFO | RELIANCE.BSE signal distribution: {0: 91, -1: 22, 1: 10}
+2025-08-10 12:31:51 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 12:31:51 | INFO | TCS.BSE: Generated 3 buy signals and 12 sell signals out of 123 periods
+2025-08-10 12:31:51 | INFO | TCS.BSE signal distribution: {0: 108, -1: 12, 1: 3}
+2025-08-10 12:31:51 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 12:31:51 | INFO | INFY.BSE: Generated 3 buy signals and 14 sell signals out of 123 periods
+2025-08-10 12:31:51 | INFO | INFY.BSE signal distribution: {0: 106, -1: 14, 1: 3}
+2025-08-10 12:31:51 | INFO | BUY: 5 shares of TCS.BSE at $3380.55
+2025-08-10 12:31:51 | INFO | SELL: 5 shares of TCS.BSE at $3390.20 (SELL_SIGNAL)
+2025-08-10 12:31:51 | INFO | BUY: 14 shares of RELIANCE.BSE at $1428.20
+2025-08-10 12:31:51 | INFO | BUY: 10 shares of INFY.BSE at $1553.55
+2025-08-10 12:31:51 | INFO | SELL: 10 shares of INFY.BSE at $1513.85 (SELL_SIGNAL)
+2025-08-10 12:31:51 | INFO | SELL: 14 shares of RELIANCE.BSE at $1411.30 (SELL_SIGNAL)
+2025-08-10 12:31:51 | SUCCESS | Backtesting completed. Total return: -0.59%
+2025-08-10 12:31:51 | INFO | Logging backtest results to Google Sheets...
+2025-08-10 12:31:51 | SUCCESS | Updated portfolio summary in Google Sheets
+2025-08-10 12:31:55 | SUCCESS | Updated performance metrics in Google Sheets
+2025-08-10 12:31:56 | INFO | Backtest plot saved to backtest_results.png
+2025-08-10 12:32:24 | INFO | Training ML model...
+2025-08-10 12:32:24 | INFO | DataFetcher initialized successfully
+2025-08-10 12:32:24 | INFO | Initialized random_forest model
+2025-08-10 12:32:24 | INFO | Fetching training data...
+2025-08-10 12:32:24 | INFO | Processing RELIANCE.BSE...
+2025-08-10 12:32:24 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-10 12:32:24 | SUCCESS | Successfully processed RELIANCE.BSE
+2025-08-10 12:32:24 | INFO | Processing TCS.BSE...
+2025-08-10 12:32:24 | INFO | Loading TCS.BSE daily data from cache
+2025-08-10 12:32:24 | SUCCESS | Successfully processed TCS.BSE
+2025-08-10 12:32:24 | INFO | Processing INFY.BSE...
+2025-08-10 12:32:24 | INFO | Loading INFY.BSE daily data from cache
+2025-08-10 12:32:24 | SUCCESS | Successfully processed INFY.BSE
+2025-08-10 12:32:24 | INFO | Successfully fetched data for 3 out of 3 stocks
+2025-08-10 12:32:24 | INFO | Starting model training...
+2025-08-10 12:32:24 | INFO | Preparing data for RELIANCE.BSE...
+2025-08-10 12:32:24 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 12:32:24 | INFO | Selected 28 features for ML model
+2025-08-10 12:32:24 | SUCCESS | Added 5026 valid samples from RELIANCE.BSE
+2025-08-10 12:32:24 | INFO | Preparing data for TCS.BSE...
+2025-08-10 12:32:25 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 12:32:25 | INFO | Selected 28 features for ML model
+2025-08-10 12:32:25 | SUCCESS | Added 5037 valid samples from TCS.BSE
+2025-08-10 12:32:25 | INFO | Preparing data for INFY.BSE...
+2025-08-10 12:32:25 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 12:32:25 | INFO | Selected 28 features for ML model
+2025-08-10 12:32:25 | SUCCESS | Added 5039 valid samples from INFY.BSE
+2025-08-10 12:32:25 | INFO | Data cleaning completed. Removed 0 problematic rows
+2025-08-10 12:32:25 | SUCCESS | Prepared dataset with 15102 samples and 28 features
+2025-08-10 12:32:25 | INFO | Training random_forest on 12081 samples...
+2025-08-10 12:33:18 | SUCCESS | Model training completed. Test accuracy: 0.5604
+2025-08-10 12:33:18 | INFO | Model saved to models/trading_model.pkl
+2025-08-10 12:33:19 | INFO | Model analysis plot saved to ml_model_analysis.png
+2025-08-10 12:33:50 | INFO | Running market scan...
+2025-08-10 12:33:50 | SUCCESS | Logging system configured
+2025-08-10 12:33:50 | INFO | Initializing data fetcher...
+2025-08-10 12:33:50 | INFO | DataFetcher initialized successfully
+2025-08-10 12:33:50 | INFO | Initializing trading strategy...
+2025-08-10 12:33:50 | INFO | RSI MA Crossover Strategy initialized with $100,000.00 capital
+2025-08-10 12:33:50 | INFO | Initializing ML model...
+2025-08-10 12:33:50 | INFO | Initialized random_forest model
+2025-08-10 12:33:50 | INFO | Initializing Google Sheets logger...
+2025-08-10 12:33:51 | SUCCESS | Connected to Google Sheets successfully
+2025-08-10 12:34:02 | INFO | Google Sheets logger initialized successfully
+2025-08-10 12:34:02 | INFO | Initializing Telegram bot...
+2025-08-10 12:34:02 | SUCCESS | Telegram bot initialized successfully
+2025-08-10 12:34:02 | SUCCESS | All components initialized successfully
+2025-08-10 12:34:02 | INFO | Trading Engine initialized successfully
+2025-08-10 12:34:02 | INFO | Running single market scan...
+2025-08-10 12:34:02 | INFO | Starting market scan and analysis...
+2025-08-10 12:34:02 | INFO | Fetching market data...
+2025-08-10 12:34:02 | INFO | Processing RELIANCE.BSE...
+2025-08-10 12:34:02 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-10 12:34:02 | SUCCESS | Successfully processed RELIANCE.BSE
+2025-08-10 12:34:02 | INFO | Processing TCS.BSE...
+2025-08-10 12:34:02 | INFO | Loading TCS.BSE daily data from cache
+2025-08-10 12:34:02 | SUCCESS | Successfully processed TCS.BSE
+2025-08-10 12:34:02 | INFO | Processing INFY.BSE...
+2025-08-10 12:34:02 | INFO | Loading INFY.BSE daily data from cache
+2025-08-10 12:34:02 | SUCCESS | Successfully processed INFY.BSE
+2025-08-10 12:34:02 | INFO | Successfully fetched data for 3 out of 3 stocks
+2025-08-10 12:34:02 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 12:34:03 | INFO | Generated SELL signal for RELIANCE.BSE (Strength: STRONG)
+2025-08-10 12:34:03 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 12:34:04 | INFO | Generated SELL signal for TCS.BSE (Strength: MODERATE)
+2025-08-10 12:34:04 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 12:34:05 | INFO | Generated SELL signal for INFY.BSE (Strength: STRONG)
+2025-08-10 12:34:05 | SUCCESS | Market scan completed. Scanned 3 symbols, generated 3 signals
+2025-08-10 12:34:44 | INFO | Starting Algo-Trading Engine...
+2025-08-10 12:34:44 | SUCCESS | Logging system configured
+2025-08-10 12:34:44 | INFO | Initializing data fetcher...
+2025-08-10 12:34:44 | INFO | DataFetcher initialized successfully
+2025-08-10 12:34:44 | INFO | Initializing trading strategy...
+2025-08-10 12:34:44 | INFO | RSI MA Crossover Strategy initialized with $100,000.00 capital
+2025-08-10 12:34:44 | INFO | Initializing ML model...
+2025-08-10 12:34:44 | INFO | Initialized random_forest model
+2025-08-10 12:34:44 | INFO | Initializing Google Sheets logger...
+2025-08-10 12:34:45 | SUCCESS | Connected to Google Sheets successfully
+2025-08-10 12:34:56 | INFO | Google Sheets logger initialized successfully
+2025-08-10 12:34:56 | INFO | Initializing Telegram bot...
+2025-08-10 12:34:56 | SUCCESS | Telegram bot initialized successfully
+2025-08-10 12:34:56 | SUCCESS | All components initialized successfully
+2025-08-10 12:34:56 | INFO | Trading Engine initialized successfully
+2025-08-10 12:34:56 | INFO | Starting automated trading engine...
+2025-08-10 12:34:56 | INFO | Validating system configuration...
+2025-08-10 12:34:56 | INFO | Configuration validation completed: OK
+2025-08-10 12:34:56 | INFO | Training ML model...
+2025-08-10 12:34:56 | INFO | Model loaded from models/trading_model.pkl
+2025-08-10 12:34:56 | SUCCESS | ML model loaded from disk
+2025-08-10 12:34:56 | INFO | Automated tasks scheduled successfully
+2025-08-10 12:34:57 | SUCCESS | Automated trading engine started successfully
+2025-08-10 12:36:49 | INFO | Received shutdown signal
+2025-08-10 12:36:49 | INFO | Stopping automated trading engine...
+2025-08-10 12:36:50 | SUCCESS | Automated trading engine stopped successfully
+2025-08-10 12:37:13 | INFO | Running market scan...
+2025-08-10 12:37:13 | SUCCESS | Logging system configured
+2025-08-10 12:37:13 | INFO | Initializing data fetcher...
+2025-08-10 12:37:13 | INFO | DataFetcher initialized successfully
+2025-08-10 12:37:13 | INFO | Initializing trading strategy...
+2025-08-10 12:37:13 | INFO | RSI MA Crossover Strategy initialized with $100,000.00 capital
+2025-08-10 12:37:13 | INFO | Initializing ML model...
+2025-08-10 12:37:13 | INFO | Initialized random_forest model
+2025-08-10 12:37:13 | INFO | Initializing Google Sheets logger...
+2025-08-10 12:37:13 | SUCCESS | Connected to Google Sheets successfully
+2025-08-10 12:37:25 | INFO | Google Sheets logger initialized successfully
+2025-08-10 12:37:25 | INFO | Initializing Telegram bot...
+2025-08-10 12:37:25 | SUCCESS | Telegram bot initialized successfully
+2025-08-10 12:37:25 | SUCCESS | All components initialized successfully
+2025-08-10 12:37:25 | INFO | Trading Engine initialized successfully
+2025-08-10 12:37:25 | INFO | Running single market scan...
+2025-08-10 12:37:25 | INFO | Starting market scan and analysis...
+2025-08-10 12:37:25 | INFO | Fetching market data...
+2025-08-10 12:37:25 | INFO | Processing RELIANCE.BSE...
+2025-08-10 12:37:25 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-10 12:37:25 | SUCCESS | Successfully processed RELIANCE.BSE
+2025-08-10 12:37:25 | INFO | Processing TCS.BSE...
+2025-08-10 12:37:25 | INFO | Loading TCS.BSE daily data from cache
+2025-08-10 12:37:25 | SUCCESS | Successfully processed TCS.BSE
+2025-08-10 12:37:25 | INFO | Processing INFY.BSE...
+2025-08-10 12:37:25 | INFO | Loading INFY.BSE daily data from cache
+2025-08-10 12:37:25 | SUCCESS | Successfully processed INFY.BSE
+2025-08-10 12:37:25 | INFO | Successfully fetched data for 3 out of 3 stocks
+2025-08-10 12:37:25 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 12:37:27 | INFO | Generated SELL signal for RELIANCE.BSE (Strength: STRONG)
+2025-08-10 12:37:27 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 12:37:28 | INFO | Generated SELL signal for TCS.BSE (Strength: MODERATE)
+2025-08-10 12:37:28 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 12:37:28 | INFO | Generated SELL signal for INFY.BSE (Strength: STRONG)
+2025-08-10 12:37:28 | SUCCESS | Market scan completed. Scanned 3 symbols, generated 3 signals
+2025-08-10 12:55:03 | INFO | Testing integrations...
+2025-08-10 12:55:03 | INFO | DataFetcher initialized successfully
+2025-08-10 12:55:03 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-10 12:55:05 | SUCCESS | Connected to Google Sheets successfully
+2025-08-10 12:55:07 | SUCCESS | Created new worksheet: Trade_Log
+2025-08-10 12:55:17 | INFO | Google Sheets logger initialized successfully
+2025-08-10 12:55:17 | SUCCESS | Telegram bot initialized successfully
+2025-08-10 12:55:18 | SUCCESS | Telegram connection test passed
+2025-08-10 12:55:32 | INFO | Running 6-month backtest...
+2025-08-10 12:55:32 | INFO | DataFetcher initialized successfully
+2025-08-10 12:55:32 | INFO | RSI MA Crossover Strategy initialized with $100,000.00 capital
+2025-08-10 12:55:33 | SUCCESS | Connected to Google Sheets successfully
+2025-08-10 12:55:44 | INFO | Google Sheets logger initialized successfully
+2025-08-10 12:55:44 | INFO | Google Sheets integration enabled for backtest logging
+2025-08-10 12:55:44 | INFO | Fetching historical data for 6-month backtest...
+2025-08-10 12:55:44 | INFO | Processing RELIANCE.BSE...
+2025-08-10 12:55:44 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-10 12:55:44 | SUCCESS | Successfully processed RELIANCE.BSE
+2025-08-10 12:55:44 | INFO | Processing TCS.BSE...
+2025-08-10 12:55:44 | INFO | Loading TCS.BSE daily data from cache
+2025-08-10 12:55:44 | SUCCESS | Successfully processed TCS.BSE
+2025-08-10 12:55:44 | INFO | Processing INFY.BSE...
+2025-08-10 12:55:44 | INFO | Loading INFY.BSE daily data from cache
+2025-08-10 12:55:44 | SUCCESS | Successfully processed INFY.BSE
+2025-08-10 12:55:44 | INFO | Successfully fetched data for 3 out of 3 stocks
+2025-08-10 12:55:44 | INFO | Backtest period: 2025-02-09 to 2025-08-08
+2025-08-10 12:55:44 | INFO | Filtered RELIANCE.BSE: 123 trading days
+2025-08-10 12:55:44 | INFO | Filtered TCS.BSE: 123 trading days
+2025-08-10 12:55:44 | INFO | Filtered INFY.BSE: 123 trading days
+2025-08-10 12:55:44 | INFO | Running strategy backtest...
+2025-08-10 12:55:44 | INFO | Starting backtesting...
+2025-08-10 12:55:44 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 12:55:44 | INFO | RELIANCE.BSE: Generated 10 buy signals and 22 sell signals out of 123 periods
+2025-08-10 12:55:44 | INFO | RELIANCE.BSE signal distribution: {0: 91, -1: 22, 1: 10}
+2025-08-10 12:55:45 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 12:55:45 | INFO | TCS.BSE: Generated 3 buy signals and 12 sell signals out of 123 periods
+2025-08-10 12:55:45 | INFO | TCS.BSE signal distribution: {0: 108, -1: 12, 1: 3}
+2025-08-10 12:55:45 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 12:55:45 | INFO | INFY.BSE: Generated 3 buy signals and 14 sell signals out of 123 periods
+2025-08-10 12:55:45 | INFO | INFY.BSE signal distribution: {0: 106, -1: 14, 1: 3}
+2025-08-10 12:55:45 | INFO | BUY: 5 shares of TCS.BSE at $3380.55
+2025-08-10 12:55:45 | INFO | SELL: 5 shares of TCS.BSE at $3390.20 (SELL_SIGNAL)
+2025-08-10 12:55:45 | INFO | BUY: 14 shares of RELIANCE.BSE at $1428.20
+2025-08-10 12:55:45 | INFO | BUY: 10 shares of INFY.BSE at $1553.55
+2025-08-10 12:55:45 | INFO | SELL: 10 shares of INFY.BSE at $1513.85 (SELL_SIGNAL)
+2025-08-10 12:55:45 | INFO | SELL: 14 shares of RELIANCE.BSE at $1411.30 (SELL_SIGNAL)
+2025-08-10 12:55:45 | SUCCESS | Backtesting completed. Total return: -0.59%
+2025-08-10 12:55:45 | INFO | Logging backtest results to Google Sheets...
+2025-08-10 12:55:45 | SUCCESS | Updated portfolio summary in Google Sheets
+2025-08-10 12:55:49 | SUCCESS | Updated performance metrics in Google Sheets
+2025-08-10 12:55:52 | INFO | Backtest plot saved to backtest_results.png
+2025-08-10 12:56:18 | INFO | Training ML model...
+2025-08-10 12:56:18 | INFO | DataFetcher initialized successfully
+2025-08-10 12:56:18 | INFO | Initialized random_forest model
+2025-08-10 12:56:18 | INFO | Fetching training data...
+2025-08-10 12:56:18 | INFO | Processing RELIANCE.BSE...
+2025-08-10 12:56:18 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-10 12:56:18 | SUCCESS | Successfully processed RELIANCE.BSE
+2025-08-10 12:56:18 | INFO | Processing TCS.BSE...
+2025-08-10 12:56:18 | INFO | Loading TCS.BSE daily data from cache
+2025-08-10 12:56:18 | SUCCESS | Successfully processed TCS.BSE
+2025-08-10 12:56:18 | INFO | Processing INFY.BSE...
+2025-08-10 12:56:18 | INFO | Loading INFY.BSE daily data from cache
+2025-08-10 12:56:18 | SUCCESS | Successfully processed INFY.BSE
+2025-08-10 12:56:18 | INFO | Successfully fetched data for 3 out of 3 stocks
+2025-08-10 12:56:18 | INFO | Starting model training...
+2025-08-10 12:56:18 | INFO | Preparing data for RELIANCE.BSE...
+2025-08-10 12:56:18 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 12:56:18 | INFO | Selected 28 features for ML model
+2025-08-10 12:56:18 | SUCCESS | Added 5026 valid samples from RELIANCE.BSE
+2025-08-10 12:56:18 | INFO | Preparing data for TCS.BSE...
+2025-08-10 12:56:18 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 12:56:18 | INFO | Selected 28 features for ML model
+2025-08-10 12:56:18 | SUCCESS | Added 5037 valid samples from TCS.BSE
+2025-08-10 12:56:18 | INFO | Preparing data for INFY.BSE...
+2025-08-10 12:56:18 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 12:56:18 | INFO | Selected 28 features for ML model
+2025-08-10 12:56:18 | SUCCESS | Added 5039 valid samples from INFY.BSE
+2025-08-10 12:56:18 | INFO | Data cleaning completed. Removed 0 problematic rows
+2025-08-10 12:56:18 | SUCCESS | Prepared dataset with 15102 samples and 28 features
+2025-08-10 12:56:18 | INFO | Training random_forest on 12081 samples...
+2025-08-10 12:57:31 | SUCCESS | Model training completed. Test accuracy: 0.5604
+2025-08-10 12:57:31 | INFO | Model saved to models/trading_model.pkl
+2025-08-10 12:57:34 | INFO | Model analysis plot saved to ml_model_analysis.png
+2025-08-10 12:58:02 | INFO | Running market scan...
+2025-08-10 12:58:02 | SUCCESS | Logging system configured
+2025-08-10 12:58:02 | INFO | Initializing data fetcher...
+2025-08-10 12:58:02 | INFO | DataFetcher initialized successfully
+2025-08-10 12:58:02 | INFO | Initializing trading strategy...
+2025-08-10 12:58:02 | INFO | RSI MA Crossover Strategy initialized with $100,000.00 capital
+2025-08-10 12:58:02 | INFO | Initializing ML model...
+2025-08-10 12:58:02 | INFO | Initialized random_forest model
+2025-08-10 12:58:02 | INFO | Initializing Google Sheets logger...
+2025-08-10 12:58:03 | SUCCESS | Connected to Google Sheets successfully
+2025-08-10 12:58:15 | INFO | Google Sheets logger initialized successfully
+2025-08-10 12:58:15 | INFO | Initializing Telegram bot...
+2025-08-10 12:58:15 | SUCCESS | Telegram bot initialized successfully
+2025-08-10 12:58:15 | SUCCESS | All components initialized successfully
+2025-08-10 12:58:15 | INFO | Trading Engine initialized successfully
+2025-08-10 12:58:15 | INFO | Running single market scan...
+2025-08-10 12:58:15 | INFO | Starting market scan and analysis...
+2025-08-10 12:58:15 | INFO | Fetching market data...
+2025-08-10 12:58:15 | INFO | Processing RELIANCE.BSE...
+2025-08-10 12:58:16 | INFO | Loading RELIANCE.BSE daily data from cache
+2025-08-10 12:58:16 | SUCCESS | Successfully processed RELIANCE.BSE
+2025-08-10 12:58:16 | INFO | Processing TCS.BSE...
+2025-08-10 12:58:16 | INFO | Loading TCS.BSE daily data from cache
+2025-08-10 12:58:16 | SUCCESS | Successfully processed TCS.BSE
+2025-08-10 12:58:16 | INFO | Processing INFY.BSE...
+2025-08-10 12:58:16 | INFO | Loading INFY.BSE daily data from cache
+2025-08-10 12:58:16 | SUCCESS | Successfully processed INFY.BSE
+2025-08-10 12:58:16 | INFO | Successfully fetched data for 3 out of 3 stocks
+2025-08-10 12:58:16 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 12:58:17 | INFO | Generated SELL signal for RELIANCE.BSE (Strength: STRONG)
+2025-08-10 12:58:17 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 12:58:18 | INFO | Generated SELL signal for TCS.BSE (Strength: MODERATE)
+2025-08-10 12:58:18 | SUCCESS | Successfully calculated all technical indicators
+2025-08-10 12:58:19 | INFO | Generated SELL signal for INFY.BSE (Strength: STRONG)
+2025-08-10 12:58:19 | SUCCESS | Market scan completed. Scanned 3 symbols, generated 3 signals

@@ -1,0 +1,14 @@
+[
+  {
+    "timestamp": "2025-08-10 04:45:00.395136",
+    "data": {
+      "date": "2025-08-10 04:45:00.395112",
+      "total_capital": 101762.5,
+      "total_pnl": 1762.5,
+      "cumulative_return": 0.017625,
+      "active_positions": 0,
+      "max_drawdown": -0.015,
+      "win_rate": 0.5
+    }
+  }
+]

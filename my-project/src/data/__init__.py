@@ -1,0 +1,1 @@
+# Data package for stock data ingestion

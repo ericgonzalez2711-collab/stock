@@ -1,0 +1,15 @@
+[
+  {
+    "timestamp": "2025-08-10 04:45:00.395162",
+    "data": {
+      "total_return": 0.017625,
+      "annualized_return": 0.105,
+      "sharpe_ratio": 0.85,
+      "max_drawdown": -0.015,
+      "win_rate": 0.5,
+      "total_trades": 2,
+      "winning_trades": 1,
+      "losing_trades": 1
+    }
+  }
+]
