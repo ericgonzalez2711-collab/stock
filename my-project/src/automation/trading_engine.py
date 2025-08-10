@@ -17,7 +17,7 @@ import psutil
 from ..data.data_fetcher import DataFetcher
 from ..data.technical_indicators import TechnicalIndicators
 from ..strategies.rsi_ma_strategy import RSIMACrossoverStrategy, Trade
-from ..strategies.improved_rsi_ma_strategy import ImprovedRSIMACrossoverStrategy
+from ..strategies.simple_improved_strategy import SimpleImprovedStrategy
 from ..ml.predictive_model import StockPredictiveModel
 from ..utils.sheets_logger import GoogleSheetsLogger
 from ..utils.telegram_alerts import TelegramAlertsBot
@@ -89,8 +89,8 @@ class TradingEngine:
             
             # Trading strategy
             if self.use_improved_strategy:
-                logger.info("Initializing improved trading strategy...")
-                self.strategy = ImprovedRSIMACrossoverStrategy(
+                logger.info("Initializing simple improved trading strategy...")
+                self.strategy = SimpleImprovedStrategy(
                     initial_capital=Config.INITIAL_CAPITAL,
                     risk_per_trade=Config.RISK_PER_TRADE * 0.75  # Reduced risk for improved strategy
                 )
