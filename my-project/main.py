@@ -397,6 +397,33 @@ def show_config():
     print("="*50)
 
 
+def compare_strategies():
+    """Compare original and improved trading strategies."""
+    if not CORE_AVAILABLE:
+        print("❌ Core modules not available")
+        print("Please install dependencies: pip install -r requirements.txt")
+        return
+    
+    try:
+        # Import the comparison script functionality
+        from test_improved_strategy import run_strategy_comparison
+        
+        print("🔄 Starting strategy comparison...")
+        results = run_strategy_comparison()
+        
+        if results:
+            print("\n✅ Strategy comparison completed successfully!")
+            print("📊 Check the output above for detailed performance metrics.")
+        else:
+            print("\n❌ Strategy comparison failed.")
+            
+    except ImportError as e:
+        print(f"❌ Could not import improved strategy: {e}")
+    except Exception as e:
+        print(f"❌ Strategy comparison failed: {e}")
+        logger.error(f"Strategy comparison error: {e}")
+
+
 def main():
     """Main function with command-line interface."""
     setup_logging()
@@ -412,12 +439,13 @@ Examples:
   python main.py scan               # Run single market scan
   python main.py test               # Test integrations
   python main.py config             # Show configuration
+  python main.py compare-strategies  # Compare original vs improved strategy
         """
     )
     
     parser.add_argument(
         'command',
-        choices=['run', 'backtest', 'train-ml', 'scan', 'test', 'config'],
+        choices=['run', 'backtest', 'train-ml', 'scan', 'test', 'config', 'compare-strategies'],
         help='Command to execute'
     )
     
@@ -445,6 +473,8 @@ Examples:
             test_integrations()
         elif args.command == 'config':
             show_config()
+        elif args.command == 'compare-strategies':
+            compare_strategies()
     
     except KeyboardInterrupt:
         logger.info("Operation interrupted by user")
